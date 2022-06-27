@@ -49,12 +49,12 @@
 <div class="bl_drawer">
     <ul class="bl_drawer_list">
         <!-- 開いたときの中身 -->
-        <li class="bl_drawer_item"><a href="#">ホーム</a></li>
-        <li class="bl_drawer_item"><a href="#about">初めての方へ</a></li>
-        <li class="bl_drawer_item"><a href="#system">料金</a></li>
-        <li class="bl_drawer_item"><a href="#question">インストラクター</a></li>
-        <li class="bl_drawer_item"><a href="#gallery">スケジュール</a></li>
-        <li class="bl_drawer_item"><a href="#contact">ブログ</a></li>
+        <li class="bl_drawer_item"><a href="<?php echo esc_url(home_url('/'));?>">ホーム</a></li>
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
+        <li class=" bl_drawer_item"><a href="<?php bloginfo('url');?>/price">料金</a></li>
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/instructor">インストラクター</a></li>
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/schedule">スケジュール</a></li>
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/blog">ブログ</a></li>
         <div class="el_icon_wrapper hp_flex">
             <div class="el_icon">
                 <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
@@ -87,28 +87,29 @@
                         <a class="bl_headerNav_link" href="<?php echo esc_url(home_url('/'));?>">ホーム</a>
                     </li>
                     <li class="bl_headerNav_item">
-                        <a class="bl_headerNav_link" href="#">初めての方へ</a>
+                        <a class="bl_headerNav_link" href="<?php bloginfo('url');?>/beginner">初めての方へ</a>
                     </li>
                     <li class="bl_headerNav_item">
-                        <a class="bl_headerNav_link" href="#">料金</a>
+                        <a class="bl_headerNav_link" href="<?php bloginfo('url');?>/price">料金</a>
                     </li>
                     <li class="bl_headerNav_item">
-                        <a class="bl_headerNav_link" href="#">インストラクター</a>
+                        <a class="bl_headerNav_link" href="<?php bloginfo('url');?>/instructor">インストラクター</a>
                     </li>
                     <li class="bl_headerNav_item">
-                        <a class="bl_headerNav_link" href="#">スケジュール</a>
+                        <a class="bl_headerNav_link" href="<?php bloginfo('url');?>/schedule">スケジュール</a>
                     </li>
                     <li class="bl_headerNav_item">
-                        <a class="bl_headerNav_link" href="#">ブログ</a>
+                        <a class="bl_headerNav_link" href="<?php bloginfo('url');?>/blog">ブログ</a>
                     </li>
                 </ul>
             </nav>
             <div class="bl_headerUtils">
-                <a class="el_btn" href="#">ご予約はこちら</a>
+                <a class="el_btn" href="<?php bloginfo('url');?>/reserve">ご予約はこちら</a>
             </div>
             <!-- /.bl_headerUtils -->
         </div>
         <!-- /.ly_header_inner -->
-        <a class="el_logo" href="#"><img src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" /></a>
+        <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>"><img
+                src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" /></a>
     </header>
     <?php wp_head();?>

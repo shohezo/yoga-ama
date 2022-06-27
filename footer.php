@@ -15,27 +15,27 @@
         </div>
         <div class="ly_footer_main hp_flex hp_column_sp hp_jcc">
             <ul class="bl_footer_nav">
-                <li><a href="<?php bloginfo('url');?>/service">初めての方へ</a></li>
+                <li><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
                 <ul>
-                    <li><a href="<?php bloginfo('url');?>/price">ヨガについて</a></li>
-                    <li><a href="<?php bloginfo('url');?>/service/works">よくある質問</a></li>
+                    <li><a href="<?php bloginfo('url');?>/beginner/about">ヨガについて</a></li>
+                    <li><a href="<?php bloginfo('url');?>/beginner/faq">よくある質問</a></li>
                 </ul>
-                <li><a href="<?php bloginfo('url');?>/service">料金</a></li>
+                <li><a href="<?php bloginfo('url');?>/price">料金</a></li>
                 <ul>
-                    <li><a href="<?php bloginfo('url');?>/price">主張レッスン</a></li>
-                    <li><a href="<?php bloginfo('url');?>/service/works">スタジオレンタル</a></li>
+                    <li><a href="<?php bloginfo('url');?>/price/privateLesson">出張レッスン</a></li>
+                    <li><a href="<?php bloginfo('url');?>/price/rental">スタジオレンタル</a></li>
                 </ul>
             </ul>
             <ul class="bl_footer_nav">
-                <li><a href="<?php bloginfo('url');?>/flow">スケジュール</a></li>
-                <li><a href="<?php bloginfo('url');?>/faq">インストラクター</a></li>
-                <li><a href="<?php bloginfo('url');?>/privacypolicy">ブログ</a></li>
-                <li><a href="<?php bloginfo('url');?>/user">フォトギャラリー</a></li>
+                <li><a href="<?php bloginfo('url');?>/schedule">スケジュール</a></li>
+                <li><a href="<?php bloginfo('url');?>/instructor">インストラクター</a></li>
+                <li><a href="<?php bloginfo('url');?>/blog">ブログ</a></li>
+                <li><a href="<?php bloginfo('url');?>/gallery">フォトギャラリー</a></li>
             </ul>
             <ul class="bl_footer_nav">
-                <li><a href="<?php bloginfo('url');?>/flow">お問い合わせ</a></li>
-                <li><a href="<?php bloginfo('url');?>/faq">プライバシーポリシー</a></li>
-                <li><a href="<?php bloginfo('url');?>/privacypolicy">利用規約</a></li>
+                <li><a href="<?php bloginfo('url');?>/contact">お問い合わせ</a></li>
+                <li><a href="<?php bloginfo('url');?>/privacy">プライバシーポリシー</a></li>
+                <li><a href="<?php bloginfo('url');?>/rule">利用規約</a></li>
             </ul>
         </div>
     </div>
