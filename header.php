@@ -16,32 +16,31 @@
     <script>
     (function(d) {
         var config = {
-                kitId: "xvg5lni",
+                kitId: 'xvg5lni',
                 scriptTimeout: 3000,
-                async: true,
+                async: true
             },
             h = d.documentElement,
             t = setTimeout(function() {
-                h.className =
-                    h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
             }, config.scriptTimeout),
             tk = d.createElement("script"),
             f = false,
             s = d.getElementsByTagName("script")[0],
             a;
         h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
         tk.async = true;
         tk.onload = tk.onreadystatechange = function() {
             a = this.readyState;
-            if (f || (a && a != "complete" && a != "loaded")) return;
+            if (f || a && a != "complete" && a != "loaded") return;
             f = true;
             clearTimeout(t);
             try {
-                Typekit.load(config);
+                Typekit.load(config)
             } catch (e) {}
         };
-        s.parentNode.insertBefore(tk, s);
+        s.parentNode.insertBefore(tk, s)
     })(document);
     </script>
 </head>
@@ -80,7 +79,11 @@
 <body <?php body_class();?>>
     <?php wp_body_open();?>
     <header class="ly_header">
-        <div class="ly_header_inner hp_flex hp_jcfe hp_aic">
+        <div class="ly_header_inner hp_flex hp_jcsb hp_aic">
+            <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>"><img
+                    src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" />
+                <p>YOGA AMA</p>
+            </a>
             <nav>
                 <ul class="bl_headerNav">
                     <li class="bl_headerNav_item">
@@ -109,7 +112,43 @@
             <!-- /.bl_headerUtils -->
         </div>
         <!-- /.ly_header_inner -->
-        <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>"><img
-                src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" /></a>
     </header>
+    <!-- ヘッダー画像の条件分岐 -->
+    <?php if(is_page('price')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/plan.jpg" alt="">
+        <h2>コース・料金</h2>
+    </div>
+    <?php }else if(is_post_type_archive('news')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/news.jpg" alt="">
+        <h2>お知らせ</h2>
+    </div>
+    <?php }else if(is_post_type_archive('instructor')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
+        <h2>INSTRUCTOR</h2>
+    </div>
+    <?php }else if(is_archive()){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
+        <h2>BLOG</h2>
+    </div>
+    <?php }else if(is_page('contact')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/cta.jpg" alt="">
+        <h2>お問い合わせ・資料請求</h2>
+    </div>
+    <?php }else{}?>
+    <!-- パンくずリスト -->
+    <div class="ly_breadcrumbs<?php if ( is_single() ) { echo ' hp_mt100'; } ?>">
+        <div class=" ly_inner">
+            <div class="bl_breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+                <?php if(function_exists('bcn_display'))
+        {
+            bcn_display();
+        }?>
+            </div>
+        </div>
+    </div>
     <?php wp_head();?>

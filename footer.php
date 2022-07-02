@@ -1,5 +1,5 @@
 <footer class="ly_footer hp_ptMd ">
-    <div class="ly_inner hp_flex hp_column_tb hp_jcc hp_aic hp_pbMd">
+    <div class="ly_inner hp_flex hp_column_tb hp_jcc hp_pbMd">
         <div class="bl_footer_side">
             <h2 class="el_section_ttl">A<span>SK</span>M<span>E</span> A<span>NYTHING</span></h2>
             <div class="el_icon_wrapper hp_flex hp_jcc">
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-        <div class="ly_footer_main hp_flex hp_column_sp hp_jcc">
+        <div class="ly_footer_main hp_flex hp_jcsb">
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
                 <ul>

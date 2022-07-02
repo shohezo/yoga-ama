@@ -6,11 +6,11 @@ html {
 
 body {
   color: #707070;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   counter-reset: number 0;
   line-height: 1.8;
   letter-spacing: 0.05em;
-  font-family: "Hiragino UD Sans W3 JIS2004", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS Pgothic", "Osaka", sans-serif, Helvetica, Helvetica Neue, Arial, Verdana;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   /* color変数 */
 }
 

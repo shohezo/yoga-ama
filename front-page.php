@@ -9,10 +9,12 @@ Template Name: フロントページ
     <img class="el_fv_img" src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="海岸でヨガをする女性" />
     <div class="el_icon_wrapper">
         <div class="el_icon">
-            <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                    src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
         </div>
         <div class="el_icon">
-            <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                    src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
         </div>
     </div>
     <div class="bl_fv_copy">

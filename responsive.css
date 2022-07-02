@@ -79,6 +79,40 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /* 投稿詳細ページ */
+  main {
+    width: 100%;
+  }
+  .bl_myrecommended p {
+    width: 100%;
+  }
+  .ly_sidebar {
+    width: 100%;
+  }
+  .bl_myrelated {
+    margin-top: 30px;
+  }
+  .bl_myrelated figure {
+    width: 28%;
+  }
+  .bl_myrelated p {
+    width: 66%;
+  }
+  /* アーカイブページ（インストラクター） */
+  #instructor-archive .bl_card {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #instructor-archive .bl_card {
+    width: 40%;
+  }
+  #instructor-archive .bl_card:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  #instructor-archive .bl_card:nth-child(2) {
+    margin-bottom: 30px;
+  }
   /* ヘルパークラス */
   .hp_br-tb {
     display: block;
@@ -136,6 +170,27 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .ly_footer .ly_inner {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .ly_footer .ly_footer_main {
+    padding-left: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .bl_footer_nav {
+    border-left: none;
+  }
+}
+
 /*--------------------------------
 スマホ
 --------------------------------*/
@@ -156,9 +211,6 @@
   }
   .bl_drawerBtn {
     left: -280px;
-  }
-  .el_logo img {
-    width: 80px;
   }
   .el_section_ttl {
     font-size: 3rem;
@@ -232,6 +284,55 @@
   .bl_footer_side {
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+  /* ブログアーカイブページ */
+  #blog-archive .bl_blog_card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #blog-archive .bl_blog_item {
+    width: 100%;
+  }
+  #blog-archive .bl_blog_thumbnail {
+    width: 100%;
+  }
+  #blog-archive .bl_blog_body {
+    width: 100%;
+  }
+  /* 投稿詳細ページ */
+  main {
+    width: 100%;
+  }
+  .bl_myrecommended p {
+    width: 100%;
+  }
+  .ly_sidebar {
+    width: 100%;
+  }
+  .bl_myrelated {
+    margin-top: 30px;
+  }
+  .bl_myrelated figure {
+    width: 28%;
+  }
+  .bl_myrelated p {
+    width: 66%;
+  }
+  /* インストラクター個別ページ */
+  #single-instructor .ly_section_left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #single-instructor .ly_section_right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #single-instructor .ly_section_right .bl_section_header {
+    margin: 20px auto;
+  }
+  #single-instructor .ly_section_right .bl_section_txt {
+    margin: 20px auto;
+    text-align: left;
   }
   /* ヘルパークラス */
   .hp_br-sp {

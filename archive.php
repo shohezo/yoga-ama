@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="ly_section" id="blog-archive">
     <div class="ly_inner">
-        <ul class="bl_blog_list">
-            <div class="el_section_ttl">
+        <ul class="bl_blog_list hp_mtSm">
+            <div class="el_section_ttl hp_mbMd">
                 <?php if(is_category()): ?>
                 <h2><?php the_archive_title(); ?>一覧</h2>
                 <?php else: ?>
@@ -12,7 +12,7 @@
             <!-- メインループ始まり -->
             <?php if(have_posts()):while(have_posts()):the_post(); ?>
             <a class="bl_blog_card" href="<?php the_permalink();?>">
-                <li class="bl_blog_item hp_flex hp_column_tb">
+                <li class="bl_blog_item hp_flex hp_column_sp">
                     <div class="bl_blog_thumbnail">
                         <?php if( has_post_thumbnail()): ?>
                         <figure>
@@ -42,9 +42,9 @@
                     </div>
                     <div class="post-categories">
                         <?php
-      $category = get_the_category(); 
-        echo $category[0]->cat_name;
-    ?>
+                          $category = get_the_category(); 
+                           echo $category[0]->cat_name;
+                            ?>
                     </div>
                 </li>
             </a>

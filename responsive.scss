@@ -87,6 +87,47 @@
     }
   }
 
+  /* 投稿詳細ページ */
+  main {
+    width: 100%;
+  }
+  .bl_myrecommended {
+    p {
+      width: 100%;
+    }
+  }
+  .ly_sidebar {
+    width: 100%;
+  }
+  .bl_myrelated {
+    margin-top: 30px;
+    figure {
+      width: 28%;
+    }
+    p {
+      width: 66%;
+    }
+  }
+
+  /* アーカイブページ（インストラクター） */
+  #instructor-archive {
+    .bl_card {
+      justify-content: space-evenly;
+    }
+    // .bl_card_imgWrapper > img {
+    //   width: 120px;
+    // }
+    .bl_card {
+      width: 40%;
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   /* ヘルパークラス */
   .hp_br-tb {
     display: block;
@@ -139,6 +180,22 @@
   }
 }
 
+@media screen and(max-width:768px) {
+  .ly_footer {
+    .ly_inner {
+      align-items: unset;
+    }
+    .ly_footer_main {
+      padding-left: 10%;
+      flex-direction: column;
+      align-items: left;
+    }
+  }
+  .bl_footer_nav {
+    border-left: none;
+  }
+}
+
 /*--------------------------------
 スマホ
 --------------------------------*/
@@ -172,11 +229,6 @@
   }
   .bl_drawerBtn {
     left: -280px;
-  }
-  .el_logo {
-    img {
-      width: 80px;
-    }
   }
   .el_section_ttl {
     font-size: 3rem;
@@ -263,6 +315,65 @@
   .bl_footer_side {
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+  /* ブログアーカイブページ */
+  #blog-archive {
+    .bl_blog {
+      &_card {
+        width: 100%;
+        margin: 0 auto;
+      }
+      &_item {
+        width: 100%;
+      }
+      &_thumbnail {
+        width: 100%;
+      }
+      &_body {
+        width: 100%;
+      }
+    }
+  }
+
+  /* 投稿詳細ページ */
+  main {
+    width: 100%;
+  }
+  .bl_myrecommended {
+    p {
+      width: 100%;
+    }
+  }
+  .ly_sidebar {
+    width: 100%;
+  }
+  .bl_myrelated {
+    margin-top: 30px;
+    figure {
+      width: 28%;
+    }
+    p {
+      width: 66%;
+    }
+  }
+
+  /* インストラクター個別ページ */
+  #single-instructor {
+    .ly_section_left {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .ly_section_right {
+      width: 100%;
+      margin-bottom: 30px;
+      .bl_section_header {
+        margin: 20px auto;
+      }
+      .bl_section_txt {
+        margin: 20px auto;
+        text-align: left;
+      }
+    }
   }
 
   /* ヘルパークラス */

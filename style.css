@@ -7,8 +7,16 @@
   z-index: 99;
 }
 
+.el_logo p {
+  font-family: trajan-pro-3, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #f78f93;
+  font-size: 1rem;
+}
+
 .el_logo img {
-  width: 120px;
+  width: 60px;
   vertical-align: middle;
 }
 
@@ -39,7 +47,7 @@
   background-color: #f78f93;
   border: 2px solid transparent;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: inherit;
   text-align: center;
   text-decoration: none;
   -webkit-transition: 0.25s;
@@ -97,6 +105,19 @@
 .el_btn:hover span::after {
   right: -32px;
   width: 25px;
+}
+
+.el_btn.el_btn__square {
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #707070;
+  padding: 8px 15px;
+  border: 0.5px solid #f78f93;
+}
+
+.el_btn.el_btn__square:hover {
+  background-color: #f78f93;
+  color: #ffffff;
 }
 
 .ly_section {
@@ -282,14 +303,13 @@ body.noscroll {
 ヘッダー
 --------------------------------*/
 .ly_header {
-  padding-top: 20px;
-  height: 80px;
-}
-
-.ly_header .el_logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 999;
 }
 
 .ly_header_inner {
@@ -341,12 +361,11 @@ body.noscroll {
 --------------------------------*/
 .ly_fv {
   max-width: 2000px;
-  padding-top: 30px;
+  padding-top: 50px;
   margin-left: auto;
   display: block;
   width: 80%;
   position: relative;
-  z-index: -2;
 }
 
 .ly_fv > img {
@@ -876,6 +895,12 @@ body.noscroll {
   display: none;
 }
 
+.ly_footer .ly_inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .el_icon {
   width: 35px;
 }
@@ -889,7 +914,9 @@ body.noscroll {
 }
 
 .bl_footer_nav {
-  margin-right: 2vw;
+  padding-left: 2%;
+  margin-right: 2%;
+  border-left: 1px solid #f78f93;
 }
 
 .bl_footer_nav a {
@@ -915,11 +942,6 @@ body.noscroll {
   content: "- ";
   display: inline;
   color: #f78f93;
-}
-
-.bl_footer_nav {
-  padding-left: 20px;
-  border-left: 1px solid #f78f93;
 }
 
 .ly_copyright {
@@ -953,12 +975,60 @@ body.noscroll {
   color: white;
 }
 
+/* ここから各固定ページ */
+.ly_heading {
+  height: 500px;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.ly_heading img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ly_heading h2 {
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #c16065;
+  font-size: 3rem;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ly_breadcrumbs {
+  padding-right: 4vw;
+  padding-left: 4vw;
+  background-color: #f5f5f5;
+}
+
+.bl_breadcrumbs {
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.bl_breadcrumbs span {
+  vertical-align: middle;
+}
+
 /*--------------------------------
-ブログアーカイブページ
+アーカイブページ（ブログ）
 --------------------------------*/
 #blog-archive .el_section_ttl {
   text-align: center;
   margin-bottom: 60px;
+  font-size: 3rem;
 }
 
 #blog-archive .bl_blog_list {
@@ -969,12 +1039,13 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #blog-archive .bl_blog_item {
+  width: 80%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1015,7 +1086,7 @@ body.noscroll {
 
 #blog-archive .bl_blog_body {
   width: 67.7777%;
-  color: #f78f93;
+  color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,6 +1119,151 @@ body.noscroll {
 }
 
 /*--------------------------------
+アーカイブページ（インストラクター）
+--------------------------------*/
+#instructor-archive .bl_instructor_wrapper {
+  background-color: #52b2ac;
+}
+
+#instructor-archive .bl_card_wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2%;
+}
+
+#instructor-archive .bl_card_wrapper img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#instructor-archive .bl_card {
+  margin-bottom: 45px;
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+
+#instructor-archive .bl_card_imgWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+#instructor-archive .bl_section_imgWrapper > img {
+  width: 100%;
+}
+
+#instructor-archive .bl_card_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #f78f93;
+}
+
+#instructor-archive .bl_card_name {
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #c16065;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+}
+
+#instructor-archive .bl_card_type {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+#instructor-archive .bl_section_body > *:last-child {
+  margin-bottom: 0;
+}
+
+#instructor-archive .el_btn {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/*--------------------------------
+インストラクター個別ページ
+--------------------------------*/
+#single-instructor .ly_section_left {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+#single-instructor .ly_section_left .bl_section_imgWrapper {
+  text-align: center;
+}
+
+#single-instructor .ly_section_left .bl_section_imgWrapper img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#single-instructor .ly_section_left .bl_section_name {
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #c16065;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+}
+
+#single-instructor .ly_section_right {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+#single-instructor .ly_section_right .bl_section_header {
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #c16065;
+  width: 100%;
+  text-align: left;
+  display: block;
+  font-size: 3rem;
+  width: 80%;
+}
+
+#single-instructor .ly_section_right .bl_section_txt {
+  width: 80%;
+}
+
+#single-instructor .el_icon {
+  display: block;
+  max-width: 1180px;
+}
+
+#single-instructor img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: 60%;
+  height: 60%;
+  min-width: 150px;
+}
+
+/*--------------------------------
 ブログ詳細
 --------------------------------*/
 main {
@@ -1061,9 +1277,15 @@ main {
 }
 
 #single-blog .el_section_ttl {
+  font-size: 2rem;
   margin-bottom: 30px;
   font-weight: bold;
   text-align: left;
+  margin: 30px 0;
+}
+
+#single-blog .el_section_ttl::after {
+  content: none;
 }
 
 #single-blog .bl_blog_category {
@@ -1149,6 +1371,58 @@ main {
   text-decoration: underline;
 }
 
+/* サイドバー */
+.ly_sidebar {
+  width: 30%;
+}
+
+.bl_myrelated h4 {
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  background-color: #f78f93;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 1.2rem;
+  padding: 2rem;
+}
+
+.bl_myrelated article > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 6%;
+}
+
+.bl_myrelated article {
+  margin-bottom: 20px;
+}
+
+.bl_myrelated article:last-child {
+  margin-bottom: 0px;
+}
+
+.bl_myrelated figure {
+  text-align: center;
+  width: 50%;
+}
+
+.bl_myrelated figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  max-height: 85.3px;
+}
+
+.bl_myrelated p {
+  color: #707070;
+  width: 50%;
+  font-size: 12px;
+}
+
 /* サイドバー・カテゴリーウィジェット */
 .widget_block {
   margin-bottom: 12px;
@@ -1158,17 +1432,25 @@ main {
   text-align: center;
 }
 
+.widget_block .has-background {
+  background-color: #f78f93 !important;
+}
+
 .wp-block-categories-list.wp-block-categories {
   list-style: inside;
 }
 
 .wp-block-categories-list.wp-block-categories li {
-  list-style-type: disc;
-  margin-bottom: 10px;
+  list-style-type: none;
+  margin-bottom: 5px;
 }
 
 .wp-block-categories-list.wp-block-categories li:last-child {
   margin-bottom: 0px;
+}
+
+.wp-block-categories-list.wp-block-categories li a {
+  color: #707070 !important;
 }
 
 /* おすすめ記事のスタイリング */
@@ -1240,6 +1522,7 @@ main {
 }
 
 .bl_myrecommended_body {
+  color: #707070;
   width: 70%;
 }
 
@@ -1424,6 +1707,7 @@ th span {
 }
 
 .page-numbers {
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

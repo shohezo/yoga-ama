@@ -21,13 +21,17 @@ function mytheme_setup(){
 	));
 	//アイキャッチ画像の有効化
 	add_theme_support('post-thumbnails');
+
+	//カスタム投稿タイプ"インストラクター"で画像挿入機能追加（150×150でトリミング）
+	add_theme_support( 'post-thumbnails', array( 'instructor' ) );
+	set_post_thumbnail_size( 150, 150, true );
 }
 add_action('after_setup_theme','mytheme_setup');
 
 
 
 
-/* カスタム投稿タイプの追加 */
+/* カスタム投稿タイプの追加（お知らせ） */
 function cpt_register_news() { //add_actionの２つのパラメーターを定義
 	$labels = [
 		"singular_name" => "news",
@@ -55,6 +59,59 @@ function cpt_register_news() { //add_actionの２つのパラメーターを定�
 }
 add_action( 'init', 'cpt_register_news' );
 
+/* カスタム投稿タイプの追加(インストラクター)*/
+function cpt_register_instructor() { //add_actionの２つのパラメーターを定義
+	$labels = [
+		"singular_name" => "instructor",
+		"edit_item" => "instructor",
+		'add_new' => _x( '新規追加', 'instructor' ),
+        'add_new_item' => _x( '新しいインストラクタープロフィールを追加', 'instructor' ),
+        'edit_item' => _x( 'インストラクタープロフィールを編集', 'instructor' ),
+        'new_item' => _x( '新しいインストラクター', 'instructor' ),
+        'view_item' => _x( 'インストラクタープロフィールを見る', 'instructor' ),
+        'search_items' => _x( 'インストラクター検索', 'instructor' ),
+        'not_found' => _x( 'プロフィールが見つかりません', 'instructor' ),
+        'not_found_in_trash' => _x( 'ゴミ箱にプロフィールはありません', 'instructor' ),
+        'parent_item_colon' => _x( '親インストラクター:', 'instructor' ),
+        'menu_name' => _x( 'インストラクター', 'instructor' ),
+	];
+	$args = [
+		"label" => "インストラクター", //管理画面、アーカイブページのタイトル、パンクズの名前に反映される！
+		"labels" => $labels,
+		"description" => "経歴紹介",
+		"public" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"map_meta_cap" => true,
+		"hierarchical" => true,
+		"rewrite" => [ "slug" => "instructor", "with_front" => true ], //スラッグをnewsに設定
+		"query_var" => true,
+		"menu_position" => 6,
+		"supports" => [ "title", "editor", "thumbnail" ],
+	];
+	register_post_type( "instructor", $args );
+}
+add_action( 'init', 'cpt_register_instructor' );
+
+//管理画面でカスタム投稿の項目にアイコンの追加
+function add_menu_icons_styles(){
+	echo '<style>
+		 #adminmenu #menu-posts-instructor div.wp-menu-image:before {
+			  content: "\f307";
+		 }
+	</style>';
+	echo '<style>
+		 #adminmenu #menu-posts-news div.wp-menu-image:before {
+			  content: "\f489";
+		 }
+	</style>';
+}
+add_action( 'admin_head', 'add_menu_icons_styles' );
+
 /* archive.phpの設定 */
 function post_has_archive($args,$post_type){ //設定後に必ずパーマリンクを設定すること
     if('post' == $post_type){
@@ -79,7 +136,6 @@ function custom_posts_per_page($query) {
 add_action('pre_get_posts', 'custom_posts_per_page');
 
 
-//管理画面にウィジェットエリアを追加
 /* サイドバー */
 //管理画面にウィジェットエリアを追加
 function widgetarea_init() {

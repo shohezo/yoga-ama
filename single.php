@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="ly_section" id="single-blog">
-    <div class="ly_inner hp_flex hp_column_tb">
+    <div class="ly_inner hp_flex hp_ptMd hp_column_tb">
         <main>
             <!-- ループ始まり -->
             <?php if(have_posts()):while(have_posts()):the_post(); ?>
@@ -26,7 +26,7 @@
             <?php endwhile;endif; ?>
             <!-- ループ終わり -->
             <!-- サイドバー・おすすめの記事 -->
-            <div class="bl_myrecommended">
+            <div class="bl_myrecommended hp_mbMd">
                 <h4>おすすめの記事</h4>
                 <?php $myposts = get_posts(array(
                 'posts_per_page' => 3, //記事の表示件数
@@ -71,7 +71,7 @@
         </main>
         <div class="ly_sidebar">
             <!-- サイドバー・関連記事 -->
-            <div class="bl_myrelated">
+            <div class="bl_myrelated hp_mbMd">
                 <h4>関連記事</h4>
                 <?php $myposts = get_posts(array(
                     'posts_per_page' => 3, //記事の表示件数
