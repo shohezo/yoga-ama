@@ -22,7 +22,7 @@
     </div>
     <div class="ly_inner">
         <div class="el_icon">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img
+            <a href="<?php echo CFS()->get('Instagram'); ?>" target="_blank" rel="noopener noreferrer"><img
                     src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
         </div>
     </div>

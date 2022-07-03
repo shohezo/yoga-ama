@@ -118,7 +118,7 @@
     //   width: 120px;
     // }
     .bl_card {
-      width: 40%;
+      width: 100%;
       &:nth-child(1) {
         margin-bottom: 30px;
       }
@@ -127,6 +127,33 @@
       }
     }
   }
+    /* プライスページ*/
+    #price-page {
+      #ticket,
+      #ticket_online,
+      #ticket_senior{
+        .bl_system_body {
+          align-items: center;
+        }
+    
+        .bl_priceUnit {
+          width: 900px;
+        }
+        .bl_plan_service_table,
+        .bl_plan_option_table {
+          width: 1500px;
+        }
+        .bl_plan_service_table thead .blank {
+          flex: 0.4;
+        }
+        .bl_plan_service_table tbody th,
+        .bl_plan_option_table tbody th {
+          padding-left: 5px;
+          flex: 0.4;
+          font-size: 1.2rem;
+        }
+      }
+    }
 
   /* ヘルパークラス */
   .hp_br-tb {
@@ -193,6 +220,33 @@
   }
   .bl_footer_nav {
     border-left: none;
+  }
+
+  /* プライスページ*/
+  #price-page {
+    .bl_system_body {
+      align-items: center;
+    }
+
+    .bl_priceUnit {
+      width: 900px;
+    }
+    .bl_plan_service_table,
+    .bl_plan_option_table {
+      width: 1000px;
+    }
+    .bl_plan_service_table thead .blank {
+      flex: 0.4;
+    }
+    .bl_plan_option_table thead .blank {
+      flex: 0.4;
+    }
+    .bl_plan_service_table tbody th,
+    .bl_plan_option_table tbody th {
+      padding-left: 5px;
+      flex: 0.4;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -375,6 +429,8 @@
       }
     }
   }
+
+  /* プライスページ */
 
   /* ヘルパークラス */
   .hp_br-sp {

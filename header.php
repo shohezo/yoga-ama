@@ -116,8 +116,8 @@
     <!-- ヘッダー画像の条件分岐 -->
     <?php if(is_page('price')){?>
     <div class="ly_heading">
-        <img src="<?php bloginfo('template_url');?>/img/plan.jpg" alt="">
-        <h2>コース・料金</h2>
+        <img src="<?php bloginfo('template_url');?>/img/price.jpeg" alt="">
+        <h2>PLAN&FEE</h2>
     </div>
     <?php }else if(is_post_type_archive('news')){?>
     <div class="ly_heading">

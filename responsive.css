@@ -105,13 +105,53 @@
             justify-content: space-evenly;
   }
   #instructor-archive .bl_card {
-    width: 40%;
+    width: 100%;
   }
   #instructor-archive .bl_card:nth-child(1) {
     margin-bottom: 30px;
   }
   #instructor-archive .bl_card:nth-child(2) {
     margin-bottom: 30px;
+  }
+  /* プライスページ*/
+  #price-page #ticket .bl_system_body,
+  #price-page #ticket_online .bl_system_body,
+  #price-page #ticket_senior .bl_system_body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #price-page #ticket .bl_priceUnit,
+  #price-page #ticket_online .bl_priceUnit,
+  #price-page #ticket_senior .bl_priceUnit {
+    width: 900px;
+  }
+  #price-page #ticket .bl_plan_service_table,
+  #price-page #ticket .bl_plan_option_table,
+  #price-page #ticket_online .bl_plan_service_table,
+  #price-page #ticket_online .bl_plan_option_table,
+  #price-page #ticket_senior .bl_plan_service_table,
+  #price-page #ticket_senior .bl_plan_option_table {
+    width: 1500px;
+  }
+  #price-page #ticket .bl_plan_service_table thead .blank,
+  #price-page #ticket_online .bl_plan_service_table thead .blank,
+  #price-page #ticket_senior .bl_plan_service_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #price-page #ticket .bl_plan_service_table tbody th,
+  #price-page #ticket .bl_plan_option_table tbody th,
+  #price-page #ticket_online .bl_plan_service_table tbody th,
+  #price-page #ticket_online .bl_plan_option_table tbody th,
+  #price-page #ticket_senior .bl_plan_service_table tbody th,
+  #price-page #ticket_senior .bl_plan_option_table tbody th {
+    padding-left: 5px;
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+    font-size: 1.2rem;
   }
   /* ヘルパークラス */
   .hp_br-tb {
@@ -188,6 +228,37 @@
   }
   .bl_footer_nav {
     border-left: none;
+  }
+  /* プライスページ*/
+  #price-page .bl_system_body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #price-page .bl_priceUnit {
+    width: 900px;
+  }
+  #price-page .bl_plan_service_table,
+  #price-page .bl_plan_option_table {
+    width: 1000px;
+  }
+  #price-page .bl_plan_service_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #price-page .bl_plan_option_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #price-page .bl_plan_service_table tbody th,
+  #price-page .bl_plan_option_table tbody th {
+    padding-left: 5px;
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+    font-size: 1.2rem;
   }
 }
 
@@ -334,6 +405,7 @@
     margin: 20px auto;
     text-align: left;
   }
+  /* プライスページ */
   /* ヘルパークラス */
   .hp_br-sp {
     display: block;

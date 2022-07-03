@@ -4,7 +4,7 @@
 <div class="ly_section" id="instructor-archive">
     <div class="ly_inner">
         <!-- <h2 class="el_section_ttl"><?php echo get_the_archive_title(); ?>紹介</h2> -->
-        <div class="bl_card_wrapper hp_flex hp_ptMd hp_pbSm">
+        <div class="bl_card_wrapper hp_flex hp_ptMd hp_pbSm hp_column_sp">
             <!-- メインループ始まり -->
             <?php
             $loop = new WP_Query(array("post_type" => "instructor"));

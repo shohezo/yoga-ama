@@ -47,8 +47,9 @@ body img {
   display: block;
 }
 
-.hp_fs-sm {
-  font-size: 80%;
+.hp_anno {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .hp_mr10 {
