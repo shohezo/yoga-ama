@@ -10,7 +10,7 @@
                     echo $category[0]->cat_name;
                 ?>
             </div>
-            <h2 class="el_section_ttl"><?php the_title(); ?></h2>
+            <h2 class="el_single_ttl"><?php the_title(); ?></h2>
             <?php wp_social_bookmarking_light_output_e(null, get_permalink(), the_title("", "", false)); ?>
             <p class="bl_blog_date">
                 <time datetime="<?php echo esc_attr(get_the_date( DATE_W3C ));?>">

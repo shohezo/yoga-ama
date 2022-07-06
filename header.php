@@ -129,6 +129,11 @@
         <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
         <h2>INSTRUCTOR</h2>
     </div>
+    <?php }else if(is_post_type_archive('schedule')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/schedule.jpg" alt="">
+        <h2>SCHEDULE</h2>
+    </div>
     <?php }else if(is_archive()){?>
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
@@ -138,6 +143,16 @@
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/cta.jpg" alt="">
         <h2>お問い合わせ・資料請求</h2>
+    </div>
+    <?php }else if(is_page('beginner')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/beginner.jpg" alt="">
+        <h2>BEGINNER</h2>
+    </div>
+    <?php }else if(is_page('reserve')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/reserve.jpg" alt="">
+        <h2>RESERVE</h2>
     </div>
     <?php }else{}?>
     <!-- パンくずリスト -->

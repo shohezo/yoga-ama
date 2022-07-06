@@ -52,6 +52,12 @@
       }
     }
   }
+  #beginner{
+    .el_btn{
+      display: table;
+      margin: 0 auto;
+    }
+  }
   #voice {
     .bl_section {
       justify-content: space-evenly;
@@ -109,51 +115,50 @@
     }
   }
 
+  /* ビギナーページ */
+  #beginner-page {
+    .bl_section {
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
+  }
+
   /* アーカイブページ（インストラクター） */
   #instructor-archive {
-    .bl_card {
-      justify-content: space-evenly;
-    }
     // .bl_card_imgWrapper > img {
     //   width: 120px;
     // }
     .bl_card {
-      width: 100%;
-      &:nth-child(1) {
-        margin-bottom: 30px;
+      width: 40%;
+    }
+  }
+  /* プライスページ*/
+  #price-page {
+    #ticket,
+    #ticket_online,
+    #ticket_senior {
+      .bl_system_body {
+        align-items: center;
       }
-      &:nth-child(2) {
-        margin-bottom: 30px;
+
+      .bl_priceUnit {
+        width: 900px;
+      }
+      .bl_plan_service_table,
+      .bl_plan_option_table {
+        width: 1500px;
+      }
+      .bl_plan_service_table thead .blank {
+        flex: 0.4;
+      }
+      .bl_plan_service_table tbody th,
+      .bl_plan_option_table tbody th {
+        padding-left: 5px;
+        flex: 0.4;
+        font-size: 1.2rem;
       }
     }
   }
-    /* プライスページ*/
-    #price-page {
-      #ticket,
-      #ticket_online,
-      #ticket_senior{
-        .bl_system_body {
-          align-items: center;
-        }
-    
-        .bl_priceUnit {
-          width: 900px;
-        }
-        .bl_plan_service_table,
-        .bl_plan_option_table {
-          width: 1500px;
-        }
-        .bl_plan_service_table thead .blank {
-          flex: 0.4;
-        }
-        .bl_plan_service_table tbody th,
-        .bl_plan_option_table tbody th {
-          padding-left: 5px;
-          flex: 0.4;
-          font-size: 1.2rem;
-        }
-      }
-    }
 
   /* ヘルパークラス */
   .hp_br-tb {
@@ -222,6 +227,18 @@
     border-left: none;
   }
 
+  /* ブログセクション */
+  #blog{
+    .bl_blog{
+      &_list{
+      // flex-direction: column;
+    }
+    &_card{
+      width: 100%;
+      gap: 10px;
+    }
+  }
+  }
   /* プライスページ*/
   #price-page {
     .bl_system_body {
@@ -259,23 +276,9 @@
   }
 }
 @media screen and(max-width:519px) {
-  // /* フォントサイズ */
-  // h1 {
-  //   font-size: 3rem;
-  // }
-  // h2 {
-  //   font-size: 2.4rem;
-  // }
-  // h3 {
-  //   font-size: 2rem;
-  // }
-  // h4 {
-  //   font-size: 1.6rem;
-  // }
 
   body {
     font-size: 1.4rem;
-    line-height: 1.6em;
   }
   /* コンポーネント */
   .bl_drawer {
@@ -295,12 +298,13 @@
     &_txt {
       text-align: center;
     }
+    &_header{
+      line-height: 3rem;
+    }
   }
 
   /* ヘッダー */
   .ly_header {
-    padding-top: 0px;
-    height: 0px;
     .el_logo {
       top: 20px;
       left: 20px;
@@ -340,7 +344,8 @@
       }
     }
     .bl_section_imgWrapper > img {
-      width: 120px;
+      width: 
+      120px;
     }
   }
   #banner {
@@ -410,6 +415,11 @@
       width: 66%;
     }
   }
+  #instructor-archive {
+    .bl_card {
+      margin-bottom: 100px;
+    }
+  }
 
   /* インストラクター個別ページ */
   #single-instructor {
@@ -431,6 +441,13 @@
   }
 
   /* プライスページ */
+
+  /* ビギナーページ */
+  #beginner-page {
+    .bl_section_body {
+      padding-left: 0vw;
+    }
+  }
 
   /* ヘルパークラス */
   .hp_br-sp {

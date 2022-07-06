@@ -17,8 +17,8 @@
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
                 <ul>
-                    <li><a href="<?php bloginfo('url');?>/beginner/about">ヨガについて</a></li>
-                    <li><a href="<?php bloginfo('url');?>/beginner/faq">よくある質問</a></li>
+                    <!-- <li><a href="<?php bloginfo('url');?>/beginner/about">ヨガについて</a></li>
+                    <li><a href="<?php bloginfo('url');?>/beginner/faq">よくある質問</a></li> -->
                 </ul>
                 <li><a href="<?php bloginfo('url');?>/price">料金</a></li>
                 <ul>
@@ -30,7 +30,6 @@
                 <li><a href="<?php bloginfo('url');?>/schedule">スケジュール</a></li>
                 <li><a href="<?php bloginfo('url');?>/instructor">インストラクター</a></li>
                 <li><a href="<?php bloginfo('url');?>/blog">ブログ</a></li>
-                <li><a href="<?php bloginfo('url');?>/gallery">フォトギャラリー</a></li>
             </ul>
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/contact">お問い合わせ</a></li>

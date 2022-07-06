@@ -570,7 +570,7 @@ Template Name: プライスページ
     <section class="ly_section hp_ptLg hp_pbLg" id="ticket_senior">
         <div class=" ly_inner">
             <span class="el_section_ttl_sub">通いたい時に、好きなだけ</span>
-            <h2 class="el_section_header">シニア<br>チケットプラン</h2>
+            <h2 class="el_section_headernox">シニア<br>チケットプラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
                     <img src="<?php bloginfo('template_url');?>/img/ticket_senior.png" alt="" />

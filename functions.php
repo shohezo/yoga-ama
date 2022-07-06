@@ -24,7 +24,7 @@ function mytheme_setup(){
 
 	//カスタム投稿タイプ"インストラクター"で画像挿入機能追加（150×150でトリミング）
 	add_theme_support( 'post-thumbnails', array( 'instructor' ) );
-	set_post_thumbnail_size( 150, 150, true );
+	// set_post_thumbnail_size( 150, 150, true );
 }
 add_action('after_setup_theme','mytheme_setup');
 
@@ -32,13 +32,13 @@ add_action('after_setup_theme','mytheme_setup');
 
 
 /* カスタム投稿タイプの追加（お知らせ） */
-function cpt_register_news() { //add_actionの２つのパラメーターを定義
+function cpt_register_schedule() { //add_actionの２つのパラメーターを定義
 	$labels = [
-		"singular_name" => "news",
-		"edit_item" => "news",
+		"singular_name" => "schedule",
+		"edit_item" => "schedule",
 	];
 	$args = [
-		"label" => "お知らせ", //管理画面、アーカイブページのタイトル、パンクズの名前に反映される！
+		"label" => "スケジュール", //管理画面、アーカイブページのタイトル、パンクズの名前に反映される！
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
@@ -50,14 +50,14 @@ function cpt_register_news() { //add_actionの２つのパラメーターを定�
 		"exclude_from_search" => false,
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "news", "with_front" => true ], //スラッグをnewsに設定
+		"rewrite" => [ "slug" => "schedule", "with_front" => true ], //スラッグをscheduleに設定
 		"query_var" => true,
 		"menu_position" => 5,
 		"supports" => [ "title", "editor", "thumbnail" ],
 	];
-	register_post_type( "news", $args );
+	register_post_type( "schedule", $args );
 }
-add_action( 'init', 'cpt_register_news' );
+add_action( 'init', 'cpt_register_schedule' );
 
 /* カスタム投稿タイプの追加(インストラクター)*/
 function cpt_register_instructor() { //add_actionの２つのパラメーターを定義
@@ -88,7 +88,7 @@ function cpt_register_instructor() { //add_actionの２つのパラメーター�
 		"exclude_from_search" => false,
 		"map_meta_cap" => true,
 		"hierarchical" => true,
-		"rewrite" => [ "slug" => "instructor", "with_front" => true ], //スラッグをnewsに設定
+		"rewrite" => [ "slug" => "instructor", "with_front" => true ], //スラッグをinstructorに設定
 		"query_var" => true,
 		"menu_position" => 6,
 		"supports" => [ "title", "editor", "thumbnail" ],
@@ -105,7 +105,7 @@ function add_menu_icons_styles(){
 		 }
 	</style>';
 	echo '<style>
-		 #adminmenu #menu-posts-news div.wp-menu-image:before {
+		 #adminmenu #menu-posts-schedule div.wp-menu-image:before {
 			  content: "\f489";
 		 }
 	</style>';
@@ -194,3 +194,39 @@ function custom_archive_title($title){
     return $title;
 }
 add_filter('get_the_archive_title','custom_archive_title');
+
+//「投稿一覧」の「クイック編集」で表示される「この投稿を先頭に固定表示」を非表示
+function custom_hidden_quick_page_sticky() {
+    ?>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".inline-edit-col-right .inline-edit-group:eq(1) label:eq(1)").css("display", "none");
+});
+</script>
+<?php
+}
+add_action( 'admin_head-edit.php', 'custom_hidden_quick_page_sticky' ); //ファイルを読み込む
+
+//「投稿の編集」で表示される「ブログのトップに固定」を非表示
+function custom_hidden_post_page_sticky() {
+    ?>
+<style type="text/css">
+.edit-post-post-status .components-panel__row:nth-of-type(3) {
+    display: none !important;
+}
+</style>
+<?php
+}
+add_action( 'admin_print_styles-post.php', 'custom_hidden_post_page_sticky' ); //スタイルを直接書き込む
+
+//「新規投稿の追加」で表示される「ブログのトップに固定」「レビュー待ち」を非表示
+function custom_hidden_postnew_page_sticky() {
+    ?>
+<style type="text/css">
+.edit-post-post-status .components-panel__row:nth-of-type(n+3) {
+    display: none !important;
+}
+</style>
+<?php
+}
+add_action( 'admin_print_styles-post-new.php', 'custom_hidden_postnew_page_sticky' ); //スタイルを直接書き込む
