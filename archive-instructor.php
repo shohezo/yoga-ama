@@ -7,9 +7,15 @@
         <div class="bl_card_wrapper hp_flex hp_ptMd hp_pbSm hp_column_sp">
             <!-- メインループ始まり -->
             <?php
-            $loop = new WP_Query(array("post_type" => "instructor"));
-            if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post();
-            ?>
+            $args = [
+                     'post_type' => 'instructor',//投稿タイプ名
+                    'posts_per_page' => 20,//アーカイブの表示件数をここで変更
+                    'paged' => $page//ページングがあるなら記述
+                        ];
+            $the_query = new WP_Query($args);
+                        ?>
+            <?php if ($the_query->have_posts()) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <article class="bl_card">
                 <figure class="bl_card_imgWrapper">
                     <?php the_post_thumbnail(); ?>

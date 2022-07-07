@@ -8,7 +8,7 @@ Template Name: ビギナーページ
     <div class="ly_inner">
         <!-- キャンペーン -->
         <div id="campaign" class="hp_pbMd">
-            <h2 class="el_section_header">キャンペーン実施中</h2>
+            <h2 class="el_section_header">体験キャンペーン実施中!</h2>
             <figure class="bl_section_imgWrapper hp_ptMd hp_pbSm">
                 <img src="<?php bloginfo('template_url');?>/img/campaign-trial.png" alt="" />
             </figure>

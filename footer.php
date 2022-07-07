@@ -4,8 +4,8 @@
             <h2 class="el_section_ttl">A<span>SK</span>M<span>E</span> A<span>NYTHING</span></h2>
             <div class="el_icon_wrapper hp_flex hp_jcc">
                 <div class="el_icon">
-                    <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_insta.png"
-                            alt="インスタグラムのリンクアイコン" /></a>
+                    <a href="https://www.instagram.com/yoga_ama/" target="_blank" rel="noopener noreferrer"><img
+                            src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
                 </div>
                 <div class="el_icon">
                     <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png"
@@ -22,7 +22,7 @@
                 </ul>
                 <li><a href="<?php bloginfo('url');?>/price">料金</a></li>
                 <ul>
-                    <li><a href="<?php bloginfo('url');?>/price/privateLesson">出張レッスン</a></li>
+                    <li><a href="<?php bloginfo('url');?>/price/private-lesson">出張レッスン</a></li>
                     <li><a href="<?php bloginfo('url');?>/price/rental">スタジオレンタル</a></li>
                 </ul>
             </ul>

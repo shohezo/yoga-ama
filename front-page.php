@@ -9,7 +9,7 @@ Template Name: フロントページ
     <img class="el_fv_img" src="<?php bloginfo('template_url');?>/img/fv.jpg" alt="海岸でヨガをする女性" />
     <div class="el_icon_wrapper">
         <div class="el_icon">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img
+            <a href="https://www.instagram.com/yoga_ama/" target="_blank" rel="noopener noreferrer"><img
                     src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
         </div>
         <div class="el_icon">

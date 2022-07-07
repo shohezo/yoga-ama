@@ -26,6 +26,9 @@
 タブレット
 --------------------------------*/
 @media screen and (max-width: 959px) {
+  .bl_section_header {
+    text-align: center;
+  }
   .ly_fv {
     width: 100%;
     padding-top: 0px;
@@ -150,6 +153,43 @@
         -ms-flex: 0.4;
             flex: 0.4;
     font-size: 1.2rem;
+  }
+  #private-lesson-page .bl_system_body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #private-lesson-page .bl_priceUnit {
+    width: 900px;
+  }
+  #private-lesson-page .bl_plan_service_table,
+  #private-lesson-page .bl_plan_option_table {
+    width: 1500px;
+  }
+  #private-lesson-page .bl_plan_service_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #private-lesson-page .bl_plan_service_table tbody th,
+  #private-lesson-page .bl_plan_option_table tbody th {
+    padding-left: 5px;
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+    font-size: 1.2rem;
+  }
+  /* レンタルページ */
+  #rental-page .bl_section_body {
+    padding-left: 0vw;
+  }
+  #rental-page .bl_section_body .bl_notice {
+    margin: 0 auto;
+    max-width: unset;
+  }
+  #rental-page .bl_section_price {
+    margin: 0 auto;
+    max-width: unset;
   }
   /* ヘルパークラス */
   .hp_br-tb {
@@ -370,6 +410,10 @@
   }
   #blog-archive .bl_blog_body {
     width: 100%;
+  }
+  /* レンタルページ */
+  #rental-page .bl_section_txt {
+    text-align: left;
   }
   /* 投稿詳細ページ */
   main {

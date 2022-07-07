@@ -192,7 +192,7 @@
   font-weight: 500;
   font-style: normal;
   color: #c16065;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: normal;
 }
 
@@ -226,6 +226,20 @@ body.noscroll {
 }
 
 .bl_drawer_item a {
+  color: #f78f93;
+}
+
+.bl_drawer_item > ul {
+  padding: 0px 0px 0px 20px;
+}
+
+.bl_drawer_item > ul li {
+  margin-top: 5px;
+}
+
+.bl_drawer_item > ul li::before {
+  content: "- ";
+  display: inline;
   color: #f78f93;
 }
 
@@ -972,6 +986,7 @@ body.noscroll {
 }
 
 .ly_heading h2 {
+  z-index: 2;
   font-family: josefin-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1076,6 +1091,93 @@ body.noscroll {
 }
 
 /*--------------------------------
+スタジオレンタルページ
+--------------------------------*/
+#rental-page #campaign .bl_section_txt {
+  margin: 0px auto;
+  width: clamp(300px, 100%, 600px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#rental-page .el_section_header {
+  font-size: 2rem;
+  text-align: center;
+  color: #272534;
+}
+
+#rental-page .bl_section_imgWrapper {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#rental-page .bl_section_header {
+  font-family: initial;
+  font-size: 1.8rem;
+  color: #272534;
+  position: relative;
+}
+
+#rental-page .bl_section_header::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background-color: #c16065;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+
+#rental-page .bl_section_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 4vw;
+  width: 100%;
+}
+
+#rental-page .bl_section_body .bl_notice {
+  max-width: 500px;
+  font-size: 1rem;
+}
+
+#rental-page .bl_section_price {
+  border: 1px solid #f78f93;
+  max-width: 500px;
+}
+
+#rental-page .bl_section_price span {
+  font-weight: 600;
+  text-align: center;
+  background-color: #f78f93;
+  color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px 20px;
+}
+
+#rental-page .bl_section_price p {
+  text-align: center;
+  background-color: #ffffff;
+  color: #707070;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 20px 20px;
+}
+
+#rental-page .bl_section_txt ul {
+  padding-left: 30px;
+}
+
+#rental-page .bl_section_txt li {
+  list-style: circle;
+}
+
+/*--------------------------------
 リザーブページ
 --------------------------------*/
 #reserve-page #lead .el_section_ttl::after {
@@ -1120,6 +1222,340 @@ body.noscroll {
 }
 
 /*--------------------------------
+出張レッスンページ
+--------------------------------*/
+#private-lesson-page #campaign .bl_section_txt {
+  margin: 0px auto;
+  width: clamp(300px, 100%, 600px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#private-lesson-page #campaign .bl_section_imgWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#private-lesson-page .el_section_header {
+  font-size: 2rem;
+  text-align: center;
+  color: #272534;
+}
+
+#private-lesson-page .bl_section_imgWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#private-lesson-page .el_section_header {
+  font-size: 2rem;
+  text-align: center;
+  color: #272534;
+}
+
+#private-lesson-page .bl_section {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+#private-lesson-page .bl_section_imgWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#private-lesson-page .bl_section_imgWrapper > img {
+  width: 100%;
+}
+
+#private-lesson-page .bl_section_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 4vw;
+}
+
+#private-lesson-page .bl_section_txt {
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+#private-lesson-page .bl_section_body > *:last-child {
+  margin-bottom: 0;
+}
+
+#private-lesson-page .bl_section_box {
+  margin: 0 auto;
+  background-color: #fff2f3;
+  font-weight: 600;
+  width: clamp(300px, 100%, 600px);
+  padding: 20px 30px 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#private-lesson-page .bl_section_box i {
+  margin-right: 1rem;
+}
+
+#private-lesson-page .bl_section_box p {
+  color: #c16065;
+  margin-bottom: 10px;
+}
+
+#private-lesson-page .bl_scroll {
+  overflow-x: scroll;
+}
+
+#private-lesson-page .bl_priceUnit {
+  list-style: none;
+}
+
+#private-lesson-page .bl_priceUnit .bl_price_card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1%;
+}
+
+#private-lesson-page .bl_priceUnit .bl_price_card:last-child {
+  margin-right: 0;
+}
+
+#private-lesson-page .bl_price_header {
+  padding: 2.4rem;
+  text-align: center;
+}
+
+#private-lesson-page .bl_price_card:nth-of-type(1) .bl_price_header {
+  background: -webkit-gradient(linear, left top, right top, from(#edb6ee), to(#db3ee1));
+  background: linear-gradient(to right, #edb6ee 0%, #db3ee1 100%);
+}
+
+#private-lesson-page .bl_price_card:nth-of-type(2) .bl_price_header {
+  padding: 3.6rem 2.4rem;
+  background: -webkit-gradient(linear, left top, right top, to(#db3ee1));
+  background: linear-gradient(to right, #db3ee1 100% #8b3378 100%);
+}
+
+#private-lesson-page .bl_price_card:nth-of-type(3) .bl_price_header {
+  background: -webkit-gradient(linear, left top, right top, to(#8b3378));
+  background: linear-gradient(to right, #8b3378 100% #694f66 100%);
+}
+
+#private-lesson-page .bl_price_card:nth-of-type(4) .bl_price_header {
+  background: -webkit-gradient(linear, left top, right top, to(#8b3378));
+  background: linear-gradient(to right, #8b3378 100% #694f66 100%);
+}
+
+#private-lesson-page .bl_price_card:nth-of-type(5) .bl_price_header {
+  background: -webkit-gradient(linear, left top, right top, to(#8b3378));
+  background: linear-gradient(to right, #8b3378 100% #694f66 100%);
+}
+
+#private-lesson-page .bl_price_ttl {
+  line-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#private-lesson-page .bl_price_body {
+  padding: 30px 15px 15px 15px;
+  height: 350px;
+  text-align: center;
+  border-bottom: 1px solid #f78f93;
+  border-right: 1px solid #f78f93;
+  border-left: 1px solid #f78f93;
+}
+
+#private-lesson-page .bl_price_price {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f78f93;
+  white-space: nowrap;
+}
+
+#private-lesson-page .bl_price_price span {
+  font-size: 1.6rem;
+  color: #707070;
+  font-weight: normal;
+  margin-right: -8px;
+}
+
+#private-lesson-page .bl_price_price.bl_price_price__white {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+#private-lesson-page .bl_price_price.bl_price_price__white span {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#private-lesson-page .bl_price_features {
+  text-align: center;
+}
+
+#private-lesson-page .bl_price_features > *:last-child {
+  margin-bottom: 0;
+}
+
+#private-lesson-page .bl_price_features dt {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#private-lesson-page .bl_price_features dd {
+  margin-bottom: 20px;
+}
+
+#private-lesson-page .bl_price_features_detail {
+  position: relative;
+  padding: 30px 10px 30px 10px;
+}
+
+#private-lesson-page .bl_plan_service_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
+}
+
+#private-lesson-page .bl_plan_service_table thead .blank {
+  background-color: #ffffff;
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(2) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(3) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(4) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(5) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(6) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th:nth-of-type(7) {
+  background: -webkit-gradient(linear, left top, right top, from(#f5929c), to(rgba(214, 157, 160, 0.5)));
+  background: linear-gradient(to right, #f5929c 0%, rgba(214, 157, 160, 0.5) 100%);
+}
+
+#private-lesson-page .bl_plan_service_table thead th {
+  padding: 1em 0.8em;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#private-lesson-page .bl_plan_service_table thead th:last-child {
+  margin-right: 0;
+}
+
+#private-lesson-page .bl_plan_service_table thead th:first-child {
+  margin-right: 0;
+  padding-right: 0em;
+}
+
+#private-lesson-page .bl_plan_service_name {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#private-lesson-page .bl_plan_service_name span {
+  font-size: 1.2rem;
+}
+
+#private-lesson-page .bl_plan_service_table tbody tr {
+  padding: 0.35em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+#private-lesson-page .bl_plan_service_table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+#private-lesson-page .bl_plan_service_table tbody th {
+  padding: 5px 0 5px 30px;
+  font-size: 14px;
+  color: #707070;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1.7em;
+}
+
+#private-lesson-page .bl_plan_service_table tbody td {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1.7em;
+  text-align: center;
+  font-size: 14px;
+  color: #707070;
+}
+
+#private-lesson-page .fixed01 {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: inherit;
+}
+
+#private-lesson-page .fixed01:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+}
+
+#private-lesson-page .bl_notice {
+  margin: 0 auto;
+  width: clamp(300px, 100%, 600px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#private-lesson-page .bl_notice_title {
+  font-weight: 600;
+}
+
+/*--------------------------------
 プライスページ
 --------------------------------*/
 #price-page {
@@ -1147,7 +1583,7 @@ body.noscroll {
   width: 100%;
 }
 
-#price-page .bl_section_body {
+#price-page .bl_section_box {
   margin: 0 auto;
   background-color: #fff2f3;
   font-weight: 600;
@@ -1157,7 +1593,7 @@ body.noscroll {
           box-sizing: border-box;
 }
 
-#price-page .bl_section_body i {
+#price-page .bl_section_box i {
   margin-right: 1rem;
 }
 
@@ -1431,6 +1867,7 @@ body.noscroll {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 1.7em;
 }
 
 #price-page .bl_plan_service_table tbody td {

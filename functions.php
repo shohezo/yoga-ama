@@ -123,17 +123,31 @@ function post_has_archive($args,$post_type){ //設定後に必ずパーマリン
 }
 add_filter('register_post_type_args','post_has_archive',10,2);
 
-// アーカイブページ 投稿表示件数の設定
+//アーカイブページ 投稿表示件数の設定
 function custom_posts_per_page($query) {
     if(is_admin() || ! $query->is_main_query()){
         return;
     }
     // 制作実績
-    if($query->is_archive('works')) {
+    if($query->is_archive('blog')) {
         $query->set('posts_per_page', '10'); //ここで表示件数を変更
     }
 }
 add_action('pre_get_posts', 'custom_posts_per_page');
+
+
+// スケジュールアーカイブページ 投稿表示件数の設定
+add_action( 'pre_get_posts', 'my_custom_query_vars' );
+function my_custom_query_vars( $query ) {
+	/* @var $query WP_Query */
+	if ( !is_admin() && $query->is_main_query()) {
+		if ( is_post_type_archive('schedule') ) {
+			$query->set( 'posts_per_page' , 10 );//表示したい数
+		}
+	}
+	return $query;
+}
+
 
 
 /* サイドバー */

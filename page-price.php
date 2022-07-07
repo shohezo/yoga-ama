@@ -9,7 +9,7 @@ Template Name: プライスページ
     <!-- キャンペーン -->
     <section class="ly_section hp_ptLg hp_pbSm" id="campaign">
         <div class=" ly_inner">
-            <h2 class="el_section_ttl">キャンペーン実施中</h2>
+            <h2 class="el_section_header">紹介キャンペーン実施中!</h2>
             <figure class="bl_section_imgWrapper hp_ptMd hp_pbSm">
                 <img src="<?php bloginfo('template_url');?>/img/campaign_banner.png" alt="" />
             </figure>
@@ -42,7 +42,7 @@ Template Name: プライスページ
                 <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
                     <img src="<?php bloginfo('template_url');?>/img/price_monthly.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>年会費なし</li>
                         <li><i class="fa-solid fa-check"></i>最短6ヶ月から利用可能</li>

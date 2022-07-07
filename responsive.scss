@@ -27,6 +27,9 @@
 タブレット
 --------------------------------*/
 @media screen and(max-width:959px) {
+  .bl_section_header{
+    text-align: center;
+  }
   .ly_fv {
     width: 100%;
     padding-top: 0px;
@@ -52,8 +55,8 @@
       }
     }
   }
-  #beginner{
-    .el_btn{
+  #beginner {
+    .el_btn {
       display: table;
       margin: 0 auto;
     }
@@ -159,6 +162,43 @@
       }
     }
   }
+  #private-lesson-page {
+    .bl_system_body {
+      align-items: center;
+    }
+
+    .bl_priceUnit {
+      width: 900px;
+    }
+    .bl_plan_service_table,
+    .bl_plan_option_table {
+      width: 1500px;
+    }
+    .bl_plan_service_table thead .blank {
+      flex: 0.4;
+    }
+    .bl_plan_service_table tbody th,
+    .bl_plan_option_table tbody th {
+      padding-left: 5px;
+      flex: 0.4;
+      font-size: 1.2rem;
+    }
+  }
+
+  /* レンタルページ */
+  #rental-page {
+    .bl_section_body {
+      padding-left: 0vw;
+      .bl_notice {
+        margin: 0 auto;
+        max-width: unset;
+      }
+    }
+    .bl_section_price {
+      margin: 0 auto;
+      max-width: unset;
+    }
+  }
 
   /* ヘルパークラス */
   .hp_br-tb {
@@ -228,16 +268,16 @@
   }
 
   /* ブログセクション */
-  #blog{
-    .bl_blog{
-      &_list{
-      // flex-direction: column;
+  #blog {
+    .bl_blog {
+      &_list {
+        // flex-direction: column;
+      }
+      &_card {
+        width: 100%;
+        gap: 10px;
+      }
     }
-    &_card{
-      width: 100%;
-      gap: 10px;
-    }
-  }
   }
   /* プライスページ*/
   #price-page {
@@ -276,7 +316,6 @@
   }
 }
 @media screen and(max-width:519px) {
-
   body {
     font-size: 1.4rem;
   }
@@ -298,7 +337,7 @@
     &_txt {
       text-align: center;
     }
-    &_header{
+    &_header {
       line-height: 3rem;
     }
   }
@@ -344,8 +383,7 @@
       }
     }
     .bl_section_imgWrapper > img {
-      width: 
-      120px;
+      width: 120px;
     }
   }
   #banner {
@@ -393,6 +431,12 @@
       }
     }
   }
+    /* レンタルページ */
+    #rental-page {
+      .bl_section_txt{
+        text-align: left;
+      }
+    }
 
   /* 投稿詳細ページ */
   main {

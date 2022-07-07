@@ -50,13 +50,19 @@
         <!-- 開いたときの中身 -->
         <li class="bl_drawer_item"><a href="<?php echo esc_url(home_url('/'));?>">ホーム</a></li>
         <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
-        <li class=" bl_drawer_item"><a href="<?php bloginfo('url');?>/price">料金</a></li>
+        <li class=" bl_drawer_item"><a href="<?php bloginfo('url');?>/price">料金</a>
+            <ul>
+                <li><a href="<?php bloginfo('url');?>/price/private-lesson">出張レッスン</a></li>
+                <li><a href="<?php bloginfo('url');?>/price/rental">スタジオレンタル</a></li>
+            </ul>
+        </li>
         <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/instructor">インストラクター</a></li>
         <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/schedule">スケジュール</a></li>
         <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/blog">ブログ</a></li>
         <div class="el_icon_wrapper hp_flex">
             <div class="el_icon">
-                <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
+                <a href="https://www.instagram.com/yoga_ama/" target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
             </div>
             <div class="el_icon">
                 <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
@@ -126,7 +132,7 @@
     </div>
     <?php }else if(is_post_type_archive('instructor')){?>
     <div class="ly_heading">
-        <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
+        <img src="<?php bloginfo('template_url');?>/img/instructor.jpg" alt="">
         <h2>INSTRUCTOR</h2>
     </div>
     <?php }else if(is_post_type_archive('schedule')){?>
@@ -135,8 +141,8 @@
         <h2>SCHEDULE</h2>
     </div>
     <?php }else if(is_archive()){?>
-    <div class="ly_heading">
-        <img src="<?php bloginfo('template_url');?>/img/park.jpeg" alt="">
+    <div class="ly_heading hp_blackfilter">
+        <img src="<?php bloginfo('template_url');?>/img/blog.jpeg" alt="">
         <h2>BLOG</h2>
     </div>
     <?php }else if(is_page('contact')){?>
@@ -153,6 +159,16 @@
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/reserve.jpg" alt="">
         <h2>RESERVE</h2>
+    </div>
+    <?php }else if(is_page('private-lesson')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/private-lesson.jpg" alt="">
+        <h2>PRIVATE LESSON</h2>
+    </div>
+    <?php }else if(is_page('rental')){?>
+    <div class="ly_heading hp_blackfilter">
+        <img src="<?php bloginfo('template_url');?>/img/rental.jpg" alt="">
+        <h2>RENTAL</h2>
     </div>
     <?php }else{}?>
     <!-- パンくずリスト -->
