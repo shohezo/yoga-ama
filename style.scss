@@ -69,35 +69,35 @@ $green: #52b2ac;
   text-decoration: none;
   transition: 0.25s;
   border-radius: 50px;
-  span {
-    position: relative;
-    &::before {
-      content: "";
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -20px;
-      width: 8px; /* くの字を山なりに見た時、左側の長さ */
-      height: 8px; /* くの字を山なりに見た時、右側の長さ */
-      border-top: 1px solid white; /* くの字を山なりに見た時、左側の太さと色 */
-      transform: rotate(45deg); /* くの字の向き */
-      transition: 0.25s;
-    }
-    &::after {
-      content: "";
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -22px;
-      width: 15px; /* 棒の長さ */
-      height: 1px; /* 棒の太さ */
-      background: white; /* 棒の色 */
-      transform: translateY(-50%);
-      transition: 0.25s;
-    }
-  }
+  // span {
+  //   position: relative;
+  //   &::before {
+  //     content: "";
+  //     margin: auto;
+  //     position: absolute;
+  //     top: 0;
+  //     bottom: 0;
+  //     right: -20px;
+  //     width: 8px; /* くの字を山なりに見た時、左側の長さ */
+  //     height: 8px; /* くの字を山なりに見た時、右側の長さ */
+  //     border-top: 1px solid white; /* くの字を山なりに見た時、左側の太さと色 */
+  //     transform: rotate(45deg); /* くの字の向き */
+  //     transition: 0.25s;
+  //   }
+  //   &::after {
+  //     content: "";
+  //     margin: auto;
+  //     position: absolute;
+  //     top: 0;
+  //     bottom: 0;
+  //     right: -22px;
+  //     width: 15px; /* 棒の長さ */
+  //     height: 1px; /* 棒の太さ */
+  //     background: white; /* 棒の色 */
+  //     transform: translateY(-50%);
+  //     transition: 0.25s;
+  //   }
+  // }
   &:hover {
     span {
       &::before {
@@ -413,7 +413,6 @@ body.noscroll {
 コンセプトセクション
 --------------------------------*/
 #concept {
-  overflow: hidden;
   .bl_section {
     margin: 0 auto;
     display: flex;
@@ -423,16 +422,11 @@ body.noscroll {
   .bl_section_imgWrapper {
     flex: 1;
   }
-  .bl_section_imgWrapper > img {
-    width: 100%;
-  }
   .bl_section_body {
     flex: 1;
+    padding-left: 4vw;
   }
-  .bl_section_txt {
-    color: $black;
-    margin-bottom: 20px;
-  }
+
   .bl_section_body > *:last-child {
     margin-bottom: 0;
   }
@@ -566,7 +560,7 @@ body.noscroll {
     }
   }
   p {
-    width: clamp(250px, 50%, 600px);
+    width: clamp(300px, 50%, 600px);
   }
 }
 /*--------------------------------
@@ -612,17 +606,15 @@ body.noscroll {
   .bl_section {
     margin: 0 auto;
   }
-  .bl_section_imgWrapper {
-  }
-  .bl_section_imgWrapper > img {
-    width: 100%;
-  }
   .bl_section_txt {
     color: $black;
     margin-bottom: 20px;
   }
   .bl_section_body > *:last-child {
     margin-bottom: 0;
+  }
+  p {
+    width: clamp(300px, 50%, 600px);
   }
   .bl_banner_wrapper {
     img {
@@ -671,12 +663,6 @@ body.noscroll {
       width: 200px;
     }
   }
-  .bl_section_body {
-    color: $primaryDark;
-  }
-  .bl_section_txt {
-    color: $primary;
-  }
   .bl_section_body > *:last-child {
     margin-bottom: 0;
   }
@@ -686,9 +672,31 @@ body.noscroll {
   .el_tel {
     vertical-align: sub;
     span {
-      font-size: 3rem;
+      font-size: 2rem;
       color: $primaryDark;
     }
+  }
+  iframe{
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
+  }
+  .ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .ggmap iframe,
+  .ggmap object,
+  .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -708,14 +716,15 @@ body.noscroll {
   }
 }
 /* フォトギャラリー */
+//ボタンのスタイリング
 #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {
   a {
+    margin-top: 30px !important;
     display: inline-block;
     font-family: "游ゴシック体", YuGothic, "游ゴシック" !important;
     width: 180px;
     max-width: 100%;
     padding: 20px 15px !important;
-    background-color: $primary;
     border: none !important;
     color: #fff !important;
     font-size: inherit;
@@ -861,12 +870,10 @@ body.noscroll {
     vertical-align: middle;
   }
 }
-
 /*--------------------------------
 ビギナーページ
 --------------------------------*/
 #beginner-page {
-  overflow: hidden;
   #campaign {
     .bl_section_txt {
       margin: 0px auto;
@@ -883,7 +890,7 @@ body.noscroll {
     text-align: center;
     color: $navy;
   }
-  .bl_section {
+  .bl_section {　x
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -911,6 +918,8 @@ body.noscroll {
     margin-bottom: 0;
   }
 }
+
+
 
 /*--------------------------------
 スタジオレンタルページ

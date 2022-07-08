@@ -46,13 +46,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  #concept {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  #concept .bl_section_body {
-    padding-left: 0;
-  }
   #beginner .el_btn {
     display: table;
     margin: 0 auto;
@@ -191,7 +184,85 @@
     margin: 0 auto;
     max-width: unset;
   }
-  /* ヘルパークラス */
+}
+
+@media screen and (max-width: 768px) {
+  .el_btn {
+    width: 290px;
+    padding: 8px 15px;
+  }
+  #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {
+    width: 290px;
+    padding: 10px 15px !important;
+  }
+  .ly_footer .ly_inner {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .ly_footer .ly_footer_main {
+    padding-left: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .bl_footer_nav {
+    border-left: none;
+  }
+  #concept {
+    margin: 0 auto;
+  }
+  #concept.ly_section {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  #concept .bl_section_body {
+    padding-left: 0;
+  }
+  #beginner.ly_section {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  /* ブログセクション */
+  #blog .bl_blog_card {
+    width: 100%;
+    gap: 10px;
+  }
+  /* プライスページ*/
+  #price-page .bl_system_body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #price-page .bl_priceUnit {
+    width: 900px;
+  }
+  #price-page .bl_plan_service_table,
+  #price-page .bl_plan_option_table {
+    width: 1000px;
+  }
+  #price-page .bl_plan_service_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #price-page .bl_plan_option_table thead .blank {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  #price-page .bl_plan_service_table tbody th,
+  #price-page .bl_plan_option_table tbody th {
+    padding-left: 5px;
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+    font-size: 1.2rem;
+  }
   .hp_br-tb {
     display: block;
   }
@@ -210,6 +281,7 @@
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
   }
+  /* ヘルパークラス */
   .hp_mtLg {
     margin-top: 80px;
   }
@@ -248,63 +320,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .ly_footer .ly_inner {
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-  }
-  .ly_footer .ly_footer_main {
-    padding-left: 10%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-  }
-  .bl_footer_nav {
-    border-left: none;
-  }
-  /* ブログセクション */
-  #blog .bl_blog_card {
-    width: 100%;
-    gap: 10px;
-  }
-  /* プライスページ*/
-  #price-page .bl_system_body {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #price-page .bl_priceUnit {
-    width: 900px;
-  }
-  #price-page .bl_plan_service_table,
-  #price-page .bl_plan_option_table {
-    width: 1000px;
-  }
-  #price-page .bl_plan_service_table thead .blank {
-    -webkit-box-flex: 0.4;
-        -ms-flex: 0.4;
-            flex: 0.4;
-  }
-  #price-page .bl_plan_option_table thead .blank {
-    -webkit-box-flex: 0.4;
-        -ms-flex: 0.4;
-            flex: 0.4;
-  }
-  #price-page .bl_plan_service_table tbody th,
-  #price-page .bl_plan_option_table tbody th {
-    padding-left: 5px;
-    -webkit-box-flex: 0.4;
-        -ms-flex: 0.4;
-            flex: 0.4;
-    font-size: 1.2rem;
-  }
-}
-
 /*--------------------------------
 スマホ
 --------------------------------*/
@@ -331,9 +346,6 @@
   .el_btn {
     display: table;
     margin: 0 auto;
-  }
-  .bl_section_txt {
-    text-align: center;
   }
   .bl_section_header {
     line-height: 3rem;

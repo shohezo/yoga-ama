@@ -27,7 +27,7 @@
 タブレット
 --------------------------------*/
 @media screen and(max-width:959px) {
-  .bl_section_header{
+  .bl_section_header {
     text-align: center;
   }
   .ly_fv {
@@ -46,15 +46,7 @@
       }
     }
   }
-  #concept {
-    max-width: 700px;
-    margin: 0 auto;
-    .bl_section {
-      &_body {
-        padding-left: 0;
-      }
-    }
-  }
+
   #beginner {
     .el_btn {
       display: table;
@@ -199,60 +191,19 @@
       max-width: unset;
     }
   }
-
-  /* ヘルパークラス */
-  .hp_br-tb {
-    display: block;
-  }
-  .hp_br-pc {
-    display: none;
-  }
-  .hp_column_tb {
-    flex-direction: column !important;
-  }
-  .hp_column_tb-reverse {
-    flex-direction: column-reverse !important;
-  }
-  .hp_mtLg {
-    margin-top: 80px;
-  }
-  .hp_mbLg {
-    margin-bottom: 80px;
-  }
-  .hp_mtMd {
-    margin-top: 50px;
-  }
-  .hp_mbMd {
-    margin-bottom: 50px;
-  }
-  .hp_mtSm {
-    margin-top: 20px;
-  }
-  .hp_mbSm {
-    margin-bottom: 20px;
-  }
-
-  .hp_ptLg {
-    padding-top: 80px;
-  }
-  .hp_pbLg {
-    padding-bottom: 80px;
-  }
-  .hp_ptMd {
-    padding-top: 50px;
-  }
-  .hp_pbMd {
-    padding-bottom: 50px;
-  }
-  .hp_ptSm {
-    padding-top: 20px;
-  }
-  .hp_pbSm {
-    padding-bottom: 20px;
-  }
 }
 
 @media screen and(max-width:768px) {
+  .el_btn {
+    width: 290px;
+    padding: 8px 15px;
+  }
+  #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {
+    a {
+      width: 290px;
+      padding: 10px 15px !important;
+    }
+  }
   .ly_footer {
     .ly_inner {
       align-items: unset;
@@ -265,6 +216,24 @@
   }
   .bl_footer_nav {
     border-left: none;
+  }
+  #concept {
+    &.ly_section {
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }
+    margin: 0 auto;
+    .bl_section {
+      &_body {
+        padding-left: 0;
+      }
+    }
+  }
+  #beginner {
+    &.ly_section {
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }
   }
 
   /* ブログセクション */
@@ -305,6 +274,57 @@
       font-size: 1.2rem;
     }
   }
+  .hp_br-tb {
+    display: block;
+  }
+  .hp_br-pc {
+    display: none;
+  }
+  .hp_column_tb {
+    flex-direction: column !important;
+  }
+  .hp_column_tb-reverse {
+    flex-direction: column-reverse !important;
+  }
+  /* ヘルパークラス */
+
+  .hp_mtLg {
+    margin-top: 80px;
+  }
+  .hp_mbLg {
+    margin-bottom: 80px;
+  }
+  .hp_mtMd {
+    margin-top: 50px;
+  }
+  .hp_mbMd {
+    margin-bottom: 50px;
+  }
+  .hp_mtSm {
+    margin-top: 20px;
+  }
+  .hp_mbSm {
+    margin-bottom: 20px;
+  }
+
+  .hp_ptLg {
+    padding-top: 80px;
+  }
+  .hp_pbLg {
+    padding-bottom: 80px;
+  }
+  .hp_ptMd {
+    padding-top: 50px;
+  }
+  .hp_pbMd {
+    padding-bottom: 50px;
+  }
+  .hp_ptSm {
+    padding-top: 20px;
+  }
+  .hp_pbSm {
+    padding-bottom: 20px;
+  }
 }
 
 /*--------------------------------
@@ -320,6 +340,7 @@
     font-size: 1.4rem;
   }
   /* コンポーネント */
+
   .bl_drawer {
     width: 300px;
   }
@@ -334,9 +355,6 @@
     margin: 0 auto;
   }
   .bl_section {
-    &_txt {
-      text-align: center;
-    }
     &_header {
       line-height: 3rem;
     }
@@ -431,12 +449,12 @@
       }
     }
   }
-    /* レンタルページ */
-    #rental-page {
-      .bl_section_txt{
-        text-align: left;
-      }
+  /* レンタルページ */
+  #rental-page {
+    .bl_section_txt {
+      text-align: left;
     }
+  }
 
   /* 投稿詳細ページ */
   main {

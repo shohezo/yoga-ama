@@ -25,7 +25,7 @@ Template Name: フロントページ
         <div class="bl_fv_copy_text">テキストテキストテキスト</div>
     </div>
 </div>
-<section class="ly_section hp_ptLg hp_pbLg" id="concept">
+<section class="ly_section hp_ptLg" id="concept">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Concept</h2>
         <span class="el_section_ttl_sub hp_mbSm">私たちの想い</span>
@@ -50,7 +50,7 @@ Template Name: フロントページ
         </div>
     </div>
 </section>
-<section class="ly_section hp_ptLg hp_pbLg" id="beginner">
+<section class="ly_section hp_ptLg" id="beginner">
     <div class="ly_inner">
         <h2 class="el_section_ttl">For Beginner</h2>
         <span class="el_section_ttl_sub hp_mbSm">初めての方へ</span>
@@ -76,7 +76,7 @@ Template Name: フロントページ
         </div>
     </div>
 </section>
-<section class="ly_section hp_ptLg hp_pbLg" id="schedule">
+<section class="ly_section hp_ptLg" id="schedule">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Schedule</h2>
         <span class="el_section_ttl_sub hp_mbSm">スケジュール</span>
@@ -89,7 +89,7 @@ Template Name: フロントページ
         </div>
     </div>
 </section>
-<section class="ly_section hp_ptLg hp_pbLg" id="blog">
+<section class="ly_section hp_ptLg" id="blog">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Blog</h2>
         <span class="el_section_ttl_sub hp_mbSm">ブログ</span>
@@ -112,61 +112,10 @@ Template Name: フロントページ
             <?php endwhile;endif; ?>
         </div>
     </div>
-    <!-- メインループ終わり -->
-    <!-- <div class="bl_section hp_flex hhp_column_tb">
-            <a href="" class="bl_section_card hp_flex hp_aic">
-                <figure class="bl_section_imgWrapper hp_mb10">
-                    <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="女性のイラスト" />
-                </figure>
-                <div class="bl_section_body hp_tal">
-                    <p class="bl_section_date hp_mb10">2022/〇〇/××</p>
-                    <p class="bl_section_ttl hp_mb10">タイトルが入ります。</p>
-                    <p class="bl_section_desc">
-                        テキストテキストテキスト テキストテキストテキスト
-                    </p>
-                </div>
-            </a>
-            <a href="" class="bl_section_card hp_flex hp_aic">
-                <figure class="bl_section_imgWrapper hp_mb10">
-                    <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="女性のイラスト" />
-                </figure>
-                <div class="bl_section_body hp_tal">
-                    <p class="bl_section_date hp_mb10">2022/〇〇/××</p>
-                    <p class="bl_section_ttl hp_mb10">タイトルが入ります。</p>
-                    <p class="bl_section_desc">
-                        テキストテキストテキスト テキストテキストテキスト
-                    </p>
-                </div>
-            </a>
-            <a href="" class="bl_section_card hp_flex hp_aic">
-                <figure class="bl_section_imgWrapper hp_mb10">
-                    <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="女性のイラスト" />
-                </figure>
-                <div class="bl_section_body hp_tal">
-                    <p class="bl_section_date hp_mb10">2022/〇〇/××</p>
-                    <p class="bl_section_ttl hp_mb10">タイトルが入ります。</p>
-                    <p class="bl_section_desc">
-                        テキストテキストテキスト テキストテキストテキスト
-                    </p>
-                </div>
-            </a>
-            <a href="" class="bl_section_card hp_flex hp_aic">
-                <figure class="bl_section_imgWrapper hp_mb10">
-                    <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="女性のイラスト" />
-                </figure>
-                <div class="bl_section_body hp_tal">
-                    <p class="bl_section_date hp_mb10">2022/〇〇/××</p>
-                    <p class="bl_section_ttl hp_mb10">タイトルが入ります。</p>
-                    <p class="bl_section_desc">
-                        テキストテキストテキスト テキストテキストテキスト
-                    </p>
-                </div>
-            </a>
-        </div> -->
     <a href="#" class="el_btn hp_centering hp_mtSm"><span>VIEW MORE</span></a>
     </div>
 </section>
-<section class="ly_section hp_ptLg hp_pbLg" id="reserve">
+<section class="ly_section hp_ptLg" id="reserve">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Reserve</h2>
         <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
@@ -175,7 +124,7 @@ Template Name: フロントページ
                 <h3 class="bl_section_header hp_mb30">
                     セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                 </h3>
-                <p class="bl_section_txt">
+                <p class="bl_section_txt hp_centering">
                     テキストテキストテキストテキスト
                     テキストテキストテキストテキスト
                     テキストテキストテキストテキスト
@@ -193,7 +142,7 @@ Template Name: フロントページ
     </div>
     </div>
 </section>
-<section class="ly_section hp_ptLg hp_pbLg" id="photo">
+<section class="ly_section hp_ptLg" id="photo">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Photo</h2>
         <span class="el_section_ttl_sub hp_mbSm">フォトギャラリー</span>
@@ -210,6 +159,7 @@ Template Name: フロントページ
             <figure class="bl_section_imgWrapper">
                 <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ" />
             </figure>
+
             <div class="bl_section_body">
                 <p class="bl_section_txt">
                     〒465-0024<br />
@@ -227,7 +177,11 @@ Template Name: フロントページ
                 </p>
             </div>
         </div>
-        <img src="<?php bloginfo('template_url');?>/img/map.jpg" alt="">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.254636380229!2d137.01196875019727!3d35.175205465068984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036570b6ed8cd1%3A0x31b2e4098c0c9ce2!2z44CSNDY1LTAwMjQg5oSb55-l55yM5ZCN5Y-k5bGL5biC5ZCN5p2x5Yy65pys6YO377yS5LiB55uu77yR77yW77yT!5e0!3m2!1sja!2sjp!4v1657249687368!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <img src="<?php bloginfo('template_url');?>/img/map.jpg" alt=""> -->
     </div>
 </section>
 <section class="ly_section" id="banner">

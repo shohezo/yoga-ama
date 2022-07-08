@@ -55,49 +55,6 @@
   border-radius: 50px;
 }
 
-.el_btn span {
-  position: relative;
-}
-
-.el_btn span::before {
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -20px;
-  width: 8px;
-  /* くの字を山なりに見た時、左側の長さ */
-  height: 8px;
-  /* くの字を山なりに見た時、右側の長さ */
-  border-top: 1px solid white;
-  /* くの字を山なりに見た時、左側の太さと色 */
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  /* くの字の向き */
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.el_btn span::after {
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -22px;
-  width: 15px;
-  /* 棒の長さ */
-  height: 1px;
-  /* 棒の太さ */
-  background: white;
-  /* 棒の色 */
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
 .el_btn:hover span::before {
   right: -30px;
 }
@@ -465,10 +422,6 @@ body.noscroll {
 /*--------------------------------
 コンセプトセクション
 --------------------------------*/
-#concept {
-  overflow: hidden;
-}
-
 #concept .bl_section {
   margin: 0 auto;
   display: -webkit-box;
@@ -486,19 +439,11 @@ body.noscroll {
           flex: 1;
 }
 
-#concept .bl_section_imgWrapper > img {
-  width: 100%;
-}
-
 #concept .bl_section_body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-#concept .bl_section_txt {
-  color: #707070;
-  margin-bottom: 20px;
+  padding-left: 4vw;
 }
 
 #concept .bl_section_body > *:last-child {
@@ -671,7 +616,7 @@ body.noscroll {
 }
 
 #schedule p {
-  width: clamp(250px, 50%, 600px);
+  width: clamp(300px, 50%, 600px);
 }
 
 /*--------------------------------
@@ -728,10 +673,6 @@ body.noscroll {
   margin: 0 auto;
 }
 
-#reserve .bl_section_imgWrapper > img {
-  width: 100%;
-}
-
 #reserve .bl_section_txt {
   color: #707070;
   margin-bottom: 20px;
@@ -739,6 +680,10 @@ body.noscroll {
 
 #reserve .bl_section_body > *:last-child {
   margin-bottom: 0;
+}
+
+#reserve p {
+  width: clamp(300px, 50%, 600px);
 }
 
 #reserve .bl_banner_wrapper img {
@@ -797,14 +742,6 @@ body.noscroll {
   width: 200px;
 }
 
-#access .bl_section_body {
-  color: #c16065;
-}
-
-#access .bl_section_txt {
-  color: #f78f93;
-}
-
 #access .bl_section_body > *:last-child {
   margin-bottom: 0;
 }
@@ -818,8 +755,32 @@ body.noscroll {
 }
 
 #access .el_tel span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #c16065;
+}
+
+#access iframe {
+  width: 100%;
+  max-width: 1920px;
+  height: 300px;
+}
+
+#access .ggmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+#access .ggmap iframe,
+#access .ggmap object,
+#access .ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*--------------------------------
@@ -837,12 +798,12 @@ body.noscroll {
 
 /* フォトギャラリー */
 #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {
+  margin-top: 30px !important;
   display: inline-block;
   font-family: "游ゴシック体", YuGothic, "游ゴシック" !important;
   width: 180px;
   max-width: 100%;
   padding: 20px 15px !important;
-  background-color: #f78f93;
   border: none !important;
   color: #fff !important;
   font-size: inherit;
@@ -1023,10 +984,6 @@ body.noscroll {
 /*--------------------------------
 ビギナーページ
 --------------------------------*/
-#beginner-page {
-  overflow: hidden;
-}
-
 #beginner-page #campaign .bl_section_txt {
   margin: 0px auto;
   width: clamp(300px, 100%, 600px);
