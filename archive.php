@@ -1,14 +1,14 @@
 <?php get_header(); ?>
-<div class="ly_section" id="blog-archive">
+<div class="ly_section hp_ptLg hp_pbLg" id="blog-archive">
     <div class="ly_inner">
+        <div class="hp_mbMd">
+            <h2 class="el_section_ttl hp_mbSm">YOGA AMAブログ</h2>
+            <p class="bl_section_txt hp_centering">
+                ヨガアマでは、お客様のライフスタイルに合わせた<br>
+                様々なプランをご用意しております。
+            </p>
+        </div>
         <ul class="bl_blog_list hp_mtSm">
-            <div class="el_section_ttl hp_mbMd">
-                <?php if(is_category()): ?>
-                <h2><?php the_archive_title(); ?>一覧</h2>
-                <?php else: ?>
-                <h2>新着一覧</h2>
-                <?php endif; ?>
-            </div>
             <!-- メインループ始まり -->
             <?php if(have_posts()):while(have_posts()):the_post(); ?>
             <a class="bl_blog_card" href="<?php the_permalink();?>">

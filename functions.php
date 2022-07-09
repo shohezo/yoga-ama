@@ -178,12 +178,12 @@ function widgetarea_init() {
 }
 add_action( 'widgets_init', 'widgetarea_init' );
 
-//Breadcrumb NavXTのパンくずで”投稿一覧”を追加（Engressでは”ブログ”で表示）
+//Breadcrumb NavXTのパンくずで”投稿一覧”を追加（”ブログ”で表示）
 function bcn_add($bcnObj) {
 	// デフォルト投稿のアーカイブの場合、TOP＞投稿一覧という形で追加
 	if (is_post_type_archive('post')) {
         	// 新規のtrailオブジェクトを末尾に追加する
-		$bcnObj->add(new bcn_breadcrumb('ブログ', null, array('archive', 'post-clumn-archive', 'current-item')));
+		$bcnObj->add(new bcn_breadcrumb('blog', null, array('archive', 'post-clumn-archive', 'current-item')));
 		// trailオブジェクト0とtrailオブジェクト1の中身を入れ替える
 		$trail_tmp = clone $bcnObj->trail[1];
 		$bcnObj->trail[1] = clone $bcnObj->trail[0];
@@ -191,7 +191,7 @@ function bcn_add($bcnObj) {
     // デフォルト投稿の詳細ページの場合、TOP > 投稿一覧 > カテゴリー1 >（投稿タイトル）で表示
 	}elseif (is_singular('post')) {
         // 新規のtrailオブジェクトを追加する
-        $bcnObj->add(new bcn_breadcrumb('ブログ', null, array('post-clumn-archive'), home_url('blog'), null, true));
+        $bcnObj->add(new bcn_breadcrumb('blog', null, array('post-clumn-archive'), home_url('blog'), null, true));
 		$trail_tmp = clone $bcnObj->trail[3];	//配列の最後（一番左）に追加
 		$bcnObj->trail[3] = clone $bcnObj->trail[2]; //配列の最後から2番目に追加
 		$bcnObj->trail[2] = $trail_tmp; //配列の最後から2番にあった値を最後（一番左に追加）

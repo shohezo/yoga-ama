@@ -7,7 +7,7 @@ Template Name: プライベートレッスンページ
 <section class="ly_section hp_ptLg" id="private-lesson-page">
     <div class="ly_inner">
         <!-- キャンペーン -->
-        <div id="campaign" class="hp_pbMd">
+        <div id="lead" class="hp_pbMd">
             <h2 class="el_section_header">出張レッスン承ります！</h2>
             <div class="bl_section hp_ptSm hp_tac">
                 <p class="bl_section_txt hp_centering">
@@ -148,18 +148,7 @@ Template Name: プライベートレッスンページ
         <h2 class="el_section_ttl">Reserve</h2>
         <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
         <div class="bl_section hp_ptSm hp_tac">
-            <div class="bl_section_body">
-                <h3 class="bl_section_header hp_mb30">
-                    セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
-                </h3>
-                <p class="bl_section_txt">
-                    テキストテキストテキストテキスト<br />
-                    テキストテキストテキストテキスト<br />
-                    テキストテキストテキストテキスト<br />
-                    テキストテキストテキストテキスト<br />
-                </p>
-            </div>
-            <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+            <div class="ly_container hp_flex hp_column_tb">
                 <a class="bl_banner_wrapper">
                     <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
                 </a>

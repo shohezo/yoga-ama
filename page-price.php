@@ -25,110 +25,109 @@ Template Name: プライスページ
     <section class="ly_section hp_ptLg" id="monthly">
         <div class=" ly_inner">
             <div class="hp_mbMd">
-                <h2 class="el_section_ttl">YOGA AMAのプラン</h2>
-                <div class="bl_section hp_ptSm hp_tac">
-                    <p class="bl_section_txt hp_centering">
-                        ヨガアマでは、お客様のライフスタイルに合わせた<br>
-                        様々なプランをご用意しております。
-                    </p>
-                </div>
+                <h2 class="el_section_ttl hp_mbSm">YOGA AMAのプラン</h2>
+                <p class="bl_section_txt hp_centering">
+                    ヨガアマでは、お客様のライフスタイルに合わせた<br>
+                    様々なプランをご用意しております。
+                </p>
             </div>
-            <span class="el_section_ttl_sub">定期的に通い効果を実感</span>
-            <h2 class="el_section_header">マンスリープラン</h2>
-            <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/price_monthly.png" alt="" />
-                </figure>
-                <div class="bl_section_box hp_centering">
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i>年会費なし</li>
-                        <li><i class="fa-solid fa-check"></i>最短6ヶ月から利用可能</li>
-                        <li><i class="fa-solid fa-check"></i>通常のレッスン価格よりもお得</li>
-                    </ul>
-                </div>
-                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
-                    <table class="bl_plan_service_table">
-                        <thead>
-                            <tr class="hp_flex">
-                                <th class="blank fixed01"></th>
-                                <th class="bl_plan_service_head">
-                                    <div>
-                                        <p class="bl_plan_service_name">マンスリーフリー</p>
-                                        <p class="bl_price_price bl_price_price__white">
-                                            <span>月額</span>
-                                            13,200<span>円(税込)</span>
-                                        </p>
-                                    </div>
-                                </th>
-                                <th class="bl_plan_service_head">
-                                    <div>
-                                        <p class="bl_plan_service_name">マンスリー6</p>
-                                        <p class="bl_price_price bl_price_price__white">
-                                            <span>月額</span>
-                                            8,800<span>円(税込)</span>
-                                        </p>
-                                    </div>
-                                </th>
-                                <th class="bl_plan_service_head">
-                                    <div>
-                                        <p class="bl_plan_service_name">マンスリー4</p>
-                                        <p class="bl_price_price bl_price_price__white">
-                                            <span>月額</span>
-                                            6,600<span>円(税込)</span>
-                                        </p>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="hp_flex">
-                                <th class="fixed01">通える回数/月</th>
-                                <td>無制限</td>
-                                <td>6回</td>
-                                <td>4回</td>
-                            </tr>
-                            <tr class="hp_flex">
-                                <th class="fixed01">繰越し</th>
-                                <td>-</i></td>
-                                <td>1回のみ翌月に繰越可能</i></td>
-                                <td>1回のみ翌月に繰越可能</td>
-                            </tr>
-                            <tr class="hp_flex">
-                                <th class="fixed01">追加受講</th>
-                                <td>-</td>
-                                <td>7回目からは別途1,100円/回</td>
-                                <td>5回目からは別途1,100円/回</td>
-                            </tr>
-                            <tr class="hp_flex">
-                                <th class="fixed01">誕生日特典</th>
-                                <td>1ヶ月無料</td>
-                                <td>1レッスンチケット<br>プレゼント</td>
-                                <td>1レッスンチケット<br>プレゼント</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="bl_required_item">
-                    <p>ご入会時に必要なもの</p>
-                    <ul>
-                        <li>月会費2ヶ月分</li>
-                        <li>会員登録手数料</li>
-                        <span class="hp_anno">※現金またはクレジットカードのみ</span>
-                    </ul>
-                </div>
-                <div class="bl_notice">
-                    <p class="bl_notice_title">ご注意事項</p>
-                    <ul>
-                        <li>※会員登録手数料が2,200円かかります。</li>
-                        <li>※前月の27日にクレジットカードでのお支払いとなります。</li>
-                        <li>※マンスリー契約は最低3ヶ月となります。</li>
-                        <li>※3ヶ月を満たない退会は出来かねます。</li>
-                        <li>※コース変更はいつでも可能、費用はかかりません。</li>
-                        <li>※コース変更、休会、退会をご希望の際は前月の9日までにフロントにてお手続きください。</li>
-                        <li>※代理人による手続き、電話やメールのお手続きは受け付けておりません。</li>
-                    </ul>
-                </div>
+        </div>
+        <span class="el_section_ttl_sub">定期的に通い効果を実感</span>
+        <h2 class="el_section_header">マンスリープラン</h2>
+        <div class="bl_section hp_ptSm">
+            <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
+                <img src="<?php bloginfo('template_url');?>/img/price_monthly.png" alt="" />
+            </figure>
+            <div class="bl_section_box hp_centering">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>年会費なし</li>
+                    <li><i class="fa-solid fa-check"></i>最短6ヶ月から利用可能</li>
+                    <li><i class="fa-solid fa-check"></i>通常のレッスン価格よりもお得</li>
+                </ul>
             </div>
+            <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
+                <table class="bl_plan_service_table">
+                    <thead>
+                        <tr class="hp_flex">
+                            <th class="blank fixed01"></th>
+                            <th class="bl_plan_service_head">
+                                <div>
+                                    <p class="bl_plan_service_name">マンスリーフリー</p>
+                                    <p class="bl_price_price bl_price_price__white">
+                                        <span>月額</span>
+                                        13,200<span>円(税込)</span>
+                                    </p>
+                                </div>
+                            </th>
+                            <th class="bl_plan_service_head">
+                                <div>
+                                    <p class="bl_plan_service_name">マンスリー6</p>
+                                    <p class="bl_price_price bl_price_price__white">
+                                        <span>月額</span>
+                                        8,800<span>円(税込)</span>
+                                    </p>
+                                </div>
+                            </th>
+                            <th class="bl_plan_service_head">
+                                <div>
+                                    <p class="bl_plan_service_name">マンスリー4</p>
+                                    <p class="bl_price_price bl_price_price__white">
+                                        <span>月額</span>
+                                        6,600<span>円(税込)</span>
+                                    </p>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hp_flex">
+                            <th class="fixed01">通える回数/月</th>
+                            <td>無制限</td>
+                            <td>6回</td>
+                            <td>4回</td>
+                        </tr>
+                        <tr class="hp_flex">
+                            <th class="fixed01">繰越し</th>
+                            <td>-</i></td>
+                            <td>1回のみ翌月に繰越可能</i></td>
+                            <td>1回のみ翌月に繰越可能</td>
+                        </tr>
+                        <tr class="hp_flex">
+                            <th class="fixed01">追加受講</th>
+                            <td>-</td>
+                            <td>7回目からは別途1,100円/回</td>
+                            <td>5回目からは別途1,100円/回</td>
+                        </tr>
+                        <tr class="hp_flex">
+                            <th class="fixed01">誕生日特典</th>
+                            <td>1ヶ月無料</td>
+                            <td>1レッスンチケット<br>プレゼント</td>
+                            <td>1レッスンチケット<br>プレゼント</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bl_required_item">
+                <p>ご入会時に必要なもの</p>
+                <ul>
+                    <li>月会費2ヶ月分</li>
+                    <li>会員登録手数料</li>
+                    <span class="hp_anno">※現金またはクレジットカードのみ</span>
+                </ul>
+            </div>
+            <div class="bl_notice">
+                <p class="bl_notice_title">ご注意事項</p>
+                <ul>
+                    <li>※会員登録手数料が2,200円かかります。</li>
+                    <li>※前月の27日にクレジットカードでのお支払いとなります。</li>
+                    <li>※マンスリー契約は最低3ヶ月となります。</li>
+                    <li>※3ヶ月を満たない退会は出来かねます。</li>
+                    <li>※コース変更はいつでも可能、費用はかかりません。</li>
+                    <li>※コース変更、休会、退会をご希望の際は前月の9日までにフロントにてお手続きください。</li>
+                    <li>※代理人による手続き、電話やメールのお手続きは受け付けておりません。</li>
+                </ul>
+            </div>
+        </div>
         </div>
     </section>
     <section class="ly_section hp_ptLg" id="ticket">
@@ -252,18 +251,7 @@ Template Name: プライスページ
             <h2 class="el_section_ttl">Reserve</h2>
             <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
             <div class="bl_section hp_ptSm hp_tac">
-                <div class="bl_section_body">
-                    <h3 class="bl_section_header hp_mb30">
-                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
-                    </h3>
-                    <p class="bl_section_txt hp_centering">
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                    </p>
-                </div>
-                <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+                <div class="ly_container hp_flex hp_column_tb">
                     <a class="bl_banner_wrapper">
                         <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
                     </a>
@@ -271,6 +259,7 @@ Template Name: プライスページ
                         <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- ここからオンライン -->
@@ -706,18 +695,7 @@ Template Name: プライスページ
             <h2 class="el_section_ttl">Reserve</h2>
             <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
             <div class="bl_section hp_ptSm hp_tac">
-                <div class="bl_section_body">
-                    <h3 class="bl_section_header hp_mb30">
-                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
-                    </h3>
-                    <p class="bl_section_txt hp_centering">
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                    </p>
-                </div>
-                <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+                <div class="ly_container hp_flex hp_column_tb">
                     <a class="bl_banner_wrapper">
                         <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
                     </a>
@@ -725,6 +703,7 @@ Template Name: プライスページ
                         <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </article>

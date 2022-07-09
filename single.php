@@ -25,6 +25,9 @@
             </div>
             <?php endwhile;endif; ?>
             <!-- ループ終わり -->
+            <p class="el_backBtn hp_mbMd"><a href="#" onclick="history.back(); return false;">
+                    < 一覧へ戻る</a>
+            </p>
             <!-- サイドバー・おすすめの記事 -->
             <div class="bl_myrecommended hp_mbMd">
                 <h4>おすすめの記事</h4>

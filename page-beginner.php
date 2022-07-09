@@ -156,18 +156,7 @@ Template Name: ビギナーページ
             <h2 class="el_section_ttl">Reserve</h2>
             <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
             <div class="bl_section hp_ptSm hp_tac">
-                <div class="bl_section_body">
-                    <h3 class="bl_section_header hp_mb30">
-                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
-                    </h3>
-                    <p class="bl_section_txt">
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                        テキストテキストテキストテキスト
-                    </p>
-                </div>
-                <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+                <div class="ly_container hp_flex hp_column_tb">
                     <a class="bl_banner_wrapper">
                         <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
                     </a>
@@ -175,6 +164,7 @@ Template Name: ビギナーページ
                         <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </article>

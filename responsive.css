@@ -169,8 +169,18 @@
     max-width: unset;
   }
   #rental-page .bl_section_price {
-    margin: 0 auto;
-    max-width: unset;
+    margin-right: auto;
+  }
+  /* フッター */
+  .ly_footer .ly_inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ly_footer .ly_inner .bl_footer_side {
+    margin-right: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -422,6 +432,10 @@
   }
   #blog-archive .bl_blog_body {
     width: 100%;
+  }
+  #blog-archive .bl_blog_ttl {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   /* レンタルページ */
   #rental-page .bl_section_txt {

@@ -170,8 +170,18 @@
       }
     }
     .bl_section_price {
-      margin: 0 auto;
-      max-width: unset;
+      margin-right: auto;
+    }
+  }
+
+  /* フッター */
+  .ly_footer {
+    .ly_inner {
+      flex-direction: column;
+      .bl_footer_side {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -444,6 +454,10 @@
       }
       &_body {
         width: 100%;
+      }
+      &_ttl {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
   }
