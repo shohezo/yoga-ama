@@ -27,9 +27,6 @@
 タブレット
 --------------------------------*/
 @media screen and(max-width:959px) {
-  .bl_section_header {
-    text-align: center;
-  }
   .ly_fv {
     width: 100%;
     padding-top: 0px;
@@ -47,12 +44,6 @@
     }
   }
 
-  #beginner {
-    .el_btn {
-      display: table;
-      margin: 0 auto;
-    }
-  }
   #voice {
     .bl_section {
       justify-content: space-evenly;
@@ -107,14 +98,6 @@
     }
     p {
       width: 66%;
-    }
-  }
-
-  /* ビギナーページ */
-  #beginner-page {
-    .bl_section {
-      max-width: 600px;
-      margin-bottom: 50px;
     }
   }
 
@@ -194,9 +177,18 @@
 }
 
 @media screen and(max-width:768px) {
+  .bl_section_header {
+    text-align: center;
+  }
   .el_btn {
     width: 290px;
     padding: 8px 15px;
+  }
+  /* フロントページ */
+  #beginner {
+    .bl_section_body {
+      padding-left: 0vw;
+    }
   }
   #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {
     a {
@@ -217,6 +209,7 @@
   .bl_footer_nav {
     border-left: none;
   }
+  /* フロントページ */
   #concept {
     &.ly_section {
       padding-left: 0vw;
@@ -235,8 +228,6 @@
       padding-right: 0vw;
     }
   }
-
-  /* ブログセクション */
   #blog {
     .bl_blog {
       &_list {
@@ -246,6 +237,13 @@
         width: 100%;
         gap: 10px;
       }
+    }
+  }
+  /* ビギナーページ */
+  #beginner-page {
+    &.ly_section {
+      padding-left: 0vw;
+      padding-right: 0vw;
     }
   }
   /* プライスページ*/

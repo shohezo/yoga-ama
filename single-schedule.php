@@ -11,7 +11,7 @@
         <div class="bl_schedule_cont">
             <?php the_content(); ?>
         </div>
-        <a href="#" class="el_btn el_btn__wide"><span>ご予約はこちら</span></a>
+        <!-- <a href="#" class="el_btn el_btn__wide"><span>ご予約はこちら</span></a> -->
         <p class="el_backBtn"><a href="#" onclick="history.back(); return false;">
                 < 一覧へ戻る</a>
         </p>

@@ -71,9 +71,9 @@ Template Name: フロントページ
                     お客様の美に寄り添うサロン。<br />
                     それがENDLESSです。
                 </p>
-                <a href="#" class="el_btn"><span>VIEW MORE</span></a>
             </div>
         </div>
+        <a href="#" class="el_btn hp_mtSm hp_centering"><span>VIEW MORE</span></a>
     </div>
 </section>
 <section class="ly_section hp_ptLg" id="schedule">
@@ -81,7 +81,7 @@ Template Name: フロントページ
         <h2 class="el_section_ttl">Schedule</h2>
         <span class="el_section_ttl_sub hp_mbSm">スケジュール</span>
         <div class="bl_section hp_ptSm hp_tac">
-            <p class="hp_centering hp_mtSm hp_mbLg">
+            <p class="hp_centering hp_mbMd">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
@@ -100,13 +100,20 @@ Template Name: フロントページ
                 <div class="bl_blog_thumbnail">
                     <?php the_post_thumbnail();?>
                 </div>
-                <div class="bl_blog_body">
+                <div class="bl_blog_body hp_flex hp_jcsb">
                     <p class="bl_blog_date"><?php echo get_the_date('Y.m.d'); ?></p>
                     <p class="bl_blog_ttl"><?php
                                 if(mb_strlen($post->post_title)>20) {$title= mb_substr($post->post_title,0,20) ;
                                 echo $title . '...';} else {
                                 echo $post->post_title;}
                             ?></p>
+                    <p class="bl_blog_excerpt">
+                        <?php
+                            $p = get_post(get_the_ID());
+                            $content = strip_shortcodes( $p->post_content );
+                            echo '<p>' .wp_html_excerpt($content, 20, '[...]'). '</p>'; 
+                            ?>
+                    </p>
                 </div>
             </a>
             <?php endwhile;endif; ?>
@@ -131,7 +138,7 @@ Template Name: フロントページ
                     テキストテキストテキストテキスト
                 </p>
             </div>
-            <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+            <div class="ly_container hp_flex hp_mtMd hp_column_tb">
                 <a class="bl_banner_wrapper">
                     <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
                 </a>

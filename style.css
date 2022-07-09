@@ -479,9 +479,12 @@ body.noscroll {
 }
 
 #beginner .bl_section_body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  padding-left: 3vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #beginner .bl_section_txt {
@@ -494,95 +497,6 @@ body.noscroll {
 }
 
 /*--------------------------------
-ボイスセクション
---------------------------------*/
-#voice {
-  overflow: hidden;
-}
-
-#voice .el_section_ttl {
-  font-size: 2.5rem;
-}
-
-#voice .bl_section {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 2%;
-}
-
-#voice .bl_section_card {
-  display: block;
-  width: 20%;
-}
-
-#voice .bl_section_imgWrapper {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-}
-
-#voice .bl_section_imgWrapper > img {
-  width: 50%;
-}
-
-#voice .bl_section_body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  color: #f78f93;
-}
-
-#voice .bl_section_txt {
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-#voice .bl_section_body > *:last-child {
-  margin-bottom: 0;
-}
-
-#voice .balloon-top {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 7px 15px;
-  min-width: 120px;
-  max-width: 100%;
-  font-size: 16px;
-  background: #f5f5f5;
-}
-
-#voice .balloon-top:before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #f5f5f5;
-}
-
-#voice .balloon-top:before .balloon-top p {
-  margin: 0;
-  padding: 0;
-}
-
-/*--------------------------------
 スケジュールセクション
 --------------------------------*/
 #schedule.ly_section {
@@ -592,7 +506,7 @@ body.noscroll {
 
 #schedule .ly_inner {
   padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
   max-width: none;
   background-image: url(./img/schedule-bg.jpeg);
   z-index: -2;
@@ -655,6 +569,10 @@ body.noscroll {
 #blog .bl_blog_body {
   width: 45%;
   color: #707070;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #blog .bl_blog_date {
@@ -662,11 +580,22 @@ body.noscroll {
   bottom: 0;
 }
 
+#blog .bl_blog_ttl {
+  font-size: 1.8rem;
+  color: #272534;
+}
+
+#blog .bl_blog_excerpt {
+  line-height: 1.2;
+}
+
 /*--------------------------------
 リザーブセクション
 --------------------------------*/
-#reserve {
-  overflow: hidden;
+#reserve .ly_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #reserve .bl_section {
@@ -996,13 +925,13 @@ body.noscroll {
   margin: 0 auto;
 }
 
-#beginner-page .el_section_header {
+#beginner-page #reason .el_section_header {
   font-size: 2rem;
   text-align: center;
   color: #272534;
 }
 
-#beginner-page .bl_section {
+#beginner-page #reason .bl_section {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1013,17 +942,17 @@ body.noscroll {
   gap: 30px;
 }
 
-#beginner-page .bl_section_imgWrapper {
+#beginner-page #reason .bl_section_imgWrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-#beginner-page .bl_section_imgWrapper > img {
+#beginner-page #reason .bl_section_imgWrapper > img {
   width: 100%;
 }
 
-#beginner-page .bl_section_body .bl_section_header:first-child {
+#beginner-page #reason .bl_section_body .bl_section_header:first-child {
   font-family: josefin-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1031,20 +960,99 @@ body.noscroll {
   font-weight: 700;
 }
 
-#beginner-page .bl_section_body {
+#beginner-page #reason .bl_section_body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 4vw;
 }
 
-#beginner-page .bl_section_txt {
+#beginner-page #reason .bl_section_txt {
   color: #707070;
   margin-bottom: 20px;
 }
 
-#beginner-page .bl_section_body > *:last-child {
+#beginner-page #reason .bl_section_body > *:last-child {
   margin-bottom: 0;
+}
+
+#beginner-page #voice .bl_section {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2%;
+}
+
+#beginner-page #voice .bl_section_card {
+  display: block;
+  width: 20%;
+}
+
+#beginner-page #voice .bl_section_imgWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+#beginner-page #voice .bl_section_imgWrapper > img {
+  width: 50%;
+}
+
+#beginner-page #voice .bl_section_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #707070;
+}
+
+#beginner-page #voice .bl_section_name {
+  color: #f78f93;
+}
+
+#beginner-page #voice .bl_section_txt {
+  width: clamp(300px, 100%, 600px);
+}
+
+#beginner-page #voice .bl_section_body > *:last-child {
+  margin-bottom: 0;
+}
+
+#beginner-page #voice .balloon-top {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 15px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background: #f5f5f5;
+}
+
+#beginner-page #voice .balloon-top:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #f5f5f5;
+}
+
+#beginner-page #voice .balloon-top:before .balloon-top p {
+  margin: 0;
+  padding: 0;
 }
 
 /*--------------------------------
@@ -1532,16 +1540,11 @@ body.noscroll {
           box-sizing: border-box;
 }
 
-#price-page .bl_section_imgWrapper {
-  margin: 0 auto;
-}
-
 #price-page .bl_section_imgWrapper > img {
   width: 100%;
 }
 
 #price-page .bl_section_box {
-  margin: 0 auto;
   background-color: #fff2f3;
   font-weight: 600;
   width: clamp(300px, 100%, 600px);
@@ -1601,10 +1604,6 @@ body.noscroll {
   margin-bottom: 0;
 }
 
-#price-page #lead .el_section_ttl::after {
-  display: none;
-}
-
 #price-page #campaign .bl_section_imgWrapper {
   max-width: 500px;
 }
@@ -1637,58 +1636,6 @@ body.noscroll {
   overflow-x: scroll;
 }
 
-#price-page .bl_priceUnit {
-  list-style: none;
-}
-
-#price-page .bl_priceUnit .bl_price_card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 1%;
-}
-
-#price-page .bl_priceUnit .bl_price_card:last-child {
-  margin-right: 0;
-}
-
-#price-page .bl_price_header {
-  padding: 2.4rem;
-  text-align: center;
-}
-
-#price-page .bl_price_card:nth-of-type(1) .bl_price_header {
-  background: -webkit-gradient(linear, left top, right top, from(#edb6ee), to(#db3ee1));
-  background: linear-gradient(to right, #edb6ee 0%, #db3ee1 100%);
-}
-
-#price-page .bl_price_card:nth-of-type(2) .bl_price_header {
-  padding: 3.6rem 2.4rem;
-  background: -webkit-gradient(linear, left top, right top, to(#db3ee1));
-  background: linear-gradient(to right, #db3ee1 100% #8b3378 100%);
-}
-
-#price-page .bl_price_card:nth-of-type(3) .bl_price_header {
-  background: -webkit-gradient(linear, left top, right top, to(#8b3378));
-  background: linear-gradient(to right, #8b3378 100% #694f66 100%);
-}
-
-#price-page .bl_price_ttl {
-  line-height: 3.6rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-#price-page .bl_price_body {
-  padding: 30px 15px 15px 15px;
-  height: 350px;
-  text-align: center;
-  border-bottom: 1px solid #f78f93;
-  border-right: 1px solid #f78f93;
-  border-left: 1px solid #f78f93;
-}
-
 #price-page .bl_price_price {
   font-size: 4rem;
   font-weight: bold;
@@ -1712,28 +1659,6 @@ body.noscroll {
 #price-page .bl_price_price.bl_price_price__white span {
   font-size: 1.2rem;
   color: #ffffff;
-}
-
-#price-page .bl_price_features {
-  text-align: center;
-}
-
-#price-page .bl_price_features > *:last-child {
-  margin-bottom: 0;
-}
-
-#price-page .bl_price_features dt {
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-#price-page .bl_price_features dd {
-  margin-bottom: 20px;
-}
-
-#price-page .bl_price_features_detail {
-  position: relative;
-  padding: 30px 10px 30px 10px;
 }
 
 #price-page .bl_plan_service_table {

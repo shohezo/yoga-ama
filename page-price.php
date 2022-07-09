@@ -7,10 +7,10 @@ Template Name: プライスページ
 ?>
 <article id="price-page">
     <!-- キャンペーン -->
-    <section class="ly_section hp_ptLg hp_pbSm" id="campaign">
+    <section class="ly_section hp_ptLg" id="campaign">
         <div class=" ly_inner">
             <h2 class="el_section_header">紹介キャンペーン実施中!</h2>
-            <figure class="bl_section_imgWrapper hp_ptMd hp_pbSm">
+            <figure class="bl_section_imgWrapper hp_centering hp_ptMd hp_pbSm">
                 <img src="<?php bloginfo('template_url');?>/img/campaign_banner.png" alt="" />
             </figure>
             <div class="bl_section hp_ptSm hp_tac">
@@ -22,34 +22,31 @@ Template Name: プライスページ
             </div>
         </div>
     </section>
-    <!-- 通常 -->
-    <section class="ly_section hp_ptLg hp_pbSm" id="lead">
+    <section class="ly_section hp_ptLg" id="monthly">
         <div class=" ly_inner">
-            <h2 class="el_section_ttl">YOGA AMAのプラン</h2>
-            <div class="bl_section hp_ptSm hp_tac">
-                <p class="bl_section_txt hp_centering">
-                    ヨガアマでは、お客様のライフスタイルに合わせた<br>
-                    様々なプランをご用意しております。
-                </p>
+            <div class="hp_mbMd">
+                <h2 class="el_section_ttl">YOGA AMAのプラン</h2>
+                <div class="bl_section hp_ptSm hp_tac">
+                    <p class="bl_section_txt hp_centering">
+                        ヨガアマでは、お客様のライフスタイルに合わせた<br>
+                        様々なプランをご用意しております。
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="ly_section hp_ptLg hp_pbLg" id="monthly">
-        <div class=" ly_inner">
             <span class="el_section_ttl_sub">定期的に通い効果を実感</span>
             <h2 class="el_section_header">マンスリープラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/price_monthly.png" alt="" />
                 </figure>
-                <div class="bl_section_box">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>年会費なし</li>
                         <li><i class="fa-solid fa-check"></i>最短6ヶ月から利用可能</li>
                         <li><i class="fa-solid fa-check"></i>通常のレッスン価格よりもお得</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -134,22 +131,22 @@ Template Name: プライスページ
             </div>
         </div>
     </section>
-    <section class="ly_section hp_ptLg hp_pbLg" id="ticket">
+    <section class="ly_section hp_ptLg" id="ticket">
         <div class=" ly_inner">
             <span class="el_section_ttl_sub">通いたい時に、好きなだけ</span>
             <h2 class="el_section_header">チケットプラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/price_ticket.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>ビジター参加もOK</li>
                         <li><i class="fa-solid fa-check"></i>初回体験時にチケット購入で会員登録料無料</li>
                         <li><i class="fa-solid fa-check"></i>期限内に次のチケット購入で550円引き</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -250,34 +247,58 @@ Template Name: プライスページ
             </div>
         </div>
     </section>
-    <!-- ここからオンライン -->
-    <section class="ly_section hp_ptMd hp_pbSm" id="lead">
-        <div class=" ly_inner">
-            <h2 class="el_section_ttl">オンラインプラン</h2>
+    <section class="ly_section hp_ptLg hp_pbLg" id="reserve">
+        <div class="ly_inner">
+            <h2 class="el_section_ttl">Reserve</h2>
+            <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
             <div class="bl_section hp_ptSm hp_tac">
-                <p class="bl_section_txt hp_centering">
-                    ヨガアマでは、オンライン利用もできる月会費プランをはじめ、<br>
-                    ご都合に合わせたプランをご用意しております。
-                </p>
+                <div class="bl_section_body">
+                    <h3 class="bl_section_header hp_mb30">
+                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                    </h3>
+                    <p class="bl_section_txt hp_centering">
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+                    <a class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+                    </a>
+                    <a class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                </div>
             </div>
         </div>
     </section>
-    <section class="ly_section hp_ptLg hp_pbLg" id="monthly_online">
+    <!-- ここからオンライン -->
+    <section class="ly_section hp_ptLg" id="monthly_online">
         <div class=" ly_inner">
+            <div class="hp_mbMd">
+                <h2 class="el_section_ttl">オンラインプラン</h2>
+                <div class="bl_section hp_ptSm hp_tac">
+                    <p class="bl_section_txt hp_centering">
+                        ヨガアマでは、オンライン利用もできる月会費プランをはじめ、<br>
+                        ご都合に合わせたプランをご用意しております。
+                    </p>
+                </div>
+            </div>
             <span class="el_section_ttl_sub">自宅でもしっかり続けたい方に</span>
             <h2 class="el_section_header">オンライン<br>マンスリープラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/price_monthly_online.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>年会費・会員登録手数料なし</li>
                         <li><i class="fa-solid fa-check"></i>最短3ヶ月から利用可能</li>
                         <li><i class="fa-solid fa-check"></i>通常のレッスン価格よりもお得</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -361,22 +382,22 @@ Template Name: プライスページ
             </div>
         </div>
     </section>
-    <section class="ly_section hp_ptLg hp_pbLg" id="ticket_online">
+    <section class="ly_section hp_ptLg" id="ticket_online">
         <div class=" ly_inner">
             <span class="el_section_ttl_sub">自宅で、好きなときだけ</span>
             <h2 class="el_section_header">オンライン<br>チケットプラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/price_ticket_online.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>ビジター参加もOK</li>
                         <li><i class="fa-solid fa-check"></i>初回体験時にチケット購入で会員登録料無料</li>
                         <li><i class="fa-solid fa-check"></i>期限内に次のチケット購入で550円引き</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -467,27 +488,24 @@ Template Name: プライスページ
             </div>
         </div>
     </section>
-    <!-- ここからシニア -->
-    <section class="ly_section hp_ptLg hp_pbSm" id="lead">
-        <div class="ly_inner">
-            <h2 class="el_section_ttl">シニア向けプラン</h2>
-            <div class="bl_section hp_ptSm hp_tac">
-                <p class="bl_section_txt hp_centering">
-                    ヨガアマでは、シニアの方にもヨガを楽しんでいただけるように<br>
-                    専用プランをご用意しております。
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="ly_section hp_ptLg hp_pbLg" id="monthly_senior">
+    <section class="ly_section hp_ptLg" id="monthly_senior">
         <div class=" ly_inner">
+            <div class="hp_mbMd">
+                <h2 class="el_section_ttl">シニア向けプラン</h2>
+                <div class="bl_section hp_ptSm hp_tac">
+                    <p class="bl_section_txt hp_centering">
+                        ヨガアマでは、シニアの方にもヨガを楽しんでいただけるように<br>
+                        専用プランをご用意しております。
+                    </p>
+                </div>
+            </div>
             <span class="el_section_ttl_sub">定期的に通い効果を実感</span>
             <h2 class="el_section_header">シニア<br>マンスリープラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/monthly_senior.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>65歳以上の方対象</li>
                         <li><i class="fa-solid fa-check"></i>年会費なし</li>
@@ -495,7 +513,7 @@ Template Name: プライスページ
                         <li><i class="fa-solid fa-check"></i>通常のレッスン価格よりもお得</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -570,19 +588,19 @@ Template Name: プライスページ
     <section class="ly_section hp_ptLg hp_pbLg" id="ticket_senior">
         <div class=" ly_inner">
             <span class="el_section_ttl_sub">通いたい時に、好きなだけ</span>
-            <h2 class="el_section_headernox">シニア<br>チケットプラン</h2>
+            <h2 class="el_section_header">シニア<br>チケットプラン</h2>
             <div class="bl_section hp_ptSm">
-                <figure class="bl_section_imgWrapper hp_ptLg hp_pbMd">
+                <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
                     <img src="<?php bloginfo('template_url');?>/img/ticket_senior.png" alt="" />
                 </figure>
-                <div class="bl_section_body">
+                <div class="bl_section_box hp_centering">
                     <ul>
                         <li><i class="fa-solid fa-check"></i>ビジター参加もOK</li>
                         <li><i class="fa-solid fa-check"></i>初回体験時にチケット購入で会員登録料無料</li>
                         <li><i class="fa-solid fa-check"></i>期限内に次のチケット購入で550円引き</li>
                     </ul>
                 </div>
-                <div class="bl_scroll js-scrollable hp_mtLg hp_mbMd">
+                <div class="bl_scroll js-scrollable hp_mtMd hp_mbMd">
                     <table class="bl_plan_service_table">
                         <thead>
                             <tr class="hp_flex">
@@ -679,6 +697,32 @@ Template Name: プライスページ
                         <li>※退会時、登録手数料の返金が致しておりません。</li>
                         <li>※親子で参加の場合、お子様（小学生まで）は0.5カウントです。お子様のみの参加は1カウントです。</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ly_section hp_ptLg hp_pbLg" id="reserve">
+        <div class="ly_inner">
+            <h2 class="el_section_ttl">Reserve</h2>
+            <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
+            <div class="bl_section hp_ptSm hp_tac">
+                <div class="bl_section_body">
+                    <h3 class="bl_section_header hp_mb30">
+                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                    </h3>
+                    <p class="bl_section_txt hp_centering">
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                        テキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="ly_contaier hp_flex hp_mtMd hp_column_tb">
+                    <a class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+                    </a>
+                    <a class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
                 </div>
             </div>
         </div>

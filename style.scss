@@ -450,7 +450,9 @@ body.noscroll {
     width: 100%;
   }
   .bl_section_body {
-    flex: 1;
+    flex: 0.8;
+    padding-left: 3vw;
+    box-sizing: border-box;
   }
   .bl_section_txt {
     color: $black;
@@ -462,73 +464,6 @@ body.noscroll {
 }
 
 /*--------------------------------
-ボイスセクション
---------------------------------*/
-#voice {
-  overflow: hidden;
-  .el_section_ttl {
-    font-size: 2.5rem;
-  }
-  .bl_section {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2%;
-  }
-  .bl_section_card {
-    display: block;
-    width: 20%;
-  }
-  .bl_section_imgWrapper {
-    flex: 1;
-    text-align: center;
-  }
-  .bl_section_imgWrapper > img {
-    width: 50%;
-  }
-  .bl_section_body {
-    flex: 1;
-    color: $primary;
-  }
-  .bl_section_txt {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .bl_section_body > *:last-child {
-    margin-bottom: 0;
-  }
-  .balloon-top {
-    box-sizing: border-box;
-    border-radius: 20px;
-    position: relative;
-    display: inline-block;
-    margin: 1.5em 0;
-    padding: 7px 15px;
-    min-width: 120px;
-    max-width: 100%;
-    font-size: 16px;
-    background: $grey;
-  }
-
-  .balloon-top:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    margin-left: -15px;
-    border: 15px solid transparent;
-    border-bottom: 15px solid $grey;
-
-    .balloon-top p {
-      margin: 0;
-      padding: 0;
-    }
-  }
-}
-/*--------------------------------
 スケジュールセクション
 --------------------------------*/
 #schedule {
@@ -538,7 +473,7 @@ body.noscroll {
   }
   .ly_inner {
     padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
     max-width: none;
     background-image: url(./img/schedule-bg.jpeg);
     z-index: -2;
@@ -590,11 +525,19 @@ body.noscroll {
     &_body {
       width: 45%;
       color: $black;
+      flex-direction: column;
     }
     &_date {
       font-size: 12px;
       // position: absolute;
       bottom: 0;
+    }
+    &_ttl {
+      font-size: 1.8rem;
+      color: $navy;
+    }
+    &_excerpt {
+      line-height: 1.2;
     }
   }
 }
@@ -602,7 +545,9 @@ body.noscroll {
 リザーブセクション
 --------------------------------*/
 #reserve {
-  overflow: hidden;
+  .ly_container {
+    justify-content: center;
+  }
   .bl_section {
     margin: 0 auto;
   }
@@ -676,7 +621,7 @@ body.noscroll {
       color: $primaryDark;
     }
   }
-  iframe{
+  iframe {
     width: 100%;
     max-width: 1920px;
     height: 300px;
@@ -885,41 +830,99 @@ body.noscroll {
       margin: 0 auto;
     }
   }
-  .el_section_header {
-    font-size: 2rem;
-    text-align: center;
-    color: $navy;
+  #reason {
+    .el_section_header {
+      font-size: 2rem;
+      text-align: center;
+      color: $navy;
+    }
+    .bl_section {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .bl_section_imgWrapper {
+      flex: 1;
+    }
+    .bl_section_imgWrapper > img {
+      width: 100%;
+    }
+    .bl_section_body .bl_section_header:first-child {
+      @include josefin-sans();
+      font-weight: 700;
+    }
+    .bl_section_body {
+      flex: 1;
+    }
+    .bl_section_txt {
+      color: $black;
+      margin-bottom: 20px;
+    }
+    .bl_section_body > *:last-child {
+      margin-bottom: 0;
+    }
   }
-  .bl_section {　x
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  .bl_section_imgWrapper {
-    flex: 1;
-  }
-  .bl_section_imgWrapper > img {
-    width: 100%;
-  }
-  .bl_section_body .bl_section_header:first-child {
-    @include josefin-sans();
-    font-weight: 700;
-  }
-  .bl_section_body {
-    flex: 1;
-    padding-left: 4vw;
-  }
-  .bl_section_txt {
-    color: $black;
-    margin-bottom: 20px;
-  }
-  .bl_section_body > *:last-child {
-    margin-bottom: 0;
+  #voice {
+    .bl_section {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2%;
+    }
+    .bl_section_card {
+      display: block;
+      width: 20%;
+    }
+    .bl_section_imgWrapper {
+      flex: 1;
+      text-align: center;
+    }
+    .bl_section_imgWrapper > img {
+      width: 50%;
+    }
+    .bl_section_body {
+      flex: 1;
+      color: $black;
+    }
+    .bl_section_name {
+      color: $primary;
+    }
+    .bl_section_txt {
+      width: clamp(300px, 100%, 600px);
+    }
+    .bl_section_body > *:last-child {
+      margin-bottom: 0;
+    }
+    .balloon-top {
+      box-sizing: border-box;
+      border-radius: 20px;
+      position: relative;
+      display: inline-block;
+      margin: 1.5em 0;
+      padding: 7px 15px;
+      min-width: 120px;
+      max-width: 100%;
+      font-size: 16px;
+      background: $grey;
+    }
+    .balloon-top:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      margin-left: -15px;
+      border: 15px solid transparent;
+      border-bottom: 15px solid $grey;
+      .balloon-top p {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 }
-
-
 
 /*--------------------------------
 スタジオレンタルページ
@@ -1363,15 +1366,10 @@ body.noscroll {
       box-sizing: border-box;
     }
   }
-
-  .bl_section_imgWrapper {
-    margin: 0 auto;
-  }
   .bl_section_imgWrapper > img {
     width: 100%;
   }
   .bl_section_box {
-    margin: 0 auto;
     background-color: $primaryLight;
     font-weight: 600;
     width: clamp(300px, 100%, 600px);
@@ -1417,13 +1415,6 @@ body.noscroll {
   .bl_section_body > *:last-child {
     margin-bottom: 0;
   }
-  #lead {
-    .el_section_ttl {
-      &::after {
-        display: none;
-      }
-    }
-  }
   #campaign {
     .bl_section_imgWrapper {
       max-width: 500px;
@@ -1460,67 +1451,10 @@ body.noscroll {
     }
   }
 
+  //価格表のスタイリング
   .bl_scroll {
     overflow-x: scroll;
   }
-  .bl_priceUnit {
-    list-style: none;
-  }
-  .bl_priceUnit .bl_price_card {
-    flex: 1;
-    margin-right: 1%;
-  }
-  .bl_priceUnit .bl_price_card:last-child {
-    margin-right: 0;
-  }
-  .bl_price_header {
-    padding: 2.4rem;
-    text-align: center;
-  }
-  .bl_price_card {
-    &:nth-of-type(1) {
-      .bl_price_header {
-        background: linear-gradient(
-          to right,
-          rgba(237, 182, 238, 1) 0%,
-          rgb(219, 62, 225) 100%
-        );
-      }
-    }
-    &:nth-of-type(2) {
-      .bl_price_header {
-        padding: 3.6rem 2.4rem;
-        background: linear-gradient(
-          to right,
-          rgb(219, 62, 225) 100% rgb(139, 51, 120) 100%
-        );
-      }
-    }
-    &:nth-of-type(3) {
-      .bl_price_header {
-        background: linear-gradient(
-          to right,
-          rgb(139, 51, 120) 100% rgb(105, 79, 102) 100%
-        );
-      }
-    }
-  }
-
-  .bl_price_ttl {
-    line-height: 3.6rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: $white;
-  }
-  .bl_price_body {
-    padding: 30px 15px 15px 15px;
-    height: 350px;
-    text-align: center;
-    border-bottom: 1px solid $primary;
-    border-right: 1px solid $primary;
-    border-left: 1px solid $primary;
-  }
-
   .bl_price_price {
     font-size: 4rem;
     font-weight: bold;
@@ -1542,25 +1476,6 @@ body.noscroll {
       color: $white;
     }
   }
-
-  .bl_price_features {
-    text-align: center;
-  }
-  .bl_price_features > *:last-child {
-    margin-bottom: 0;
-  }
-  .bl_price_features dt {
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  .bl_price_features dd {
-    margin-bottom: 20px;
-  }
-  .bl_price_features_detail {
-    position: relative;
-    padding: 30px 10px 30px 10px;
-  }
-  //各プランのサービス内容
   .bl_plan_service_table {
     width: 100%;
     border-collapse: collapse;
@@ -1655,7 +1570,6 @@ body.noscroll {
     font-size: 14px;
     color: $black;
   }
-
   .fixed01 {
     position: sticky;
     left: 0;
@@ -1670,6 +1584,7 @@ body.noscroll {
     }
   }
 }
+
 /*--------------------------------
 アーカイブページ（ブログ）
 --------------------------------*/
