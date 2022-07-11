@@ -22,7 +22,6 @@ Template Name: レンタルページ
                 <img src="<?php bloginfo('template_url');?>/img/rental_studio.jpeg" alt="" />
             </figure>
             <div class="bl_section_body">
-                <!-- <h3 class="bl_section_header hp_mb10">利用料金</h3> -->
                 <div class="bl_section_price hp_flex hp_aic hp_mb10">
                     <span>利用料金</span>
                     <p>1,650<small>円/時間</small></p>
@@ -70,6 +69,12 @@ Template Name: レンタルページ
                     <li class="hp_listStyleNone">1日前迄：50％</li>
                     <li class="hp_listStyleNone">当日・無連絡：100％</li>
                 </ul>
+            </div>
+        </div>
+        <div class="bl_section hp_ptMd">
+            <div class="bl_section_header">ご利用に際して注意事項</div>
+            <div class="bl_section_txt">
+                <p>ネットワークビジネスのように組織構築を行うような特定のビジネスへの勧誘につながるセミナーなどでのご利用はご遠慮願います。</p>
             </div>
         </div>
     </div>

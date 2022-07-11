@@ -25,7 +25,7 @@ Template Name: ビギナーページ
             <span class="el_section_ttl_sub hp_mbSm">ヨガアマが選ばれる理由</span>
             <div class="bl_section hp_flex hp_ptSm hp_column_tb">
                 <figure class="bl_section_imgWrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/yoga-woman.jpg" alt="" />
+                    <img src="<?php bloginfo('template_url');?>/img/beginner01.jpeg" alt="" />
                 </figure>
                 <div class="bl_section_body">
                     <div>
@@ -35,19 +35,18 @@ Template Name: ビギナーページ
                         </h3>
                     </div>
                     <p class="bl_section_txt">
-                        「どこにいっても満足いく結果が出ない…」<br />
-                        「結果が出なくていくつものお店を利用した」<br />
-                        「今までの経験上、脱毛は終わらない」<br />
-                        そう思われているあなたに贈る<br class="hp_br-sp" />最後の脱毛サロン。<br />
-                        ”あなたのキレイを永久に”をコンセプトに、<br />
-                        お客様の美に寄り添うサロン。<br />
-                        それがENDLESSです。
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
                     </p>
                 </div>
             </div>
             <div class="bl_section hp_flex hp_ptSm hp_reverse hp_column_tb">
                 <figure class="bl_section_imgWrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="" />
+                    <img src="<?php bloginfo('template_url');?>/img/beginner02.jpeg" alt="" />
                 </figure>
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 02</h3>
@@ -55,19 +54,18 @@ Template Name: ビギナーページ
                         セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                     </h3>
                     <p class="bl_section_txt">
-                        「どこにいっても満足いく結果が出ない…」<br />
-                        「結果が出なくていくつものお店を利用した」<br />
-                        「今までの経験上、脱毛は終わらない」<br />
-                        そう思われているあなたに贈る<br class="hp_br-sp" />最後の脱毛サロン。<br />
-                        ”あなたのキレイを永久に”をコンセプトに、<br />
-                        お客様の美に寄り添うサロン。<br />
-                        それがENDLESSです。
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
                     </p>
                 </div>
             </div>
             <div class="bl_section hp_flex hp_ptSm hp_column_tb">
                 <figure class="bl_section_imgWrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/yoga-woman.jpg" alt="" />
+                    <img src="<?php bloginfo('template_url');?>/img/beginner03.jpeg" alt="" />
                 </figure>
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 03</h3>
@@ -75,13 +73,12 @@ Template Name: ビギナーページ
                         セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                     </h3>
                     <p class="bl_section_txt">
-                        「どこにいっても満足いく結果が出ない…」<br />
-                        「結果が出なくていくつものお店を利用した」<br />
-                        「今までの経験上、脱毛は終わらない」<br />
-                        そう思われているあなたに贈る<br class="hp_br-sp" />最後の脱毛サロン。<br />
-                        ”あなたのキレイを永久に”をコンセプトに、<br />
-                        お客様の美に寄り添うサロン。<br />
-                        それがENDLESSです。
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        YOGA AMA様の強みYOGA AMA様の強み<br />
                     </p>
                 </div>
             </div>
@@ -97,12 +94,9 @@ Template Name: ビギナーページ
                         <img src="<?php bloginfo('template_url');?>/img/voice01.png" alt="女性のイラスト" />
                     </figure>
                     <div class="bl_section_body">
-                        <p class="bl_section_name hp_tac hp_mb10">〇〇様</p>
+                        <p class="bl_section_name hp_tac hp_mb10">N.F様</p>
                         <p class="bl_section_txt balloon-top">
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト
+                            ヨガ自体初めてでしたが、オーナーさんもトレーナーさんも優しく丁寧な方ばかりで、気楽に通えます。体がとても硬い方でしたが、こちらのペースに合わせてポーズを選んでくださるので無理なく進められます。子連れOKな点もおすすめで、子どもが騒いでも大丈夫！という温かい空気感の中ヨガが出来ますよ。
                         </p>
                     </div>
                 </div>
@@ -111,12 +105,12 @@ Template Name: ビギナーページ
                         <img src="<?php bloginfo('template_url');?>/img/voice02.png" alt="女性のイラスト" />
                     </figure>
                     <div class="bl_section_body">
-                        <p class="bl_section_name hp_tac hp_mb10">〇〇様</p>
+                        <p class="bl_section_name hp_tac hp_mb10">O.M様</p>
                         <p class="bl_section_txt balloon-top">
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト
+                            少人数でアットホームなヨガスタジオです！先生もオーナーもとても気さくな方で、和気あいあいとしています♪
+                            ヨガを始めたいけど…って思ってる人には持ってこいかなぁって思います◎
+                            私もこのスタジオがなかったらヨガを始めてなかったと思います！
+                            これからも楽しくヨガを続けていきたいと思います。
                         </p>
                     </div>
                 </div>
@@ -125,12 +119,12 @@ Template Name: ビギナーページ
                         <img src="<?php bloginfo('template_url');?>/img/voice03.png" alt="女性のイラスト" />
                     </figure>
                     <div class="bl_section_body">
-                        <p class="bl_section_name hp_tac hp_mb10">〇〇様</p>
+                        <p class="bl_section_name hp_tac hp_mb10">M.I様</p>
                         <p class="bl_section_txt balloon-top">
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト
+                            先生がとても明るくて素敵な方です。
+                            身体が硬くてちゃんとできるか心配でしたが、教え方も丁寧で気持ちよく楽しめます。
+                            子連れOKで、おもちゃがたくさんあるので1歳の息子も楽しんでくれてます。
+                            ここに通う日がいつも楽しみです！
                         </p>
                     </div>
                 </div>
@@ -139,12 +133,15 @@ Template Name: ビギナーページ
                         <img src="<?php bloginfo('template_url');?>/img/voice04.png" alt="女性のイラスト" />
                     </figure>
                     <div class="bl_section_body">
-                        <p class="bl_section_name hp_tac hp_mb10">〇〇様</p>
+                        <p class="bl_section_name hp_tac hp_mb10">H.H様</p>
                         <p class="bl_section_txt balloon-top">
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト テキストテキストテキスト
-                            テキストテキストテキスト
+                            身体が致命的に硬く、筋力なし。
+                            そして、日々の運動が定着しない私ですが、
+                            AMAさんに通い週2、3回で3ヶ月目に入りました。続けられているのは、先生方とオーナーさんが明るく親身に教えてくださるお陰です。
+                            1人1人のペースに合わせてくれるのも有難いところ。3ヶ月前と比べると身体の動かし方も少しですがキレ（笑）が良くなってきました。
+                            小さな前進を、周りと比べず喜べるようになってきたのも気楽で温かい雰囲気のお陰です。
+                            近くに引っ越してきたのがきっかけですが、
+                            行くのが楽しみになれたのはAMAさんが初めてです。ありがとうございます。
                         </p>
                     </div>
                 </div>

@@ -40,24 +40,23 @@
             transform: translateX(-50%);
   }
   .ly_fv .bl_fv_copy_main {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: unset;
   }
-  #voice .bl_section {
+  #beginner-page #voice .bl_section {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  #voice .bl_section_imgWrapper > img {
+  #beginner-page #voice .bl_section_imgWrapper > img {
     width: 120px;
   }
-  #voice .bl_section_card {
+  #beginner-page #voice .bl_section_card {
     width: 40%;
   }
-  #voice .bl_section_card:nth-child(1) {
+  #beginner-page #voice .bl_section_card:nth-child(1) {
     margin-bottom: 30px;
   }
-  #voice .bl_section_card:nth-child(2) {
+  #beginner-page #voice .bl_section_card:nth-child(2) {
     margin-bottom: 30px;
   }
   #blog .bl_section_card {
@@ -192,6 +191,10 @@
     width: 290px;
     padding: 8px 15px;
   }
+  .bl_section_txt {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
   /* フロントページ */
   #beginner .bl_section_body {
     padding-left: 0vw;
@@ -242,6 +245,23 @@
     padding-left: 0vw;
     padding-right: 0vw;
   }
+  #beginner-page #voice .bl_section {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #beginner-page #voice .bl_section_card {
+    width: 80%;
+  }
+  #beginner-page #voice .bl_section_card:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  #beginner-page #voice .bl_section_card:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  #beginner-page #voice .bl_section_card:nth-child(3) {
+    margin-bottom: 30px;
+  }
   /* プライスページ*/
   #price-page .bl_system_body {
     -webkit-box-align: center;
@@ -272,6 +292,33 @@
         -ms-flex: 0.4;
             flex: 0.4;
     font-size: 1.2rem;
+  }
+  /* よくある質問ページ */
+  #faq-p .bl_faq_item_question {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #faq-p .bl_faq_item_question div i {
+    font-size: 3rem;
+  }
+  #faq-p #question .bl_faq_container .bl_faq_list:first-child::after {
+    width: 150px;
+    height: 150px;
+    top: -90.5px;
+    right: -71px;
+  }
+  #faq-p .bl_faq_container {
+    position: relative;
+  }
+  #faq-p .bl_faq_item_answer {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  #menu-p .bl_section_txt {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
   }
   .hp_br-tb {
     display: block;
@@ -367,16 +414,28 @@
     z-index: 99;
   }
   /* ファーストビュー */
+  .ly_fv .el_fv_img {
+    background-position: 50% 30%;
+  }
+  .ly_fv::before {
+    top: 75%;
+  }
   .ly_fv .bl_fv_copy {
-    top: 30%;
+    top: 15%;
     left: 30%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .ly_fv .bl_fv_copy_main {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .ly_fv .bl_fv_copy_txt {
+    padding-left: 30px;
+  }
+  .ly_fv .bl_fv_campaign {
+    right: 10px;
   }
   #voice .bl_section {
     -webkit-box-pack: space-evenly;

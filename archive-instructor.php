@@ -6,8 +6,8 @@
         <div class="hp_mbMd">
             <h2 class="el_section_ttl hp_mbSm">インストラクターのご紹介</h2>
             <p class="bl_section_txt hp_centering">
-                ヨガアマでは、お客様のライフスタイルに合わせた<br>
-                様々なプランをご用意しております。
+                経験豊富で個性豊かなインストラクターたち。<br>
+                あなたとの出会いを楽しみにしております。
             </p>
         </div>
         <div class="bl_card_wrapper hp_flex hp_ptSm hp_pbSm hp_column_sp">

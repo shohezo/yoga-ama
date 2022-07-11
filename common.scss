@@ -255,6 +255,9 @@ body {
 .hp_flex {
   display: flex;
 }
+.hp_column{
+  flex-direction: column;
+}
 .hp_jcc {
   justify-content: center;
 }
@@ -305,7 +308,7 @@ body {
 .hp_blackfilter {
   &::after {
     /* 透過させた黒を重ねる （擬似要素で実装）*/
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     /* どの範囲に重ねるかを指定 */
     position: absolute;
     top: 0;
@@ -319,3 +322,10 @@ body {
 .hp_listStyleNone {
   list-style: none !important;
 }
+
+.hp_jp{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif !important;
+  font-size: 2rem !important;
+}
+
+

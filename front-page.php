@@ -6,7 +6,7 @@ Template Name: フロントページ
 ?>
 
 <div class="ly_fv">
-    <img class="el_fv_img" src="<?php bloginfo('template_url');?>/img/fv.jpg" alt="海岸でヨガをする女性" />
+    <img class="el_fv_img" src="<?php bloginfo('template_url');?>/img/fv01.jpg" alt="ヨガをする女性" />
     <div class="el_icon_wrapper">
         <div class="el_icon">
             <a href="https://www.instagram.com/yoga_ama/" target="_blank" rel="noopener noreferrer"><img
@@ -16,13 +16,23 @@ Template Name: フロントページ
             <a href="#" target="_blank" rel="noopener noreferrer"><img
                     src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
         </div>
+        <div class="el_icon">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                    src="<?php bloginfo('template_url');?>/img/line.png" alt="LINEのリンクアイコン" /></a>
+        </div>
     </div>
     <div class="bl_fv_copy">
-        <div class="bl_fv_copy_sub">サブコピー</div>
-        <div class="bl_fv_copy_main">メインコピー</div>
-        <div class="bl_fv_copy_text">テキストテキストテキスト</div>
-        <div class="bl_fv_copy_text">テキストテキストテキスト</div>
-        <div class="bl_fv_copy_text">テキストテキストテキスト</div>
+        <div class="bl_fv_copy_main">人生<span>に</span>ヨガ<span>を! </span></div>
+        <div class="bl_fv_copy_txt">YOGA AMAはヨガと通じて</div>
+        <div class="bl_fv_copy_txt">あなたの生活をサポートする</div>
+        <div class="bl_fv_copy_txt">本郷初のヨガスタジオです。</div>
+    </div>
+    <div class="bl_fv_campaign hp_flex hp_aic">
+        <div>
+            <div class="bl_fv_campaign_main">体験・入会<br>キャンペーン</div>
+        </div>
+        <a href="<?php bloginfo('url');?>/beginner"><img src="<?php bloginfo('template_url');?>/img/fv_campaign.png"
+                alt="ファーストビューのキャンペーンバナー"></a>
     </div>
 </div>
 <section class="ly_section hp_ptLg" id="concept">
@@ -31,21 +41,15 @@ Template Name: フロントページ
         <span class="el_section_ttl_sub hp_mbSm">私たちの想い</span>
         <div class="bl_section hp_flex hp_ptSm hp_column_tb">
             <figure class="bl_section_imgWrapper">
-                <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="振り返る女性" />
+                <img src="<?php bloginfo('template_url');?>/img/concept.jpg" alt="ヨガのレッスン風景" />
             </figure>
             <div class="bl_section_body">
                 <h3 class="bl_section_header hp_mb30">
-                    セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                    頑張りすぎた<br />ココロとカラダへ。
                 </h3>
                 <p class="bl_section_txt">
-                    「どこにいっても満足いく結果が出ない…」<br />
-                    「結果が出なくていくつものお店を利用した」<br />
-                    「今までの経験上、脱毛は終わらない」<br />
-                    そう思われているあなたに贈る<br class="hp_br-sp" />最後の脱毛サロン。<br />
-                    ”あなたのキレイを永久に”をコンセプトに、<br />
-                    お客様の美に寄り添うサロン。<br />
-                    それがENDLESSです。
-                </p>
+                    運動不足の解消、ダイエット、スタイルアップ、健康になりたい、瞑想したい…目的や動機は人それぞれ。同時にカラダにエネルギーを巡らせ、日々のしがらみやストレスから一時的に自らを開放してみてはいかがでしょうか。
+                    そんな想いから私達は、ヨガを充実した生活を送る為の一つのツールとして日常生活に取り入れて頂ける空間を目指しています。 </p>
             </div>
         </div>
     </div>
@@ -56,20 +60,17 @@ Template Name: フロントページ
         <span class="el_section_ttl_sub hp_mbSm">初めての方へ</span>
         <div class="bl_section hp_flex hp_ptSm hp_reverse hp_column_tb">
             <figure class="bl_section_imgWrapper">
-                <img src="<?php bloginfo('template_url');?>/img/fv.jpeg" alt="振り返る女性" />
+                <img src="<?php bloginfo('template_url');?>/img/front_page_beginner.jpg" alt="ヨガをする親子" />
             </figure>
             <div class="bl_section_body">
                 <h3 class="bl_section_header hp_mb30">
-                    セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                    YOGA AMAでヨガデビュー
                 </h3>
                 <p class="bl_section_txt">
-                    「どこにいっても満足いく結果が出ない…」<br />
-                    「結果が出なくていくつものお店を利用した」<br />
-                    「今までの経験上、脱毛は終わらない」<br />
-                    そう思われているあなたに贈る<br class="hp_br-sp" />最後の脱毛サロン。<br />
-                    ”あなたのキレイを永久に”をコンセプトに、<br />
-                    お客様の美に寄り添うサロン。<br />
-                    それがENDLESSです。
+                    ヨガの基本は「ポーズ」と「呼吸」。これを正しく行うことで体の歪みが矯正され、丈夫でしなやかな身体に変化することはもちろん、穏やか揺るぎない活力に満ちた気持ちを手に入れることができます。<br>
+                    仕事前後、休みの日、家事や育児の間にでも構いません。
+                    慌ただしい日常の中にほんの少し自分を見つめ直す時間とリラックスできる空間を体感してみてください。
+                    当スタジオでは体験レッスンもご用意しています。
                 </p>
             </div>
         </div>
@@ -82,8 +83,8 @@ Template Name: フロントページ
         <span class="el_section_ttl_sub hp_mbSm">スケジュール</span>
         <div class="bl_section hp_ptSm hp_tac">
             <p class="hp_centering hp_mbMd">
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                YOGA AMAではバラエティに富んだクラスを毎月更新しています！<br>
+                こちらからぜひご覧ください。<br>
             </p>
             <a href="#" class="el_btn"><span>VIEW MORE</span></a>
         </div>
@@ -125,25 +126,15 @@ Template Name: フロントページ
 <section class="ly_section hp_ptLg" id="reserve">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Reserve</h2>
-        <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
-        <div class="bl_section hp_ptSm hp_tac">
-            <div class="bl_section_body">
-                <h3 class="bl_section_header hp_mb30">
-                    セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
-                </h3>
-                <p class="bl_section_txt hp_centering">
-                    テキストテキストテキストテキスト
-                    テキストテキストテキストテキスト
-                    テキストテキストテキストテキスト
-                    テキストテキストテキストテキスト
-                </p>
-            </div>
+        <span class="el_section_ttl_sub">ご予約</span>
+        <div class="bl_section hp_tac">
             <div class="ly_container hp_flex hp_mtMd hp_column_tb">
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+                <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                 </a>
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                </a>
             </div>
         </div>
     </div>
@@ -154,8 +145,6 @@ Template Name: フロントページ
         <h2 class="el_section_ttl">Photo</h2>
         <span class="el_section_ttl_sub hp_mbSm">フォトギャラリー</span>
         <?php if( function_exists('photo_gallery') ) { photo_gallery(1); } ?>
-        <!-- <img src="<?php bloginfo('template_url');?>/img/gallery.jpg" alt="">
-        <a href="#" class="el_btn hp_centering hp_mtSm"><span>VIEW MORE</span></a> -->
     </div>
 </section>
 <section class="ly_section hp_ptLg hp_pbMd" id="access">
@@ -166,7 +155,6 @@ Template Name: フロントページ
             <figure class="bl_section_imgWrapper">
                 <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ" />
             </figure>
-
             <div class="bl_section_body">
                 <p class="bl_section_txt">
                     〒465-0024<br />

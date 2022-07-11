@@ -11,7 +11,7 @@ Template Name: プライスページ
         <div class=" ly_inner">
             <h2 class="el_section_header">紹介キャンペーン実施中!</h2>
             <figure class="bl_section_imgWrapper hp_centering hp_ptMd hp_pbSm">
-                <img src="<?php bloginfo('template_url');?>/img/campaign_banner.png" alt="" />
+                <img src="<?php bloginfo('template_url');?>/img/campaign_introduction.png" alt="" />
             </figure>
             <div class="bl_section hp_ptSm hp_tac">
                 <p class="bl_section_txt hp_centering">

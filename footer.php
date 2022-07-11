@@ -11,14 +11,16 @@
                     <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png"
                             alt="フェイスブックのリンクアイコン" /></a>
                 </div>
+                <div class="el_icon">
+                    <a href="#"><img src="<?php bloginfo('template_url');?>/img/line.png" alt="LINEのリンクアイコン" /></a>
+                </div>
             </div>
         </div>
         <div class="ly_footer_main hp_flex hp_jcsb">
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
                 <ul>
-                    <!-- <li><a href="<?php bloginfo('url');?>/beginner/about">ヨガについて</a></li>
-                    <li><a href="<?php bloginfo('url');?>/beginner/faq">よくある質問</a></li> -->
+                    <li><a href="<?php bloginfo('url');?>/price/faq">よくある質問</a></li>
                 </ul>
                 <li><a href="<?php bloginfo('url');?>/price">料金</a></li>
                 <ul>
@@ -34,7 +36,7 @@
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/contact">お問い合わせ</a></li>
                 <li><a href="<?php bloginfo('url');?>/privacy">プライバシーポリシー</a></li>
-                <li><a href="<?php bloginfo('url');?>/rule">利用規約</a></li>
+                <li><a href="<?php bloginfo('url');?>/tos">利用規約</a></li>
             </ul>
         </div>
     </div>

@@ -17,29 +17,38 @@ $(function () {
 });
 
 /* ニュースのアコーディオン */
+// $(function () {
+//   $(".news_list dt").on("click", function () {
+//     $(this).next().slideToggle(300);
+//   });
+// });
+
+/* アコーディオン */
 $(function () {
-  $(".news_list dt").on("click", function () {
-    $(this).next().slideToggle(300);
+  $(".bl_faq_item_answer:first").show(); //ひとつ目は最初から
+  $(".bl_faq_list .bl_faq_item_question").click(function () {
+    $(this).next(".bl_faq_item_answer").slideToggle(300);
+    $(this).toggleClass("open");
   });
 });
 
-/* よくある質問のアコーディオン */
-$(function () {
-  $(".bl_faq_list dd:first").show();
-  $(".bl_faq_list dt").on("click", function () {
-    $(this).next().slideToggle(300);
-  });
-});
+var headerH = $("#header").outerHeight(true); //headerの高さを取得
 
-//.ly_fvまでスクロールするとheaderの色が変化
-("use strict");
-
-jQuery(window).on("scroll", function () {
-  if (jQuery("#news").height() < jQuery(this).scrollTop()) {
-    jQuery(".el_pageTop").addClass("show");
+//スクロール途中からヘッダーの高さを変化させるための設定を関数でまとめる
+function FixedAnime() {
+  //ヘッダーの高さを取得
+  var scroll = $(window).scrollTop();
+  if (scroll >= headerH) {
+    //ヘッダーの高さを超えたら
+    $("#header").addClass("HeightMin"); //#headerについているHeightMinというクラス名を付与
   } else {
-    jQuery(".el_pageTop").removeClass("show");
+    $("#header").removeClass("HeightMin"); //HeightMinというクラス名を除去
   }
+}
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
 });
+
 /* スクロールヒント */
 new ScrollHint(".js-scrollable");

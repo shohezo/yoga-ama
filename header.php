@@ -84,7 +84,7 @@
 
 <body <?php body_class();?>>
     <?php wp_body_open();?>
-    <header class="ly_header">
+    <header class="ly_header" id="header">
         <div class="ly_header_inner hp_flex hp_jcsb hp_aic">
             <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>"><img
                     src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" />
@@ -125,11 +125,6 @@
         <img src="<?php bloginfo('template_url');?>/img/price.jpeg" alt="">
         <h2>PLAN&FEE</h2>
     </div>
-    <?php }else if(is_post_type_archive('news')){?>
-    <div class="ly_heading">
-        <img src="<?php bloginfo('template_url');?>/img/news.jpg" alt="">
-        <h2>お知らせ</h2>
-    </div>
     <?php }else if(is_post_type_archive('instructor')){?>
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/instructor.jpg" alt="">
@@ -147,8 +142,18 @@
     </div>
     <?php }else if(is_page('contact')){?>
     <div class="ly_heading">
-        <img src="<?php bloginfo('template_url');?>/img/cta.jpg" alt="">
-        <h2>お問い合わせ・資料請求</h2>
+        <img src="<?php bloginfo('template_url');?>/img/contact.jpg" alt="">
+        <h2>CONTACT</h2>
+    </div>
+    <?php }else if(is_page('privacy')){?>
+    <div class="ly_heading  hp_blackfilter">
+        <img src="<?php bloginfo('template_url');?>/img/privacypolicy.jpg" alt="">
+        <h2>PRIVACY POLICY</h2>
+    </div>
+    <?php }else if(is_page('tos')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/tos.jpg" alt="">
+        <h2>TERMS OF SERVICE</h2>
     </div>
     <?php }else if(is_page('beginner')){?>
     <div class="ly_heading">
@@ -164,15 +169,20 @@
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/private-lesson.jpg" alt="">
         <h2>PRIVATE LESSON</h2>
-    </div>
+    </div>>
     <?php }else if(is_page('rental')){?>
     <div class="ly_heading hp_blackfilter">
         <img src="<?php bloginfo('template_url');?>/img/rental.jpg" alt="">
         <h2>RENTAL</h2>
     </div>
+    <?php }else if(is_page('faq')){?>
+    <div class="ly_heading hp_blackfilter">
+        <img src="<?php bloginfo('template_url');?>/img/faq.jpg" alt="">
+        <h2>FAQ</h2>
+    </div>
     <?php }else{}?>
     <!-- パンくずリスト -->
-    <div class="ly_breadcrumbs<?php if ( is_single() ) { echo ' hp_mt100'; } ?>">
+    <div class="ly_breadcrumbs<?php if ( is_single() ) { echo ''; } ?>">
         <div class=" ly_inner">
             <div class="bl_breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
                 <?php if(function_exists('bcn_display'))

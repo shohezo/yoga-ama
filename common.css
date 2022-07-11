@@ -275,6 +275,13 @@ body img {
   display: flex;
 }
 
+.hp_column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .hp_jcc {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -350,7 +357,7 @@ body img {
 
 .hp_blackfilter::after {
   /* 透過させた黒を重ねる （擬似要素で実装）*/
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   /* どの範囲に重ねるかを指定 */
   position: absolute;
   top: 0;
@@ -363,5 +370,10 @@ body img {
 
 .hp_listStyleNone {
   list-style: none !important;
+}
+
+.hp_jp {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif !important;
+  font-size: 2rem !important;
 }
 /*# sourceMappingURL=common.css.map */
