@@ -51,6 +51,14 @@
         </div>
     </div>
 </footer>
+<!--ローディングアニメーション -->
+<div class="loading">
+    <div class="loading-animation">
+        <a class="el_logo">
+            <img src=" <?php bloginfo('template_url');?>/img/logo.png" alt="ロゴマーク" />
+        </a>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url');?>/js/script.js"></script>
 <?php wp_footer();?>

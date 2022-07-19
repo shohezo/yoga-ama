@@ -34,6 +34,7 @@ $green: #52b2ac;
 --------------------------------*/
 .el_logo {
   z-index: 99;
+  transition: 0.5s;
   p {
     @include trajan();
     font-size: 1rem;
@@ -214,7 +215,7 @@ body.noscroll {
 //ドロワーメニューの開閉ボタン
 .bl_drawerBtn {
   position: fixed;
-  top: 10px;
+  top: 23px;
   left: -70px; //中身の幅をいじるとボタンが隠れてしまうのでこちらで調整
   width: 60px;
   height: 60px;
@@ -227,6 +228,9 @@ body.noscroll {
   padding-bottom: 2px;
   z-index: 10000;
   display: none; //これがあるとスマホのときしか表示されなくなるので注意！！
+}
+.bl_drawerBtn.HeightMin {
+  top: 10px;
 }
 //ハンバーガーボタンを作るスタイルシート
 .hambarg {
@@ -295,15 +299,23 @@ body.noscroll {
   padding-bottom: 10px;
   width: 100%;
   background-color: $white;
-  height: 100px;
+  height: 80px;
   position: fixed;
   z-index: 999;
 }
 #header.HeightMin {
   padding-bottom: 0px;
-  height: 80px;
+  height: 59px;
   position: fixed;
   transition: 0.5s;
+  .el_logo {
+    width: 50px;
+    transition: 0.5s;
+    p {
+      display: none;
+      white-space: nowrap;
+    }
+  }
 }
 
 .ly_header_inner {
@@ -2344,4 +2356,43 @@ tr {
     font-weight: 700;
     margin-bottom: 20px;
   }
+}
+/*--------------------------------
+loading animation
+--------------------------------*/
+/* ローディングアニメーション */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation.is-active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -86,9 +86,11 @@
     <?php wp_body_open();?>
     <header class="ly_header" id="header">
         <div class="ly_header_inner hp_flex hp_jcsb hp_aic">
-            <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>"><img
-                    src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" />
-                <p>YOGA AMA</p>
+            <a class="el_logo" href="<?php echo esc_url(home_url('/'));?>">
+                <div>
+                    <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="ロゴ画像" />
+                    <p>YOGA AMA</p>
+                </div>
             </a>
             <nav>
                 <ul class="bl_headerNav">

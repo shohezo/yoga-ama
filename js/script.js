@@ -41,14 +41,40 @@ function FixedAnime() {
   if (scroll >= headerH) {
     //ヘッダーの高さを超えたら
     $("#header").addClass("HeightMin"); //#headerについているHeightMinというクラス名を付与
+    $(".bl_drawerBtn").addClass("HeightMin"); //#headerについているHeightMinというクラス名を付与
   } else {
+    $("#header").removeClass("HeightMin"); 
     $("#header").removeClass("HeightMin"); //HeightMinというクラス名を除去
   }
 }
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+  FixedAnime(); //スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
 });
 
 /* スクロールヒント */
-new ScrollHint(".js-scrollable");
+// new ScrollHint(".js-scrollable");
+
+/* ローディングアニメーション */
+$(function () {
+  var webStorage = function () {
+    if (sessionStorage.getItem("access")) {
+      /*
+        2回目以降アクセス時の処理
+      */
+      $(".loading").addClass("is-active");
+    } else {
+      /*
+        初回アクセス時の処理
+      */
+      sessionStorage.setItem("access", "true"); // sessionStorageにデータを保存
+      $(".loading-animation").addClass("is-active"); // loadingアニメーションを表示
+      setTimeout(function () {
+        // ローディングを数秒後に非表示にする
+        $(".loading").addClass("is-active");
+        $(".loading-animation").removeClass("is-active");
+      }, 4000); // ローディングを表示する時間
+    }
+  };
+  webStorage();
+});
