@@ -3,10 +3,9 @@
 <div class="ly_section hp_ptLg hp_pbLg" id="schedule-archive">
     <div class="ly_inner">
         <div class="hp_mbMd">
-            <h2 class="el_section_ttl hp_mbSm">毎月のスケジュールはこちら</h2>
+            <h2 class="el_section_ttl hp_mbSm hp_jp">スケジュールはこちら</h2>
             <p class="bl_section_txt hp_centering">
-                ヨガアマでは、お客様のライフスタイルに合わせた<br>
-                様々なプランをご用意しております。
+                ヨガアマでは、お客様のライフスタイルに合わせた<br class="hp_br-pc">様々なプランをご用意しております。
             </p>
         </div>
         <div class="bl_schedule_wrapper">

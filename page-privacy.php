@@ -6,7 +6,7 @@ Template Name:プライバシーページ
 ?>
 <section class="ly_section hp_ptMd hp_pbLg">
     <div class="ly_inner">
-        <h2 class="el_section_ttl hp_mbMd">プライバシーポリシー</h2>
+        <h2 class="el_section_ttl hp_mbMd hp_jp">プライバシーポリシー</h2>
         <p class="el_privacy_lead">
             YOGA AMA（以下、当サイト）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全スタッフに個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
         </p>

@@ -7,7 +7,9 @@
     <title><?php echo wp_get_document_title();?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/reset.css" />
-    <link rel="icon" type="image/-icon" href="/img/favicon.ico" />
+    <!-- <link rel="icon" type="image/-icon" href="/img/favicon.ico" /> -->
+    <link rel="shortcut icon" href="<?php bloginfo('template_url');?>/img/favicon.ico">
+
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/common.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/responsive.css" />

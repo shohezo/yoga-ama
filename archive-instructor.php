@@ -4,7 +4,7 @@
 <div class="ly_section hp_ptLg" id="instructor-archive">
     <div class="ly_inner">
         <div class="hp_mbMd">
-            <h2 class="el_section_ttl hp_mbSm">インストラクターのご紹介</h2>
+            <h2 class="el_section_ttl hp_mbSm hp_jp">インストラクターの<br class="hp_br-sp">ご紹介</h2>
             <p class="bl_section_txt hp_centering">
                 経験豊富で個性豊かなインストラクターたち。<br>
                 あなたとの出会いを楽しみにしております。

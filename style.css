@@ -2575,6 +2575,7 @@ main {
 }
 
 #schedule-archive .bl_schedule_date {
+  font-size: 80%;
   margin-right: 30px;
   font-weight: 500;
 }

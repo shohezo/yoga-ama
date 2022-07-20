@@ -6,7 +6,7 @@ Template Name:利用規約ページ
 ?>
 <section class="ly_section hp_ptMd hp_pbLg">
     <div class="ly_inner">
-        <h2 class="el_section_ttl hp_mbMd">利用規約</h2>
+        <h2 class="el_section_ttl hp_mbMd hp_jp">利用規約</h2>
         <div class="bl_row_article hp_mt50 hp_mb50">
             <h3>事業者名
             </h3>
