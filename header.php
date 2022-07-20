@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo wp_get_document_title();?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <!-- OGP -->
+    <meta property="og:url" content="https://yoga-ama.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="yoga-ama" />
+    <meta property="og:description" content="名古屋市のヨガスタジオ | YOGA AMA（ヨガアマ）" />
+    <meta property="og:site_name" content="yoga-ama" />
+    <meta property="og:image" content="https://yoga-ama.com/wp-content/themes/yoga-ama/img/logo.png" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/reset.css" />
     <!-- <link rel="icon" type="image/-icon" href="/img/favicon.ico" /> -->
     <link rel="shortcut icon" href="<?php bloginfo('template_url');?>/img/favicon.ico">
@@ -56,6 +63,8 @@
 <div class="bl_drawer">
     <ul class="bl_drawer_list">
         <!-- 開いたときの中身 -->
+        <!-- <a class="el_btn hp_mbSm" href="<?php bloginfo('url');?>/reserve">ご予約はこちら</a> -->
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/reserve">ご予約</a>
         <li class="bl_drawer_item"><a href="<?php echo esc_url(home_url('/'));?>">ホーム</a></li>
         <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a>
             <ul>

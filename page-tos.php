@@ -25,7 +25,7 @@ Template Name:利用規約ページ
             <h3>代表者名
             </h3>
             <p>
-                代表者の名前
+                井上 靖規
             <p>
         </div>
         <div class="bl_row_article hp_mt50 hp_mb50">
