@@ -26,6 +26,10 @@
   width: 50px;
 }
 
+.el_icon:hover {
+  opacity: 0.5;
+}
+
 .el_tel {
   font-size: 2rem;
   color: #707070;
@@ -42,12 +46,17 @@
 }
 
 .el_btn {
-  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 290px;
+  display: block;
   width: 180px;
   max-width: 100%;
   padding: 15px 15px;
   background-color: #f78f93;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: #fff;
   font-size: inherit;
   text-align: center;
@@ -55,15 +64,14 @@
   -webkit-transition: 0.25s;
   transition: 0.25s;
   border-radius: 50px;
+  overflow: hidden;
 }
 
-.el_btn:hover span::before {
-  right: -30px;
-}
-
-.el_btn:hover span::after {
-  right: -32px;
-  width: 25px;
+.el_btn:hover {
+  background-color: white;
+  border: 1px solid #f78f93;
+  color: #f78f93;
+  opacity: 1;
 }
 
 .el_btn.el_btn__square {
@@ -200,6 +208,10 @@ body.noscroll {
   color: #f78f93;
 }
 
+.bl_drawer_item a:hover {
+  opacity: 0.8;
+}
+
 .bl_drawer_item > ul {
   padding: 0px 0px 0px 20px;
 }
@@ -212,6 +224,10 @@ body.noscroll {
   content: "- ";
   display: inline;
   color: #f78f93;
+}
+
+.bl_drawer_item > ul li:hover {
+  opacity: 0.8;
 }
 
 .bl_drawer_list {
@@ -328,6 +344,10 @@ body.noscroll {
   position: fixed;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#header.HeightMin .el_btn {
+  padding: 10px 10px;
 }
 
 #header.HeightMin .el_logo {
@@ -515,8 +535,18 @@ body.noscroll {
           transform: rotate(-385deg);
 }
 
+.bl_fv_campaign a {
+  opacity: 1 !important;
+}
+
 .bl_fv_campaign img {
   width: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bl_fv_campaign img:hover {
+  width: 120px;
 }
 
 /*--------------------------------
@@ -596,6 +626,10 @@ body.noscroll {
   margin-bottom: 0;
 }
 
+#beginner .el_btn {
+  z-index: 99;
+}
+
 /*--------------------------------
 スケジュールセクション
 --------------------------------*/
@@ -608,8 +642,7 @@ body.noscroll {
   padding-top: 5vh;
   padding-bottom: 8vh;
   max-width: none;
-  background-image: url(./img/schedule-bg.jpeg);
-  z-index: -2;
+  background-image: url(./img/yoga-studio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -618,7 +651,7 @@ body.noscroll {
 
 #schedule .ly_inner::before {
   /* 透過させた黒を重ねる */
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   /* どの範囲に重ねるかを指定 */
   position: absolute;
   top: 0;
@@ -630,7 +663,11 @@ body.noscroll {
 }
 
 #schedule p {
-  width: clamp(300px, 50%, 600px);
+  width: clamp(290px, 50%, 600px);
+}
+
+#schedule .el_btn {
+  z-index: 99;
 }
 
 /*--------------------------------
@@ -653,6 +690,10 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#blog .bl_blog_card:hover {
+  opacity: 0.8;
 }
 
 #blog .bl_blog_thumbnail {
@@ -826,11 +867,17 @@ body.noscroll {
   width: 180px;
 }
 
+#banner .bl_section_imgWrapper:hover {
+  opacity: 0.8;
+}
+
 /* フォトギャラリー */
 #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 30px !important;
   display: inline-block;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック" !important;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif !important;
   width: 180px;
   max-width: 100%;
   padding: 20px 15px !important;
@@ -842,6 +889,7 @@ body.noscroll {
   text-decoration: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  border: 1px solid transparent !important;
   border-radius: 50px !important;
   background-color: #f78f93 !important;
   font-size: 0 !important;
@@ -850,6 +898,12 @@ body.noscroll {
 #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a::after {
   font-size: 1.4rem;
   content: "VIEW MORE";
+}
+
+#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a:hover {
+  background-color: white !important;
+  border: 1px solid #f78f93 !important;
+  color: #f78f93 !important;
 }
 
 #bwg_container1_0
@@ -1316,9 +1370,9 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1358,7 +1412,7 @@ body.noscroll {
   transform: translate(-50%, -50%) rotate(90deg);
   height: 1px;
   width: 10px;
-  background: #f5f5f5;
+  background: #c16065;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   top: 50%;
@@ -1372,7 +1426,7 @@ body.noscroll {
   transform: translate(-50%, -50%);
   height: 1px;
   width: 10px;
-  background: #f5f5f5;
+  background: #c16065;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   top: 50%;
@@ -2807,5 +2861,10 @@ loading animation
 .loading-animation.is-active {
   opacity: 1;
   visibility: visible;
+}
+
+#bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

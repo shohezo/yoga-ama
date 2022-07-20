@@ -8,11 +8,13 @@
                             src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
                 </div>
                 <div class="el_icon">
-                    <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png"
-                            alt="フェイスブックのリンクアイコン" /></a>
+                    <a href="https://www.facebook.com/yogastudioama" target="_blank" rel="noopener noreferrer"><img
+                            src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
                 </div>
                 <div class="el_icon">
-                    <a href="#"><img src="<?php bloginfo('template_url');?>/img/line.png" alt="LINEのリンクアイコン" /></a>
+                    <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=800mbsre" target="_blank"
+                        rel="noopener noreferrer"><img src="<?php bloginfo('template_url');?>/img/line.png"
+                            alt="LINEのリンクアイコン" /></a>
                 </div>
             </div>
         </div>
@@ -62,6 +64,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url');?>/js/script.js"></script>
 <?php wp_footer();?>
+<!-- AOS実装 -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 
 </html>

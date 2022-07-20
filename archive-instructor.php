@@ -23,7 +23,7 @@
             <?php if ($the_query->have_posts()) : ?>
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <article class="bl_card">
-                <figure class="bl_card_imgWrapper">
+                <figure class="bl_card_imgWrapper" data-aos="zoom-in">
                     <?php the_post_thumbnail(); ?>
                 </figure>
                 <div class="bl_card_body">
@@ -46,19 +46,19 @@
         <section class="ly_section hp_pbLg" id="reserve">
             <div class="ly_inner">
                 <h2 class="el_section_ttl">Reserve</h2>
-                <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
-                <div class="bl_section hp_ptSm hp_tac">
-                    <div class="ly_container hp_flex hp_column_tb">
-                        <a class="bl_banner_wrapper">
-                            <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+                <span class="el_section_ttl_sub">ご予約</span>
+                <div class="bl_section hp_tac">
+                    <div class="ly_container hp_flex hp_mtMd hp_column_tb">
+                        <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
+                            <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                         </a>
-                        <a class="bl_banner_wrapper">
-                            <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                        <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
+                            <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                        </a>
                     </div>
                 </div>
             </div>
+        </section>
     </div>
-    </section>
-</div>
 </div>
 <?php get_footer(); ?>

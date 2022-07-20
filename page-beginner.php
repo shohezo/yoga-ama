@@ -10,7 +10,7 @@ Template Name: ビギナーページ
             <!-- キャンペーン -->
             <div id="campaign" class="hp_pbMd">
                 <h2 class="el_section_header">体験キャンペーン実施中!</h2>
-                <figure class="bl_section_imgWrapper hp_ptMd hp_pbSm">
+                <figure class="bl_section_imgWrapper hp_ptMd hp_pbSm" data-aos="fade-up">
                     <img src="<?php bloginfo('template_url');?>/img/campaign_trial.png" alt="" />
                 </figure>
                 <div class="bl_section hp_ptSm hp_tac">
@@ -30,7 +30,7 @@ Template Name: ビギナーページ
                 <div class="bl_section_body">
                     <div>
                         <h3 class="bl_section_header hp_mb10">Point 01</h3>
-                        <h3 class="bl_section_header hp_mb30">
+                        <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                             セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                         </h3>
                     </div>
@@ -50,7 +50,7 @@ Template Name: ビギナーページ
                 </figure>
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 02</h3>
-                    <h3 class="bl_section_header hp_mb30">
+                    <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                         セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                     </h3>
                     <p class="bl_section_txt">
@@ -69,7 +69,7 @@ Template Name: ビギナーページ
                 </figure>
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 03</h3>
-                    <h3 class="bl_section_header hp_mb30">
+                    <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                         セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
                     </h3>
                     <p class="bl_section_txt">
@@ -88,7 +88,7 @@ Template Name: ビギナーページ
         <div class="ly_inner">
             <h2 class="el_section_ttl">Voice</h2>
             <span class="el_section_ttl_sub hp_mbSm">お客様からのお声</span>
-            <div class="bl_section hp_flex hp_ptSm">
+            <div class="bl_section hp_flex hp_ptSm" data-aos="zoom-in">
                 <div class="bl_section_card">
                     <figure class="bl_section_imgWrapper hp_mb10">
                         <img src="<?php bloginfo('template_url');?>/img/voice01.png" alt="女性のイラスト" />
@@ -151,17 +151,17 @@ Template Name: ビギナーページ
     <section class="ly_section hp_ptLg hp_pbLg" id="reserve">
         <div class="ly_inner">
             <h2 class="el_section_ttl">Reserve</h2>
-            <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
-            <div class="bl_section hp_ptSm hp_tac">
-                <div class="ly_container hp_flex hp_column_tb">
-                    <a class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+            <span class="el_section_ttl_sub">ご予約</span>
+            <div class="bl_section hp_tac">
+                <div class="ly_container hp_flex hp_mtMd hp_column_tb">
+                    <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                     </a>
-                    <a class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                    <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                    </a>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 </article>

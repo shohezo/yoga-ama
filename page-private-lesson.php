@@ -22,7 +22,7 @@ Template Name: プライベートレッスンページ
             </figure>
             <div class="bl_section_body">
                 <div>
-                    <h3 class="bl_section_header hp_mb30">
+                    <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                         周りを気にせず自分１人のしずかな空間で、質の高いレッスンを。 </h3>
                 </div>
                 <p class="bl_section_txt">
@@ -146,17 +146,17 @@ Template Name: プライベートレッスンページ
 <section class="ly_section hp_ptLg hp_pbLg" id="reserve">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Reserve</h2>
-        <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
-        <div class="bl_section hp_ptSm hp_tac">
-            <div class="ly_container hp_flex hp_column_tb">
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+        <span class="el_section_ttl_sub">ご予約</span>
+        <div class="bl_section hp_tac">
+            <div class="ly_container hp_flex hp_mtMd hp_column_tb">
+                <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                 </a>
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                </a>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <?php get_footer(); ?>

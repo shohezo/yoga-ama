@@ -419,12 +419,10 @@
   .bl_drawerBtn {
     left: -280px;
   }
-  .el_section_ttl {
-    font-size: 3rem;
-  }
+
   .el_btn {
-    display: table;
     margin: 0 auto;
+    border-radius: 50px;
   }
   .bl_section {
     &_header {

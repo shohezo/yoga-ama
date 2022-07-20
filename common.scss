@@ -43,6 +43,9 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   a {
     text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   img {
     max-width: 100%;
@@ -285,9 +288,11 @@ body {
   clear: both;
 }
 .hp_centering {
-  display: table !important;
+  display: block;
   margin-left: auto !important;
   margin-right: auto !important;
+  border-spacing: 0 !important;
+  border-collapse: separate !important;
 }
 .hp_green {
   color: $green;

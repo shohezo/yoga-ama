@@ -18,6 +18,10 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  opacity: 0.8;
+}
+
 body img {
   max-width: 100%;
   vertical-align: bottom;
@@ -328,9 +332,11 @@ body img {
 }
 
 .hp_centering {
-  display: table !important;
+  display: block;
   margin-left: auto !important;
   margin-right: auto !important;
+  border-spacing: 0 !important;
+  border-collapse: separate !important;
 }
 
 .hp_green {

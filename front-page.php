@@ -13,16 +13,18 @@ Template Name: フロントページ
                     src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
         </div>
         <div class="el_icon">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img
+            <a href="https://www.facebook.com/yogastudioama" target="_blank" rel="noopener noreferrer"><img
                     src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
         </div>
         <div class="el_icon">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img
-                    src="<?php bloginfo('template_url');?>/img/line.png" alt="LINEのリンクアイコン" /></a>
+            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=800mbsre" target="_blank"
+                rel="noopener noreferrer"><img src="<?php bloginfo('template_url');?>/img/line.png"
+                    alt="LINEのリンクアイコン" /></a>
         </div>
     </div>
     <div class="bl_fv_copy">
-        <div class="bl_fv_copy_main">人生<span>に</span>ヨガ<span>を! </span></div>
+        <div class="bl_fv_copy_main" data-aos="fade-right" data-aos-duration="3000">人生<span>に</span>ヨガ<span>を! </span>
+        </div>
         <div class="bl_fv_copy_txt">YOGA AMAはヨガと通じて</div>
         <div class="bl_fv_copy_txt">あなたの生活をサポートする</div>
         <div class="bl_fv_copy_txt">本郷初のヨガスタジオです。</div>
@@ -44,7 +46,7 @@ Template Name: フロントページ
                 <img src="<?php bloginfo('template_url');?>/img/concept.jpg" alt="ヨガのレッスン風景" />
             </figure>
             <div class="bl_section_body">
-                <h3 class="bl_section_header hp_mb30">
+                <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                     頑張りすぎた<br />ココロとカラダへ。
                 </h3>
                 <p class="bl_section_txt">
@@ -63,7 +65,7 @@ Template Name: フロントページ
                 <img src="<?php bloginfo('template_url');?>/img/front_page_beginner.jpg" alt="ヨガをする親子" />
             </figure>
             <div class="bl_section_body">
-                <h3 class="bl_section_header hp_mb30">
+                <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
                     YOGA AMAでヨガデビュー
                 </h3>
                 <p class="bl_section_txt">
@@ -74,7 +76,7 @@ Template Name: フロントページ
                 </p>
             </div>
         </div>
-        <a href="#" class="el_btn hp_mtSm hp_centering"><span>VIEW MORE</span></a>
+        <a href="<?php bloginfo('url');?>/beginner" class="el_btn hp_mtSm"><span>VIEW MORE</span></a>
     </div>
 </section>
 <section class="ly_section hp_ptLg" id="schedule">
@@ -82,11 +84,11 @@ Template Name: フロントページ
         <h2 class="el_section_ttl">Schedule</h2>
         <span class="el_section_ttl_sub hp_mbSm">スケジュール</span>
         <div class="bl_section hp_ptSm hp_tac">
-            <p class="hp_centering hp_mbMd">
+            <p class="hp_centering hp_mbMd" data-aos="fade-up">
                 YOGA AMAではバラエティに富んだクラスを毎月更新しています！<br>
                 こちらからぜひご覧ください。<br>
             </p>
-            <a href="#" class="el_btn"><span>VIEW MORE</span></a>
+            <a href="<?php bloginfo('url');?>/schedule" class="el_btn"><span>VIEW MORE</span></a>
         </div>
     </div>
 </section>
@@ -97,7 +99,7 @@ Template Name: フロントページ
         <div class="bl_blog_list hp_ptSm">
             <!-- メインループ始まり -->
             <?php if(have_posts()):while(have_posts()):the_post(); ?>
-            <a class="bl_blog_card" href="<?php the_permalink();?>">
+            <a class="bl_blog_card" data-aos="fade-up" href="<?php the_permalink();?>">
                 <div class="bl_blog_thumbnail">
                     <?php the_post_thumbnail();?>
                 </div>
@@ -120,8 +122,7 @@ Template Name: フロントページ
             <?php endwhile;endif; ?>
         </div>
     </div>
-    <a href="#" class="el_btn hp_centering hp_mtSm"><span>VIEW MORE</span></a>
-    </div>
+    <a href="#" class="el_btn hp_mtSm"><span>VIEW MORE</span></a>
 </section>
 <section class="ly_section hp_ptLg" id="reserve">
     <div class="ly_inner">
@@ -137,7 +138,6 @@ Template Name: フロントページ
                 </a>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <section class="ly_section hp_ptLg" id="photo">
@@ -182,14 +182,18 @@ Template Name: フロントページ
 <section class="ly_section" id="banner">
     <div class="ly_inner">
         <div class="bl_section hp_tac hp_flex hp_jcsb hp_column_sp">
-            <div class="bl_section_imgWrapper">
-                <img src="<?php bloginfo('template_url');?>/img/seitai.jpeg" alt="">
+            <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://seitai-ama.com/" target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/seitai.jpeg" alt="本郷駅前整体 アマのリンク画像"></a>
             </div>
-            <div class="bl_section_imgWrapper">
-                <img src="<?php bloginfo('template_url');?>/img/yg-banner-150-150.jpeg" alt="">
+            <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="2500">
+                <a href="https://shop.yoga-gene.com/?gclid=CjwKCAjwrNmWBhA4EiwAHbjEQKPinnblm_TWTuxv21rFAppjoC0uJsq98XoETxR7mP1os5flfAcokBoCOzQQAvD_BwE"
+                    target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/yg-banner-150-150.jpeg" alt="ヨガジェネレーションのリンク画像"></a>
             </div>
-            <div class="bl_section_imgWrapper">
-                <img src="<?php bloginfo('template_url');?>/img/acro-yoga-japan.jpeg" alt="">
+            <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="3000">
+                <a href="https://acroyogajapan.tokyo/" target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/acro-yoga-japan.jpeg" alt=""></a>
             </div>
         </div>
     </div>

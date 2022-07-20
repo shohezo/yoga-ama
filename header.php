@@ -7,7 +7,7 @@
     <title><?php echo wp_get_document_title();?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/reset.css" />
-    <link rel="icon" type="image/-icon" href="./img/favicon.ico" />
+    <link rel="icon" type="image/-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/common.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/responsive.css" />
@@ -43,13 +43,24 @@
         s.parentNode.insertBefore(tk, s)
     })(document);
     </script>
+    <!-- aosライブラリの読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type=" text/javascript" src="./js/jquery-migrate-1.4.1.min.js"></script>
+
 </head>
 <!-- ドロワーメニュー -->
 <div class="bl_drawer">
     <ul class="bl_drawer_list">
         <!-- 開いたときの中身 -->
         <li class="bl_drawer_item"><a href="<?php echo esc_url(home_url('/'));?>">ホーム</a></li>
-        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a></li>
+        <li class="bl_drawer_item"><a href="<?php bloginfo('url');?>/beginner">初めての方へ</a>
+            <ul>
+                <li><a href="<?php bloginfo('url');?>/price/faq">よくある質問</a></li>
+            </ul>
+        </li>
+
         <li class=" bl_drawer_item"><a href="<?php bloginfo('url');?>/price">料金</a>
             <ul>
                 <li><a href="<?php bloginfo('url');?>/price/private-lesson">出張レッスン</a></li>
@@ -65,7 +76,13 @@
                         src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
             </div>
             <div class="el_icon">
-                <a href="#"><img src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
+                <a href="https://www.facebook.com/yogastudioama" target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/icon_fb.png" alt="フェイスブックのリンクアイコン" /></a>
+            </div>
+            <div class="el_icon">
+                <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=800mbsre" target="_blank"
+                    rel="noopener noreferrer"><img src="<?php bloginfo('template_url');?>/img/line.png"
+                        alt="LINEのリンクアイコン" /></a>
             </div>
         </div>
     </ul>

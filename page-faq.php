@@ -4,15 +4,17 @@
 Template Name: faqページ
 */
 ?>
-<section class="ly_section hp_ptMd hp_pbLg" id="faq-p">
+<section class="ly_section hp_ptMd" id="faq-p">
     <div class="ly_inner">
         <h2 class="el_section_ttl hp_mbMd hp_jp">よくある質問</h2>
         <div class="bl_faq_container">
             <ul class="bl_faq_list">
                 <li class="bl_faq_item_question open">
-                    <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
                     <div class="hp_flex hp_aic">
-                        <p>ヨガをする時に、何を着たらいいの？</p>
+                        <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                        <div class="hp_flex hp_aic">
+                            <p>ヨガをする時に、何を着たらいいの？</p>
+                        </div>
                     </div>
                     <div class="el_faq_icon">
                     </div>
@@ -31,10 +33,12 @@ Template Name: faqページ
                 </div>
             </ul>
             <ul class="bl_faq_list">
-                <li class="bl_faq_item_question open">
-                    <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                <li class="bl_faq_item_question">
                     <div class="hp_flex hp_aic">
-                        <p>何を持って行ったらいいの？</p>
+                        <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                        <div class="hp_flex hp_aic">
+                            <p>何を持って行ったらいいの？</p>
+                        </div>
                     </div>
                     <div class="el_faq_icon">
                     </div>
@@ -52,10 +56,12 @@ Template Name: faqページ
                 </div>
             </ul>
             <ul class="bl_faq_list">
-                <li class="bl_faq_item_question open">
-                    <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                <li class="bl_faq_item_question">
                     <div class="hp_flex hp_aic">
-                        <p>初心者にはどのクラスがオススメなの？</p>
+                        <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                        <div class="hp_flex hp_aic">
+                            <p>初心者にはどのクラスがオススメなの？</p>
+                        </div>
                     </div>
                     <div class="el_faq_icon">
                     </div>
@@ -74,10 +80,12 @@ Template Name: faqページ
                 </div>
             </ul>
             <ul class="bl_faq_list">
-                <li class="bl_faq_item_question open">
-                    <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                <li class="bl_faq_item_question">
                     <div class="hp_flex hp_aic">
-                        <p>身体が超硬い私でもできるの？</p>
+                        <img src="<?php bloginfo('template_url');?>/img/q.png" alt="">
+                        <div class="hp_flex hp_aic">
+                            <p>身体が超硬い私でもできるの？</p>
+                        </div>
                     </div>
                     <div class="el_faq_icon">
                     </div>
@@ -103,17 +111,17 @@ Template Name: faqページ
 <section class="ly_section hp_ptLg hp_pbLg" id="reserve">
     <div class="ly_inner">
         <h2 class="el_section_ttl">Reserve</h2>
-        <span class="el_section_ttl_sub hp_mbSm">ご予約</span>
-        <div class="bl_section hp_ptSm hp_tac">
-            <div class="ly_container hp_flex hp_column_tb">
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="予約バナー画像" />
+        <span class="el_section_ttl_sub">ご予約</span>
+        <div class="bl_section hp_tac">
+            <div class="ly_container hp_flex hp_mtMd hp_column_tb">
+                <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                 </a>
-                <a class="bl_banner_wrapper">
-                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="れ" />
+                <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
+                    <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                </a>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <?php get_footer(); ?>

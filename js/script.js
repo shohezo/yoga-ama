@@ -43,7 +43,7 @@ function FixedAnime() {
     $("#header").addClass("HeightMin"); //#headerについているHeightMinというクラス名を付与
     $(".bl_drawerBtn").addClass("HeightMin"); //#headerについているHeightMinというクラス名を付与
   } else {
-    $("#header").removeClass("HeightMin"); 
+    $("#header").removeClass("HeightMin");
     $("#header").removeClass("HeightMin"); //HeightMinというクラス名を除去
   }
 }
@@ -77,4 +77,13 @@ $(function () {
     }
   };
   webStorage();
+});
+
+/* AOS */
+$(document).ready(function () {
+  /* animation */
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
 });
