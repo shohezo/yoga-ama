@@ -14,7 +14,7 @@ Template Name: プライスページ
                 <img src="<?php bloginfo('template_url');?>/img/campaign_introduction.png" alt="" />
             </figure>
             <div class="bl_section hp_ptSm hp_tac">
-                <p class="bl_section_txt hp_centering">
+                <p class="bl_section_txt hp_tac">
                     YOGA AMAでは健康になりたい、美しくなりたい、不安少なく心穏やかに過ごしたい、などヨガを通して今の自分を変えたい人のコミュニティの形成を目指しています。
                     YOGA AMAをお知り合いへご紹介頂き、ご紹介された方が初回体験日に入会した場合、
                     紹介した方、紹介された方共に1レッスンプレゼントしております。
@@ -26,7 +26,7 @@ Template Name: プライスページ
         <div class=" ly_inner">
             <div class="hp_mbMd">
                 <h2 class="el_section_ttl hp_mbSm">YOGA AMAのプラン</h2>
-                <p class="bl_section_txt hp_centering">
+                <p class="bl_section_txt hp_tac">
                     ヨガアマでは、お客様のライフスタイルに合わせた<br>
                     様々なプランをご用意しております。
                 </p>
@@ -268,7 +268,7 @@ Template Name: プライスページ
             <div class="hp_mbMd">
                 <h2 class="el_section_ttl">オンラインプラン</h2>
                 <div class="bl_section hp_ptSm hp_tac">
-                    <p class="bl_section_txt hp_centering">
+                    <p class="bl_section_txt hp_tac">
                         ヨガアマでは、オンライン利用もできる月会費プランをはじめ、<br>
                         ご都合に合わせたプランをご用意しております。
                     </p>
@@ -482,7 +482,7 @@ Template Name: プライスページ
             <div class="hp_mbMd">
                 <h2 class="el_section_ttl">シニア向けプラン</h2>
                 <div class="bl_section hp_ptSm hp_tac">
-                    <p class="bl_section_txt hp_centering">
+                    <p class="bl_section_txt hp_tac">
                         ヨガアマでは、シニアの方にもヨガを楽しんでいただけるように<br>
                         専用プランをご用意しております。
                     </p>

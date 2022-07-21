@@ -6,7 +6,7 @@ Template Name: リザーブページ
 
 ?>
 <section class="ly_section hp_ptLg hp_pbLg" id="reserve-page">
-    <section class="ly_section hp_ptLg hp_pbSm" id="lead">
+    <section class="ly_section hp_pbSm" id="lead">
         <div class=" ly_inner">
             <h2 class="el_section_ttl hp_jp">ご予約はこちら</h2>
             <div class="bl_section hp_ptSm hp_tac">

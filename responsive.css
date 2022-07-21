@@ -471,6 +471,9 @@
   #access .bl_section_body {
     width: 80%;
   }
+  #access .bl_section_txt {
+    text-align: center;
+  }
   .bl_footer_side {
     margin-right: 0px;
     margin-bottom: 30px;

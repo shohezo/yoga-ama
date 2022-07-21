@@ -1895,11 +1895,13 @@ body.noscroll {
   }
   .bl_card_type {
     display: block;
-    margin-bottom: 20px;
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
     color: $black;
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
   }
   .bl_section_body > *:last-child {
     margin-bottom: 0;

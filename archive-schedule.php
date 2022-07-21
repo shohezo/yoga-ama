@@ -4,8 +4,8 @@
     <div class="ly_inner">
         <div class="hp_mbMd">
             <h2 class="el_section_ttl hp_mbSm hp_jp">スケジュールはこちら</h2>
-            <p class="bl_section_txt hp_centering">
-                ヨガアマでは、お客様のライフスタイルに合わせた<br class="hp_br-pc">様々なプランをご用意しております。
+            <p class="bl_section_txt hp_tac">
+                お客様に楽しく続けていただけるよう<br class="hp_br-pc">毎月更新しております。
             </p>
         </div>
         <div class="bl_schedule_wrapper">
