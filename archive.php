@@ -3,10 +3,6 @@
     <div class="ly_inner">
         <div class="hp_mbMd">
             <h2 class="el_section_ttl hp_mbSm">YOGA AMAブログ</h2>
-            <p class="bl_section_txt hp_centering">
-                ヨガアマでは、お客様のライフスタイルに合わせた<br>
-                様々なプランをご用意しております。
-            </p>
         </div>
         <ul class="bl_blog_list hp_mtSm">
             <!-- メインループ始まり -->
