@@ -1911,6 +1911,10 @@ body.noscroll {
     width: 150px;
     margin: 0 auto;
   }
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 /*--------------------------------
@@ -1955,9 +1959,8 @@ body.noscroll {
     max-width: 1180px;
   }
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-    width: 60%;
-    height: 60%;
-    min-width: 150px;
+    width: 150px;
+    height: 150px;
   }
 }
 
