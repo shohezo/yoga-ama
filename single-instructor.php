@@ -11,20 +11,32 @@
             <div class="hp_mbMd">
                 <p class="bl_section_header">Profile</p>
                 <div class="bl_section_txt">
-                    <?php echo CFS()->get('career'); ?>
+                    <?php echo CFS()->get("career"); ?>
                 </div>
             </div>
             <p class="bl_section_header">Message</p>
             <div class="bl_section_txt">
-                <?php echo CFS()->get('message'); ?>
+                <?php echo CFS()->get("message"); ?>
             </div>
         </div>
     </div>
     <div class="ly_inner">
-        <div class="el_icon">
-            <a href="<?php echo CFS()->get('Instagram'); ?>" target="_blank" rel="noopener noreferrer"><img
-                    src="<?php bloginfo('template_url');?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
-        </div>
+        <?php if (have_posts()): ?>
+        <?php while (have_posts()):
+            the_post(); ?>
+        <p><?php the_content(); ?></p>
+        <?php
+        endwhile; ?>
+        <?php endif; ?>
+
+        <!-- <div class="el_icon">
+            <a href="<?php echo CFS()->get(
+                "Instagram"
+            ); ?>" target="_blank" rel="noopener noreferrer"><img
+                    src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/icon_insta.png" alt="インスタグラムのリンクアイコン" /></a>
+        </div> -->
     </div>
 </div>
 <?php get_footer(); ?>
