@@ -9,14 +9,14 @@
         </div>
         <div class="ly_section_right">
             <div class="hp_mbMd">
-                <p class="bl_section_header">Profile</p>
+                <p class="bl_section_header">Message</p>
                 <div class="bl_section_txt">
-                    <?php echo CFS()->get("career"); ?>
+                    <?php echo CFS()->get("message"); ?>
                 </div>
             </div>
-            <p class="bl_section_header">Message</p>
+            <p class="bl_section_header">Profile</p>
             <div class="bl_section_txt">
-                <?php echo CFS()->get("message"); ?>
+                <?php echo CFS()->get("career"); ?>
             </div>
         </div>
     </div>
