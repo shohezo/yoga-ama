@@ -10,6 +10,7 @@
         <div class="ly_section_right">
             <div class="hp_mbMd">
                 <p class="bl_section_header">Message</p>
+<<<<<<< HEAD
                 <div class="bl_section_txt">
                     <?php echo CFS()->get("message"); ?>
                 </div>
@@ -28,6 +29,15 @@
                 <p><?php echo CFS()->get("lesson04"); ?></p>
                 <p><?php echo CFS()->get("lesson05"); ?></p>
                 <p><?php echo CFS()->get("lesson06"); ?></p>
+=======
+                <div class="bl_section_txt">
+                    <?php echo CFS()->get("message"); ?>
+                </div>
+            </div>
+            <p class="bl_section_header">Profile</p>
+            <div class="bl_section_txt">
+                <?php echo CFS()->get("career"); ?>
+>>>>>>> f0740e124189947df60e43aca35da0688bad0b74
             </div>
         </div>
     </div>
