@@ -111,7 +111,7 @@
     //   width: 120px;
     // }
     .bl_card {
-      width: 40%;
+      width: 100%;
     }
   }
   /* プライスページ*/
@@ -255,6 +255,12 @@
         width: 100%;
         gap: 10px;
       }
+    }
+  }
+  #access {
+    .bl_section_txt {
+      padding-left: 0vw;
+      padding-right: 0vw;
     }
   }
   /* ビギナーページ */

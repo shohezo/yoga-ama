@@ -122,7 +122,7 @@ Template Name: フロントページ
             <?php endwhile;endif; ?>
         </div>
     </div>
-    <a href="#" class="el_btn hp_mtSm"><span>VIEW MORE</span></a>
+    <a href="<?php bloginfo('url');?>/blog" class="el_btn hp_mtSm"><span>VIEW MORE</span></a>
 </section>
 <section class="ly_section hp_ptLg" id="reserve">
     <div class="ly_inner">
@@ -182,9 +182,13 @@ Template Name: フロントページ
 <section class="ly_section" id="banner">
     <div class="ly_inner">
         <div class="bl_section hp_tac hp_flex hp_jcsb hp_column_sp">
+            <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="1500">
+                <a href="http://ama-hongou.info/index.php" target="_blank" rel="noopener noreferrer"><img
+                        src="<?php bloginfo('template_url');?>/img/banner_onlinestore.png" alt="オンラインストアリンク画像"></a>
+            </div>
             <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="2000">
                 <a href="https://seitai-ama.com/" target="_blank" rel="noopener noreferrer"><img
-                        src="<?php bloginfo('template_url');?>/img/seitai.jpeg" alt="本郷駅前整体 アマのリンク画像"></a>
+                        src="<?php bloginfo('template_url');?>/img/seitai.jpeg" alt="本郷駅前整体アマのリンク画像"></a>
             </div>
             <div class="bl_section_imgWrapper" data-aos="fade-up" data-aos-duration="2500">
                 <a href="https://shop.yoga-gene.com/?gclid=CjwKCAjwrNmWBhA4EiwAHbjEQKPinnblm_TWTuxv21rFAppjoC0uJsq98XoETxR7mP1os5flfAcokBoCOzQQAvD_BwE"

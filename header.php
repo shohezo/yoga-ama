@@ -199,7 +199,7 @@
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/private-lesson.jpg" alt="">
         <h2>PRIVATE LESSON</h2>
-    </div>>
+    </div>
     <?php }else if(is_page('rental')){?>
     <div class="ly_heading hp_blackfilter">
         <img src="<?php bloginfo('template_url');?>/img/rental.jpg" alt="">

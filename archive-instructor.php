@@ -36,6 +36,11 @@
                     <span class="bl_card_type"><?php echo $label; ?></span>
                     <?php endforeach; ?>
                     <!-- typeここまで -->
+                    <div class="bl_card_lesson">
+                        <p>メインレッスン</p>
+                        <p><?php echo CFS()->get("lesson01"); ?></p>
+                        <p><?php echo CFS()->get("lesson02"); ?></p>
+                    </div>
                     <a href="<?php the_permalink(); ?>" class="el_btn el_btn__square hp_mb10">
                         PROFILE
                     </a>

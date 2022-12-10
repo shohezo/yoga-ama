@@ -92,7 +92,7 @@
   }
   /* アーカイブページ（インストラクター） */
   #instructor-archive .bl_card {
-    width: 40%;
+    width: 100%;
   }
   /* プライスページ*/
   #price-page #ticket .bl_system_body,
@@ -239,6 +239,10 @@
   #blog .bl_blog_card {
     width: 100%;
     gap: 10px;
+  }
+  #access .bl_section_txt {
+    padding-left: 0vw;
+    padding-right: 0vw;
   }
   /* ビギナーページ */
   #beginner-page.ly_section {

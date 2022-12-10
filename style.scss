@@ -1872,7 +1872,7 @@ body.noscroll {
   .bl_card {
     margin-bottom: 150px;
     display: block;
-    width: 20%;
+    width: 30%;
     text-align: center;
   }
   .bl_card_imgWrapper {
@@ -1903,6 +1903,44 @@ body.noscroll {
       margin-bottom: 20px;
     }
   }
+  .bl_card_lesson {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $primaryDark;
+    margin-bottom: 20px;
+    span.text::after {
+      content: "\f138";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-left: 10px;
+      color: $primary;
+    }
+    span {
+      position: relative;
+      color: $black;
+      .fa-solid.fa-circle-chevron-right {
+        color: $primary;
+      }
+      &::before {
+        background: $primary;
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        margin: auto;
+        transform-origin: right top;
+        transform: scale(0, 1);
+        transition: transform 0.3s;
+      }
+      &:hover::before {
+        transform-origin: center top;
+        transform: scale(1, 1);
+      }
+    }
+  }
   .bl_section_body > *:last-child {
     margin-bottom: 0;
   }
@@ -1910,6 +1948,10 @@ body.noscroll {
     display: block;
     width: 150px;
     margin: 0 auto;
+  }
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -1928,7 +1970,7 @@ body.noscroll {
       }
     }
     .bl_section_name {
-      @include shuei-minchou();
+      @include josefin-sans();
       width: 100%;
       text-align: center;
       display: block;
@@ -1946,8 +1988,38 @@ body.noscroll {
       font-size: 3rem;
       width: 80%;
     }
+
     .bl_section_txt {
       width: 80%;
+      span.text::after {
+        content: "\f138";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: 10px;
+        color: $primary;
+      }
+      span {
+        position: relative;
+        color: $black;
+
+        &::before {
+          background: $primary;
+          content: "";
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          margin: auto;
+          transform-origin: right top;
+          transform: scale(0, 1);
+          transition: transform 0.3s;
+        }
+        &:hover::before {
+          transform-origin: center top;
+          transform: scale(1, 1);
+        }
+      }
     }
   }
   .el_icon {
@@ -1955,9 +2027,8 @@ body.noscroll {
     max-width: 1180px;
   }
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-    width: 60%;
-    height: 60%;
-    min-width: 150px;
+    width: 150px;
+    height: 150px;
   }
 }
 

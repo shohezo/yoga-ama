@@ -2182,7 +2182,7 @@ body.noscroll {
 #instructor-archive .bl_card {
   margin-bottom: 150px;
   display: block;
-  width: 20%;
+  width: 30%;
   text-align: center;
 }
 
@@ -2227,6 +2227,57 @@ body.noscroll {
   margin-bottom: 20px;
 }
 
+#instructor-archive .bl_card_lesson {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #c16065;
+  margin-bottom: 20px;
+}
+
+#instructor-archive .bl_card_lesson span.text::after {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+  color: #f78f93;
+}
+
+#instructor-archive .bl_card_lesson span {
+  position: relative;
+  color: #707070;
+}
+
+#instructor-archive .bl_card_lesson span .fa-solid.fa-circle-chevron-right {
+  color: #f78f93;
+}
+
+#instructor-archive .bl_card_lesson span::before {
+  background: #f78f93;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  margin: auto;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#instructor-archive .bl_card_lesson span:hover::before {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
 #instructor-archive .bl_section_body > *:last-child {
   margin-bottom: 0;
 }
@@ -2235,6 +2286,11 @@ body.noscroll {
   display: block;
   width: 150px;
   margin: 0 auto;
+}
+
+#instructor-archive img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  height: 150px;
+  width: 150px;
 }
 
 /*--------------------------------
@@ -2256,8 +2312,8 @@ body.noscroll {
 }
 
 #single-instructor .ly_section_left .bl_section_name {
-  font-family: dnp-shuei-mincho-pr6n, sans-serif;
-  font-weight: 500;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
   font-style: normal;
   color: #c16065;
   width: 100%;
@@ -2287,15 +2343,53 @@ body.noscroll {
   width: 80%;
 }
 
+#single-instructor .ly_section_right .bl_section_txt span.text::after {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+  color: #f78f93;
+}
+
+#single-instructor .ly_section_right .bl_section_txt span {
+  position: relative;
+  color: #707070;
+}
+
+#single-instructor .ly_section_right .bl_section_txt span::before {
+  background: #f78f93;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  margin: auto;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#single-instructor .ly_section_right .bl_section_txt span:hover::before {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
 #single-instructor .el_icon {
   display: block;
   max-width: 1180px;
 }
 
 #single-instructor img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-  width: 60%;
-  height: 60%;
-  min-width: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 /*--------------------------------

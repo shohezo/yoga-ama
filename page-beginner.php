@@ -15,9 +15,9 @@ Template Name: ビギナーページ
                 </figure>
                 <div class="bl_section hp_ptSm hp_tac">
                     <p class="bl_section_txt hp_centering">
-                        ヨガに興味はあるけど、ハードルが高そう…。雰囲気だけでも味わってみたい。
-                        YOGA AMAではそんな方の第一歩を後押ししたいと思い、初回に限りヨガの体験（1,100円）を行っています。
-                        体験日に回数券チケットをご購入いただいたお客様は会員登録料無料をプレゼントさせていただきます。
+                        ヨガに興味はあるけど、ハードルが高そう…。雰囲気だけでも味わってみたい。<br />
+                        YOGA AMAではそんな方の第一歩を後押ししたいと思い、<br class="hp_br-pc">初回に限りヨガの体験（1,100円）を行っています。<br />
+                        体験日に回数券チケットをご購入いただいたお客様は会員登録料無料を<br class="hp_br-pc hp_br-sp">プレゼントさせていただきます。
                     </p>
                 </div>
             </div>
@@ -31,16 +31,16 @@ Template Name: ビギナーページ
                     <div>
                         <h3 class="bl_section_header hp_mb10">Point 01</h3>
                         <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
-                            セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                            少人数制でアットホームなスタジオ
                         </h3>
                     </div>
                     <p class="bl_section_txt">
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        参加者様の状態や目的に合わせて的確なアドバイスや指導がしっかりと行き届く環境は、少人数制を採用している当スタジオならでは。<br />
+                        日々、お身体の小さな変化も感じて頂きやすいです。<br />
+                        また、インストラクターともオン・オフラインに関わらず気軽に質問できる体制を整えております。<br />
+                        <br />
+                        小さなお子様連れがOKなクラスもご用意。見守り付きなのでママさん達に大好評。<br />
+                        お子さん寝かしつけ率90％以上（!?）との噂も。
                     </p>
                 </div>
             </div>
@@ -51,15 +51,13 @@ Template Name: ビギナーページ
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 02</h3>
                     <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
-                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                        選べる豊富な<br class="hp_br-sp">インストラクターとレッスン。<br />
+                        他では受けられない特殊なレッスンも。
                     </h3>
                     <p class="bl_section_txt">
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        好みや目的に合わせて選べるレッスンとインストラクター。<br />
+                        名古屋のスタジオではここAMAでしか受けられないレッスンも多数ご用意しています。<br />
+                        目的のレッスンを受けるために名古屋市外から通われている方も。<br />
                     </p>
                 </div>
             </div>
@@ -70,15 +68,12 @@ Template Name: ビギナーページ
                 <div class="bl_section_body">
                     <h3 class="bl_section_header hp_mb10">Point 03</h3>
                     <h3 class="bl_section_header hp_mb30" data-aos="fade-up">
-                        セクションヘッダーが入ります。<br />セクションヘッダーが入ります。
+                        併設の整体サロンでメンテナンス。
                     </h3>
                     <p class="bl_section_txt">
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
-                        YOGA AMA様の強みYOGA AMA様の強み<br />
+                        レッスン前後の隙間時間に受けられる「ドライヘッドスパ」から全身の歪みを整えて不調を解消する
+                        「整体メニュー」まで、ヨガと整体で心身の健康をトータルでケアできます。<br />
+                        ヨガ会員様限定のメンテナンスメニューも多くのお客様に喜ばれております。<br />
                     </p>
                 </div>
             </div>
