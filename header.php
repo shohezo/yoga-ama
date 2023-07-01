@@ -185,6 +185,11 @@
         <img src="<?php bloginfo('template_url');?>/img/tos.jpg" alt="">
         <h2>TERMS OF SERVICE</h2>
     </div>
+    <?php }else if(is_page('cancel')){?>
+    <div class="ly_heading">
+        <img src="<?php bloginfo('template_url');?>/img/tos.jpg" alt="">
+        <h2>CANCEL POLICY</h2>
+    </div>
     <?php }else if(is_page('beginner')){?>
     <div class="ly_heading">
         <img src="<?php bloginfo('template_url');?>/img/beginner.jpg" alt="">

@@ -38,6 +38,7 @@
             <ul class="bl_footer_nav">
                 <li><a href="<?php bloginfo('url');?>/contact">お問い合わせ</a></li>
                 <li><a href="<?php bloginfo('url');?>/privacy">プライバシーポリシー</a></li>
+                <li><a href="<?php bloginfo('url');?>/cancel">キャンセルポリシー</a></li>
                 <li><a href="<?php bloginfo('url');?>/tos">利用規約</a></li>
             </ul>
         </div>
