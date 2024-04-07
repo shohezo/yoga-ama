@@ -55,7 +55,7 @@ Template Name: プライスページ
                                     <p class="bl_plan_service_name">マンスリーフリー</p>
                                     <p class="bl_price_price bl_price_price__white">
                                         <span>月額</span>
-                                        13,200<span>円(税込)</span>
+                                        15,900<span>円(税込)</span>
                                     </p>
                                 </div>
                             </th>
@@ -64,7 +64,7 @@ Template Name: プライスページ
                                     <p class="bl_plan_service_name">マンスリー6</p>
                                     <p class="bl_price_price bl_price_price__white">
                                         <span>月額</span>
-                                        8,800<span>円(税込)</span>
+                                        10,500<span>円(税込)</span>
                                     </p>
                                 </div>
                             </th>
@@ -73,7 +73,7 @@ Template Name: プライスページ
                                     <p class="bl_plan_service_name">マンスリー4</p>
                                     <p class="bl_price_price bl_price_price__white">
                                         <span>月額</span>
-                                        6,600<span>円(税込)</span>
+                                        7,900<span>円(税込)</span>
                                     </p>
                                 </div>
                             </th>
@@ -95,8 +95,8 @@ Template Name: プライスページ
                         <tr class="hp_flex">
                             <th class="fixed01">追加受講</th>
                             <td>-</td>
-                            <td>7回目からは別途1,100円/回</td>
-                            <td>5回目からは別途1,100円/回</td>
+                            <td>7回目からは別途1,500円/回</td>
+                            <td>5回目からは別途1,500円/回</td>
                         </tr>
                         <tr class="hp_flex">
                             <th class="fixed01">誕生日特典</th>
@@ -118,10 +118,10 @@ Template Name: プライスページ
             <div class="bl_notice">
                 <p class="bl_notice_title">ご注意事項</p>
                 <ul>
-                    <li>※会員登録手数料が2,200円かかります。</li>
+                    <li>※会員登録手数料が5,500円かかります。</li>
                     <li>※前月の27日にクレジットカードでのお支払いとなります。</li>
-                    <li>※マンスリー契約は最低3ヶ月となります。</li>
-                    <li>※3ヶ月を満たない退会は出来かねます。</li>
+                    <li>※マンスリー契約は最低6ヶ月となります。</li>
+                    <li>※6ヶ月を満たない退会は出来かねます。</li>
                     <li>※コース変更はいつでも可能、費用はかかりません。</li>
                     <li>※コース変更、休会、退会をご希望の際は前月の9日までにフロントにてお手続きください。</li>
                     <li>※代理人による手続き、電話やメールのお手続きは受け付けておりません。</li>
@@ -154,7 +154,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">初回体験</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            1,100<span>円(税込)</span>
+                                            1,300<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -162,7 +162,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">当日1回<span>（会員）</span></p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            2,200<span>円(税込)</span>
+                                            2,600<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -170,7 +170,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">当日1回<span>（ビジター）</span></p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            2,750<span>円(税込)</span>
+                                            3,300<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -178,7 +178,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">8回チケット</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            13,750<span>円(税込)</span>
+                                            16,500<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -186,7 +186,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">4回チケット</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            7,700<span>円(税込)</span>
+                                            9,200<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -204,10 +204,10 @@ Template Name: プライスページ
                             <tr class="hp_flex">
                                 <th class="fixed01">登録手数料</th>
                                 <td>-</td>
-                                <td>2,200円</td>
+                                <td>5,500円</td>
                                 <td>0円</td>
-                                <td>2,200円</td>
-                                <td>2,200円</td>
+                                <td>5,500円</td>
+                                <td>5,500円</td>
                             </tr>
                             <tr class="hp_flex">
                                 <th class="fixed01">繰越し</th>
@@ -230,9 +230,9 @@ Template Name: プライスページ
                 <div class="bl_notice">
                     <p class="bl_notice_title">ご注意事項</p>
                     <ul>
-                        <li>※会員登録手数料が2,200円かかります。</li>
+                        <li>※会員登録手数料が5,500円かかります。</li>
                         <li>※初回体験日にチケット購入で会員登録手数料無料です。</li>
-                        <li>※マットレンタルは無料、ビジターの方は1回220円（税込）です。</li>
+                        <li>※マットレンタルは無料、ビジターの方は1回270円（税込）です。</li>
                         <li>※チケットの購入は現金またはクレジットカードでのお支払いとなります。</li>
                         <li>※チケットの有効期限は使用日からです。</li>
                         <li>※チケットは期限内に次のチケット購入で550円引きです。</li>
@@ -263,7 +263,7 @@ Template Name: プライスページ
         </div>
     </section>
     <!-- ここからオンライン -->
-    <section class="ly_section hp_ptLg" id="monthly_online">
+    <!-- <section class="ly_section hp_ptLg" id="monthly_online">
         <div class=" ly_inner">
             <div class="hp_mbMd">
                 <h2 class="el_section_ttl">オンラインプラン</h2>
@@ -370,8 +370,8 @@ Template Name: プライスページ
                 </div>
             </div>
         </div>
-    </section>
-    <section class="ly_section hp_ptLg" id="ticket_online">
+    </section> -->
+    <!-- <section class="ly_section hp_ptLg" id="ticket_online">
         <div class=" ly_inner">
             <span class="el_section_ttl_sub" data-aos="fade-up">自宅で、好きなときだけ</span>
             <h2 class="el_section_header" data-aos="fade-up">オンライン<br>チケットプラン</h2>
@@ -453,14 +453,14 @@ Template Name: プライスページ
                         </tbody>
                     </table>
                 </div>
-                <!-- <div class="bl_required_item">
+                <div class="bl_required_item">
                     <p>ご入会時に必要なもの</p>
                     <ul>
                         <li>月会費2ヶ月分</li>
                         <span class="hp_anno">※現金またはクレジットカードのみ</span>
                     </ul>
                 </div> -->
-                <div class="bl_notice">
+                <!-- <div class="bl_notice">
                     <p class="bl_notice_title">ご注意事項</p>
                     <ul>
                         <li>※初回体験日にチケット購入で会員登録手数料です。</li>
@@ -475,8 +475,8 @@ Template Name: プライスページ
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
     <section class="ly_section hp_ptLg" id="monthly_senior">
         <div class=" ly_inner">
             <div class="hp_mbMd">
@@ -512,16 +512,16 @@ Template Name: プライスページ
                                         <p class="bl_plan_service_name">マンスリー6</p>
                                         <p class="bl_price_price bl_price_price__white">
                                             <span>月額</span>
-                                            6,600<span>円(税込)</span>
+                                            8,500<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
                                 <th class="bl_plan_service_head">
                                     <div>
-                                        <p class="bl_plan_service_name">マンスリー3</p>
+                                        <p class="bl_plan_service_name">マンスリー4</p>
                                         <p class="bl_price_price bl_price_price__white">
                                             <span>月額</span>
-                                            3,500<span>円(税込)</span>
+                                            6,000<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -531,7 +531,7 @@ Template Name: プライスページ
                             <tr class="hp_flex">
                                 <th class="fixed01">通える回数/月</th>
                                 <td>6回</td>
-                                <td>3回</td>
+                                <td>4回</td>
                             </tr>
                             <tr class="hp_flex">
                                 <th class="fixed01">繰越し</th>
@@ -540,8 +540,8 @@ Template Name: プライスページ
                             </tr>
                             <tr class="hp_flex">
                                 <th class="fixed01">追加受講</th>
-                                <td>7回目からは別途1,100円/回</td>
-                                <td>4回目からは別途1,100円/回</td>
+                                <td>7回目からは別途1,300円/回</td>
+                                <td>5回目からは別途1,300円/回</td>
                             </tr>
                             <tr class="hp_flex">
                                 <th class="fixed01">誕生日特典</th>
@@ -562,10 +562,10 @@ Template Name: プライスページ
                 <div class="bl_notice">
                     <p class="bl_notice_title">ご注意事項</p>
                     <ul>
-                        <li>※会員登録手数料が2,200円かかります。</li>
+                        <li>※会員登録手数料が5,500円かかります。</li>
                         <li>※前月の27日にクレジットカードでのお支払いとなります。</li>
-                        <li>※マンスリー契約は最低3ヶ月となります。</li>
-                        <li>※3ヶ月を満たない退会は出来かねます。</li>
+                        <li>※マンスリー契約は最低6ヶ月となります。</li>
+                        <li>※6ヶ月を満たない退会は出来かねます。</li>
                         <li>※コース変更はいつでも可能、費用はかかりません。</li>
                         <li>※コース変更、休会、退会をご希望の際は前月の9日までにフロントにてお手続きください。</li>
                         <li>※代理人による手続き、電話やメールのお手続きは受け付けておりません。</li>
@@ -598,7 +598,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">初回体験</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            550<span>円(税込)</span>
+                                            1,100<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -606,7 +606,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">当日1回<span>（会員）</span></p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            2,200<span>円(税込)</span>
+                                            2,600<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -614,7 +614,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">当日1回<span>（ビジター）</span></p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            2,750<span>円(税込)</span>
+                                            3,300<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -622,7 +622,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">8回チケット</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            9,900<span>円(税込)</span>
+                                            12,730<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -630,7 +630,7 @@ Template Name: プライスページ
                                     <div>
                                         <p class="bl_plan_service_name">4回チケット</p>
                                         <p class="bl_price_price bl_price_price__white">
-                                            5,500<span>円(税込)</span>
+                                            6,600<span>円(税込)</span>
                                         </p>
                                     </div>
                                 </th>
@@ -648,10 +648,10 @@ Template Name: プライスページ
                             <tr class="hp_flex">
                                 <th class="fixed01">登録手数料</th>
                                 <td>-</td>
-                                <td>2,200円</td>
+                                <td>5,500円</td>
                                 <td>0円</td>
-                                <td>2,200円</td>
-                                <td>2,200円</td>
+                                <td>5,500円</td>
+                                <td>5,500円</td>
                             </tr>
                             <tr class="hp_flex">
                                 <th class="fixed01">繰越し</th>
@@ -674,9 +674,9 @@ Template Name: プライスページ
                 <div class="bl_notice">
                     <p class="bl_notice_title">ご注意事項</p>
                     <ul>
-                        <li>※会員登録手数料が2,200円かかります。</li>
+                        <li>※会員登録手数料が5,500円かかります。</li>
                         <li>※初回体験日にチケット購入で会員登録手数料無料です。</li>
-                        <li>※マットレンタルは無料、ビジターの方は1回220円（税込）です。</li>
+                        <li>※マットレンタルは無料、ビジターの方は1回270円（税込）です。</li>
                         <li>※チケットの購入は現金またはクレジットカードでのお支払いとなります。</li>
                         <li>※チケットの有効期限は使用日からです。</li>
                         <li>※チケットは期限内に次のチケット購入で550円引きです。</li>

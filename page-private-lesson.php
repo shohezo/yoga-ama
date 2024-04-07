@@ -49,7 +49,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">初回体験</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    1,100<span>円(税込)</span>
+                                    6,600<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -57,7 +57,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">当日1回</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    2,200<span>円(税込)</span>
+                                    9,000<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -65,7 +65,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">12回チケット</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    72,600<span>円(税込)</span>
+                                    90,000<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -73,7 +73,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">8回チケット</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    52,800<span>円(税込)</span>
+                                    63,300<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -81,7 +81,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">4回チケット</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    28,600<span>円(税込)</span>
+                                    34,300<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -89,7 +89,7 @@ Template Name: プライベートレッスンページ
                             <div>
                                 <p class="bl_plan_service_name">90分レッスン</p>
                                 <p class="bl_price_price bl_price_price__white">
-                                    8,800<span>円(税込)</span>
+                                    10,500<span>円(税込)</span>
                                 </p>
                             </div>
                         </th>
@@ -108,11 +108,11 @@ Template Name: プライベートレッスンページ
                     <tr class="hp_flex">
                         <th class="fixed01">登録手数料</th>
                         <td>体験日にチケット購入で無料</td>
-                        <td>2,200円</td>
-                        <td>2,200円</td>
-                        <td>2,200円</td>
-                        <td>2,200円</td>
-                        <td>2,200円</td>
+                        <td>5,500円</td>
+                        <td>5,500円</td>
+                        <td>5,500円</td>
+                        <td>5,500円</td>
+                        <td>5,500円</td>
                     </tr>
                     <tr class="hp_flex">
                         <th class="fixed01">割引</th>
@@ -129,7 +129,7 @@ Template Name: プライベートレッスンページ
         <div class="bl_notice">
             <p class="bl_notice_title">ご注意事項</p>
             <ul>
-                <li>※会員登録手数料が2,200円かかります。</li>
+                <li>※会員登録手数料が5,500円かかります。</li>
                 <li>※初回体験日にチケット購入で会員登録手数料無料です。</li>
                 <li>※チケットの購入は現金またはクレジットカードでのお支払いとなります。</li>
                 <li>※チケットの有効期限は使用日からです。</li>

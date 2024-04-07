@@ -24,15 +24,15 @@ Template Name: レンタルページ
             <div class="bl_section_body">
                 <div class="bl_section_price hp_flex hp_aic hp_mb10" data-aos="fade-up">
                     <span>利用料金</span>
-                    <p>1,650<small>円/時間</small></p>
+                    <p>1,800<small>円/時間</small></p>
                 </div>
                 <div class="bl_notice hp_ptSm">
                     <!-- <p class="bl_notice_title">ご注意事項</p> -->
                     <ul>
                         <li>※税込価格です。</li>
-                        <li>※前後10時前後利用可能です。</li>
+                        <li>※前後10分前後利用可能です。</li>
                         <li>※最低利用時間は2時間からとなります。</li>
-                        <li>※12～3月、6～9月は、冷暖房費が追加550円(税込）となります。
+                        <li>※12～3月、6～9月は、冷暖房費が追加660円(税込）となります。
                         </li>
                     </ul>
                 </div>
@@ -41,7 +41,7 @@ Template Name: レンタルページ
         <div class="bl_section hp_ptMd">
             <div class="bl_section_header" data-aos="fade-right">ご利用について</div>
             <div class="bl_section_txt">
-                <p>空き状況や詳細についてはメール、またはお電話にてお問い合わせください。</p>
+                <p>空き状況や詳細についてはメール、またはお電話にてお問い合わせください。</p>
                 <p>事前に現地見学も承っております。</p>
             </div>
         </div>
