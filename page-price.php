@@ -3,7 +3,6 @@
 /* 
 Template Name: プライスページ
 */
-
 ?>
 <article id="price-page">
     <!-- キャンペーン -->
@@ -11,7 +10,9 @@ Template Name: プライスページ
         <div class=" ly_inner">
             <h2 class="el_section_header">紹介キャンペーン実施中!</h2>
             <figure class="bl_section_imgWrapper hp_centering hp_ptMd hp_pbSm" data-aos="fade-up">
-                <img src="<?php bloginfo('template_url');?>/img/campaign_introduction.png" alt="" />
+                <img src="<?php bloginfo(
+                    "template_url"
+                ); ?>/img/campaign_introduction.png" alt="" />
             </figure>
             <div class="bl_section hp_ptSm hp_tac">
                 <p class="bl_section_txt hp_tac">
@@ -36,7 +37,9 @@ Template Name: プライスページ
         <h2 class="el_section_header" data-aos="fade-up">マンスリープラン</h2>
         <div class="bl_section hp_ptSm">
             <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                <img src="<?php bloginfo('template_url');?>/img/price_monthly.png" alt="" />
+                <img src="<?php bloginfo(
+                    "template_url"
+                ); ?>/img/price_monthly.png" alt="" />
             </figure>
             <div class="bl_section_box hp_centering">
                 <ul>
@@ -100,7 +103,7 @@ Template Name: プライスページ
                         </tr>
                         <tr class="hp_flex">
                             <th class="fixed01">誕生日特典</th>
-                            <td>1ヶ月無料</td>
+                            <td>整体1回プレゼント</td>
                             <td>1レッスンチケット<br>プレゼント</td>
                             <td>1レッスンチケット<br>プレゼント</td>
                         </tr>
@@ -136,7 +139,9 @@ Template Name: プライスページ
             <h2 class="el_section_header" data-aos="fade-up">チケットプラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/price_ticket.png" alt="" />
+                    <img src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/price_ticket.png" alt="" />
                 </figure>
                 <div class="bl_section_box hp_centering">
                     <ul>
@@ -252,11 +257,19 @@ Template Name: プライスページ
             <span class="el_section_ttl_sub">ご予約</span>
             <div class="bl_section hp_tac">
                 <div class="ly_container hp_flex hp_mtMd hp_column_tb">
-                    <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
+                    <a href="<?php bloginfo(
+                        "url"
+                    ); ?>/reserve" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo(
+                            "template_url"
+                        ); ?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                     </a>
-                    <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                    <a href="<?php bloginfo(
+                        "url"
+                    ); ?>/price" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo(
+                            "template_url"
+                        ); ?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
                     </a>
                 </div>
             </div>
@@ -278,7 +291,9 @@ Template Name: プライスページ
             <h2 class="el_section_header" data-aos="fade-up">オンライン<br>マンスリープラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/price_monthly_online.png" alt="" />
+                    <img src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/price_monthly_online.png" alt="" />
                 </figure>
                 <div class="bl_section_box hp_centering">
                     <ul>
@@ -377,7 +392,9 @@ Template Name: プライスページ
             <h2 class="el_section_header" data-aos="fade-up">オンライン<br>チケットプラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/price_ticket_online.png" alt="" />
+                    <img src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/price_ticket_online.png" alt="" />
                 </figure>
                 <div class="bl_section_box hp_centering">
                     <ul>
@@ -460,7 +477,7 @@ Template Name: プライスページ
                         <span class="hp_anno">※現金またはクレジットカードのみ</span>
                     </ul>
                 </div> -->
-                <!-- <div class="bl_notice">
+    <!-- <div class="bl_notice">
                     <p class="bl_notice_title">ご注意事項</p>
                     <ul>
                         <li>※初回体験日にチケット購入で会員登録手数料です。</li>
@@ -492,7 +509,9 @@ Template Name: プライスページ
             <h2 class="el_section_header" data-aos="fade-up">シニア<br>マンスリープラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/monthly_senior.png" alt="" />
+                    <img src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/monthly_senior.png" alt="" />
                 </figure>
                 <div class="bl_section_box hp_centering">
                     <ul>
@@ -580,7 +599,9 @@ Template Name: プライスページ
             <h2 class="el_section_header" data-aos="fade-up">シニア<br>チケットプラン</h2>
             <div class="bl_section hp_ptSm">
                 <figure class="bl_section_imgWrapper hp_centering hp_ptSm hp_pbSm">
-                    <img src="<?php bloginfo('template_url');?>/img/ticket_senior.png" alt="" />
+                    <img src="<?php bloginfo(
+                        "template_url"
+                    ); ?>/img/ticket_senior.png" alt="" />
                 </figure>
                 <div class="bl_section_box hp_centering">
                     <ul>
@@ -696,11 +717,19 @@ Template Name: プライスページ
             <span class="el_section_ttl_sub">ご予約</span>
             <div class="bl_section hp_tac">
                 <div class="ly_container hp_flex hp_mtMd hp_column_tb">
-                    <a href="<?php bloginfo('url');?>/reserve" class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
+                    <a href="<?php bloginfo(
+                        "url"
+                    ); ?>/reserve" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo(
+                            "template_url"
+                        ); ?>/img/reserveBanner.png" alt="ネット予約バナー画像" />
                     </a>
-                    <a href="<?php bloginfo('url');?>/price" class="bl_banner_wrapper">
-                        <img src="<?php bloginfo('template_url');?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
+                    <a href="<?php bloginfo(
+                        "url"
+                    ); ?>/price" class="bl_banner_wrapper">
+                        <img src="<?php bloginfo(
+                            "template_url"
+                        ); ?>/img/resson_price.png" alt="レッスン・料金についてのバナー画像" />
                     </a>
                 </div>
             </div>
